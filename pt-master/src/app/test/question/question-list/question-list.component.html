@@ -1,0 +1,36 @@
+<table class="table table-bordered style">
+  <thead class="thead-light">
+    <tr>
+      <th>ID</th>
+      <th>Libellés</th>
+      <th>Type</th>
+      <th>Gérer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let question of (questions$ | async)">
+      <td>{{ question.id }}</td>
+      <td>{{ question.label }}</td>
+      <td>{{ question.answerType }}</td>
+      <td>
+        <a [routerLink]="['../', idTest, 'question', 'editer', question.id]">
+          <img class="icon-style" src="../../../assets/icons/pencil.svg" alt="stylo">
+        </a>
+        <a [routerLink]="['../', idTest, 'question', 'consulter', question.id]">
+          <img class="icon-style"src="../../../assets/icons/magnifier-tool.svg" alt="loupe">
+        </a>
+        <a [routerLink]="['/']">
+          <img class="icon-style" src="../../../assets/icons/rubbish-bin.svg" alt="poubelle">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a class="font-weight-bold text-dark" [routerLink]="['../', idTest, 'question', 'creer']">+ Ajouter</a></td>
+    </tr>
+  </tfoot>
+</table>

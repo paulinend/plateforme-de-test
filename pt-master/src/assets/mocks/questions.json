@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "label": "Question 1",
+    "score": 4,
+    "enable": true,
+    "answers": [],
+    "answerType": 0
+  },
+  {
+    "id": 1,
+    "label": "Question 2",
+    "score": 5,
+    "enable": true,
+    "answers": [],
+    "answerType": 1
+  },
+  {
+    "id": 2,
+    "label": "Question 3",
+    "score": 1,
+    "enable": true,
+    "answers": [],
+    "answerType": 2
+  }
+]
