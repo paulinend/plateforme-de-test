@@ -1,0 +1,32 @@
+<div class="container">
+  <h2>{{title}}</h2>
+  <br>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <!-- <form (ngSubmit)="onSubmit()" [formGroup]="form" *ngIf="test$ | async"> -->
+    <div class="form-group row">
+      <label for="testTitle" class="col-sm-2 col-form-label">Titre</label>
+      <div class="form-group col-md-10">
+        <input id="testTitle" type="text" class="form-control" formControlName="nom">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label" for="testDuration">Durée</label>
+      <div class="form-group col-md-2">
+        <input id="testDuration" type="number" min="5" max="99" class="form-control" formControlName="duree">
+      </div>
+      <span>min</span>
+    </div>
+    <div class="form-check">
+      <input id="testEnable" type="checkbox" class="form-check-input" formControlName="enable">
+      <label class="form-check-label" for="testEnable">Désactiver</label>
+    </div>
+    <br>
+
+    <app-question-list [idTest]="test.id" *ngIf="test"></app-question-list>
+    <div class="btn-grp" style="display: flex; justify-content: space-between;">
+      <button type="button" class="btn btn-outline-danger" [routerLink]="['/test']" routerLinkActive="router-link-active">Annuler</button>
+      <button type="submit" class="btn btn-outline-success" *ngIf="!this.state.includes('consulter')">Enregistrer</button>
+    </div>
+  </form>
+
+</div>

@@ -1,0 +1,14 @@
+[
+  {
+    "code": 0,
+    "label": "CHOIX_UNIQUE"
+  },
+  {
+    "code": 1,
+    "label": "CHOIX_MULTIPLE"
+  },
+  {
+    "code": 2,
+    "label": "Réponse libre"
+  }
+]

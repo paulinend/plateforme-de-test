@@ -1,0 +1,46 @@
+<table class="table table-bordered" *ngIf="(tests$ | async) as tests; else noTest">
+  <thead class="thead-light">
+    <tr>
+      <th>Nom</th>
+      <th>Durée</th>
+      <th>Crée le</th>
+      <th>Mis à jour le</th>
+      <th>Statut</th>
+      <th>Gérer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let test of tests">
+      <th>{{ test.nom }}</th>
+      <th>{{ test.duree }} min</th>
+      <th>{{ test.dateCreation | date: "shortDate" }}</th>
+      <th>{{ test.dateModification | date: "shortDate" }}</th>
+      <th *ngIf="test.enable">Actif</th>
+      <th *ngIf="!test.enable">Inactif</th>
+      <th>
+        <a [routerLink]="['editer', test.id]">
+          <img class="icon-style" src="../../../assets/icons/pencil.svg" alt="stylo">
+        </a>
+        <a [routerLink]="['consulter', test.id]">
+          <img class="icon-style"src="../../../assets/icons/magnifier-tool.svg" alt="loupe">
+        </a>
+        <a>
+          <img class="icon-style" (click)="delete(test.id)" src="../../../assets/icons/rubbish-bin.svg" alt="poubelle">
+        </a>
+      </th>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a class="font-weight-bold text-dark" [routerLink]="['/test/creer']">+ Ajouter</a></td>
+    </tr>
+  </tfoot>
+</table>
+<ng-template #noTest>
+  <p>Aucun test.</p>
+</ng-template>

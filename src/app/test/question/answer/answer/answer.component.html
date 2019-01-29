@@ -1,0 +1,80 @@
+<h5>Réponses associées</h5>
+
+<table class="table table-bordered">
+  <thead class="thead-light">
+    <tr>
+      <th>ID</th>
+      <th>Libellés</th>
+      <th>Solution</th>
+      <th>Gérer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let answer of (answers$ | async); let idx = index">
+      <td>{{ answer.id }}</td>
+      <td>{{ answer.intitule }}</td>
+      <td>
+        <div class="form-check" [ngSwitch]="typeQuestion">
+          <input
+            *ngSwitchCase="0"
+            class="form-check-input"
+            type="radio"
+            value=""
+            name="radiogroup"
+            id="radioCheck"
+            [checked]="idx === 0"
+            [value]="answer.id"
+            (change)="onSelectionChange(answer)"
+          >
+          <input *ngSwitchCase="1" class="form-check-input" type="checkbox" value="" id="CheckBox">
+        </div>
+      </td>
+      <td class="text-align-center">
+        <a><img class="icon-style" src="../../../assets/icons/pencil.svg" alt="stylo"></a> <!-- mettre des btns pas des a-->
+        <a><img class="icon-style" (click)="deleteAnswer(idTest, idQuestion, answer.id)" src="../../../assets/icons/rubbish-bin.svg" alt="poubelle"></a>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="text-align-center"><a class="font-weight-bold text-dark" (click)="openVerticallyCentered(content)">+ Ajouter</a></td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- MODAL D'AJOUT D'UNE REPONSE -->
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Ajouter une réponse</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+      <div class="form-group">
+        <label for="reponseLabel">Intitulé</label>
+        <textarea id="reponseLabel" class="form-control" formControlName="intitule"></textarea>
+      </div>
+      <div class="form-check">
+        <p>Correct</p>
+        <div class="radio">
+            <label><input type="radio" value="oui" formControlName="correct">Oui</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" value="False">Non</label>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-grp" style="display: flex; justify-content: space-between;">
+          <button type="button" class="btn btn-outline-danger" (click)="modal.close('Close click')" >Annuler</button>
+          <button type="submit" class="btn btn-outline-success">Enregistrer</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</ng-template>
