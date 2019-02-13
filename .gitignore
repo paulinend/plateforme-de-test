@@ -3,3 +3,5 @@
 **/.settings
 **/.project
 **/*.log
+node_modules
+.vs/test-online/v15/.suo

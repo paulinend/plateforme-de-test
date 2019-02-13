@@ -1,5 +1,3 @@
-import { user_profile } from "../shared/const/user_profile";
-
 export interface IUser {
   id: number;
   nom: string;
@@ -7,7 +5,7 @@ export interface IUser {
   mail: string;
   dateCreation?: string;
   dateModification?: string;
-  profil:user_profile | string ;
+  profil: string ;
   enable:	boolean;
 }
 
@@ -18,7 +16,7 @@ export class User implements IUser{
     mail:string;
     dateCreation?:	string;
     dateModification?:	string;
-    profil:user_profile | string ;
+    profil: string ;
     enable:	boolean;
 
     constructor(ctor?: IUser) {
