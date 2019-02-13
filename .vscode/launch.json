@@ -5,14 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}\\serve",
-            "preLaunchTask": "tsc: build - tsconfig.json",
-            "outFiles": [
-                "${workspaceFolder}/dist/out-tsc/**/*.js"
-            ]
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-App<plateforme-test>",
+            "request": "launch",
+            "mainClass": "com.proelan.plateforme_test.App",
+            "projectName": "plateforme-test"
         }
     ]
 }

@@ -13,13 +13,17 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {LOCALE_ID} from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 registerLocaleData(localeFr, 'fr');
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
