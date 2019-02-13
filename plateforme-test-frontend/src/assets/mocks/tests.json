@@ -1,201 +1,7204 @@
-[
-  {
-    "id": 1,
-    "nom": "Hibernate",
-    "duree": 6,
-    "dateCreation": "2018-12-05T11:51:53",
-    "dateModification": "2018-12-11T16:41:03",
-    "questions": [
-        {
-            "id": 1,
-            "reponses": [
-                {
-                    "id": 1,
-                    "intitule": "Oui",
-                    "correct": false
-                },
-                {
-                    "id": 2,
-                    "intitule": "Non",
-                    "correct": true
-                }
-            ],
-            "typeQuestion": "CHOIX_UNIQUE",
-            "enonce": "Est-il obligé d'utiliser hibernate.cfg.xml pour configurer hibernate?",
-            "nbPoints": 2
-        },
-        {
-            "id": 2,
-            "reponses": [
-                {
-                    "id": 3,
-                    "intitule": "Singleton",
-                    "correct": true
-                },
-                {
-                    "id": 4,
-                    "intitule": "Prototype",
-                    "correct": false
-                }
-            ],
-            "typeQuestion": "CHOIX_UNIQUE",
-            "enonce": "Quel « design pattern » est approprié pour créer la SessionFactory hibernate ?",
-            "nbPoints": 2
-        },
-        {
-            "id": 3,
-            "reponses": [
-                {
-                    "id": 5,
-                    "intitule": "Oui",
-                    "correct": true
-                },
-                {
-                    "id": 6,
-                    "intitule": "Non",
-                    "correct": false
-                }
-            ],
-            "typeQuestion": "CHOIX_UNIQUE",
-            "enonce": "Il y a une session Hibernate créée par thread par défaut ?",
-            "nbPoints": 2
-        },
-        {
-            "id": 4,
-            "reponses": [
-                {
-                    "id": 7,
-                    "intitule": "Des instances de classes persistantes qui ne sont pas associées par la session",
-                    "correct": true
-                },
-                {
-                    "id": 8,
-                    "intitule": "Des instances de classes persistantes qui sont en session",
-                    "correct": false
-                }
-            ],
-            "typeQuestion": "CHOIX_UNIQUE",
-            "enonce": "Les objets « transient » et « detached » sont pour Hibernate :",
-            "nbPoints": 2
-        },
-        {
-            "id": 5,
-            "reponses": [
-                {
-                    "id": 9,
-                    "intitule": "Seul les guetteurs sont pris en compte pour la persistance",
-                    "correct": true
-                },
-                {
-                    "id": 10,
-                    "intitule": "Les attributs de classe sont aussi pris en compte",
-                    "correct": false
-                }
-            ],
-            "typeQuestion": "CHOIX_UNIQUE",
-            "enonce": "Si @Id annote un « getteur » :",
-            "nbPoints": 2
-        }
-    ]
-  },
-  {
-      "id": 2,
-      "nom": "Spring",
-      "duree": 5,
-      "dateCreation": "2018-12-05T11:51:53",
-      "dateModification": "2018-12-05T11:51:53",
-      "questions": [
-          {
-              "id": 6,
-              "reponses": [
-                  {
-                      "id": 11,
-                      "intitule": "Vrai",
-                      "correct": false
-                  },
-                  {
-                      "id": 12,
-                      "intitule": "Faux",
-                      "correct": true
-                  }
-              ],
-              "typeQuestion": "CHOIX_UNIQUE",
-              "enonce": "L'AOP fait partie du Coeur de framework Spring :",
-              "nbPoints": 2
-          },
-          {
-              "id": 7,
-              "reponses": [
-                  {
-                      "id": 13,
-                      "intitule": "ApplicationContext",
-                      "correct": true
-                  },
-                  {
-                      "id": 14,
-                      "intitule": "ServletContext",
-                      "correct": false
-                  }
-              ],
-              "typeQuestion": "CHOIX_UNIQUE",
-              "enonce": "Quelle classe fournit un conteneur IoC ?",
-              "nbPoints": 2
-          },
-          {
-              "id": 8,
-              "reponses": [
-                  {
-                      "id": 15,
-                      "intitule": "Uniquement sur les setteurs",
-                      "correct": false
-                  },
-                  {
-                      "id": 16,
-                      "intitule": "Sur les setteurs et arguments du constructeur",
-                      "correct": true
-                  }
-              ],
-              "typeQuestion": "CHOIX_UNIQUE",
-              "enonce": "Comment peut-on utiliser idref dans Spring ?",
-              "nbPoints": 2
-          },
-          {
-              "id": 9,
-              "reponses": [
-                  {
-                      "id": 17,
-                      "intitule": "Prototype",
-                      "correct": false
-                  },
-                  {
-                      "id": 18,
-                      "intitule": "Singleton",
-                      "correct": true
-                  }
-              ],
-              "typeQuestion": "CHOIX_UNIQUE",
-              "enonce": "Quel est le scope par défaut d'un bean dans Spring ?",
-              "nbPoints": 2
-          },
-          {
-              "id": 10,
-              "reponses": [
-                  {
-                      "id": 19,
-                      "intitule": "Vrai",
-                      "correct": true
-                  },
-                  {
-                      "id": 20,
-                      "intitule": "Faux",
-                      "correct": false
-                  }
-              ],
-              "typeQuestion": "CHOIX_UNIQUE",
-              "enonce": "Par défaut un bean est initialisé en mode « eager » :",
-              "nbPoints": 2
-          }
-      ]
-  }
-
-]
+[{
+	"id": 1,
+	"nom": "Hibernate",
+	"duree": 8,
+	"dateCreation": "2018-12-05T11:51:53",
+	"dateModification": "2019-01-08T11:20:12",
+	"questions": [{
+		"id": 4,
+		"reponses": [{
+			"id": 8,
+			"intitule": "Des instances de classes persistantes qui sont en session",
+			"correct": false
+		}, {
+			"id": 7,
+			"intitule": "Des instances de classes persistantes qui ne sont pas associées par la session",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Les objets « transient » et « detached » sont pour Hibernate :",
+		"nbPoints": 2
+	}, {
+		"id": 1,
+		"reponses": [{
+			"id": 1,
+			"intitule": "Oui",
+			"correct": false
+		}, {
+			"id": 2,
+			"intitule": "Non",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Est-il obligé d'utiliser hibernate.cfg.xml pour configurer hibernate?",
+		"nbPoints": 2
+	}, {
+		"id": 2,
+		"reponses": [{
+			"id": 4,
+			"intitule": "Prototype",
+			"correct": false
+		}, {
+			"id": 3,
+			"intitule": "Singleton",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quel « design pattern » est approprié pour créer la SessionFactory hibernate ? test",
+		"nbPoints": 2
+	}, {
+		"id": 3,
+		"reponses": [{
+			"id": 5,
+			"intitule": "Oui",
+			"correct": true
+		}, {
+			"id": 6,
+			"intitule": "Non",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Il y a une session Hibernate créée par thread par défaut ?",
+		"nbPoints": 2
+	}, {
+		"id": 5,
+		"reponses": [{
+			"id": 9,
+			"intitule": "Seul les guetteurs sont pris en compte pour la persistance",
+			"correct": true
+		}, {
+			"id": 10,
+			"intitule": "Les attributs de classe sont aussi pris en compte",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Si @Id annote un « getteur » :",
+		"nbPoints": 2
+	}]
+}, {
+	"id": 2,
+	"nom": "Spring",
+	"duree": 5,
+	"dateCreation": "2018-12-05T11:51:53",
+	"dateModification": "2018-12-05T11:51:53",
+	"questions": [{
+		"id": 8,
+		"reponses": [{
+			"id": 16,
+			"intitule": "Sur les setteurs et arguments du constructeur",
+			"correct": true
+		}, {
+			"id": 15,
+			"intitule": "Uniquement sur les setteurs",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Comment peut-on utiliser idref dans Spring ?",
+		"nbPoints": 2
+	}, {
+		"id": 6,
+		"reponses": [{
+			"id": 12,
+			"intitule": "Faux",
+			"correct": true
+		}, {
+			"id": 11,
+			"intitule": "Vrai",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "L'AOP fait partie du Coeur de framework Spring :",
+		"nbPoints": 2
+	}, {
+		"id": 10,
+		"reponses": [{
+			"id": 20,
+			"intitule": "Faux",
+			"correct": false
+		}, {
+			"id": 19,
+			"intitule": "Vrai",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Par défaut un bean est initialisé en mode « eager » :",
+		"nbPoints": 2
+	}, {
+		"id": 7,
+		"reponses": [{
+			"id": 13,
+			"intitule": "ApplicationContext",
+			"correct": true
+		}, {
+			"id": 14,
+			"intitule": "ServletContext",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle classe fournit un conteneur IoC ?",
+		"nbPoints": 2
+	}, {
+		"id": 9,
+		"reponses": [{
+			"id": 17,
+			"intitule": "Prototype",
+			"correct": false
+		}, {
+			"id": 18,
+			"intitule": "Singleton",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel est le scope par défaut d'un bean dans Spring ?",
+		"nbPoints": 2
+	}]
+}, {
+	"id": 3,
+	"nom": "Web Services",
+	"duree": 5,
+	"dateCreation": "2018-12-05T11:51:53",
+	"dateModification": "2018-12-05T11:51:53",
+	"questions": [{
+		"id": 14,
+		"reponses": [{
+			"id": 33,
+			"intitule": "De connaître les options existantes pour une ressource",
+			"correct": false
+		}, {
+			"id": 34,
+			"intitule": "De faire un hand-check",
+			"correct": false
+		}, {
+			"id": 35,
+			"intitule": "De savoir si une ressource est disponible",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "La méthode Head pour la communication HTTP REST permet :",
+		"nbPoints": 2
+	}, {
+		"id": 11,
+		"reponses": [{
+			"id": 25,
+			"intitule": "WSDL",
+			"correct": false
+		}, {
+			"id": 21,
+			"intitule": "UDDI",
+			"correct": true
+		}, {
+			"id": 22,
+			"intitule": "XML",
+			"correct": false
+		}, {
+			"id": 23,
+			"intitule": "SOAP",
+			"correct": false
+		}, {
+			"id": 24,
+			"intitule": "WSIL",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel élément des Web Services joue le rôle d'annuaire ?",
+		"nbPoints": 2
+	}, {
+		"id": 12,
+		"reponses": [{
+			"id": 27,
+			"intitule": "Le protocole RPC de communication",
+			"correct": false
+		}, {
+			"id": 30,
+			"intitule": "L'encapsulation des messages d'erreurs",
+			"correct": true
+		}, {
+			"id": 26,
+			"intitule": "La structure du message XML",
+			"correct": true
+		}, {
+			"id": 28,
+			"intitule": "Un lien HTTP",
+			"correct": true
+		}, {
+			"id": 29,
+			"intitule": "Le type du client",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Qu'est-ce que SOAP définit ?",
+		"nbPoints": 2
+	}, {
+		"id": 13,
+		"reponses": [{
+			"id": 31,
+			"intitule": "Est une architecture",
+			"correct": true
+		}, {
+			"id": 32,
+			"intitule": "Un protocole de communication",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "REST : Quelles sont les affirmations vraies ?",
+		"nbPoints": 2
+	}, {
+		"id": 15,
+		"reponses": [{
+			"id": 36,
+			"intitule": "De connaître les options du navigateur",
+			"correct": true
+		}, {
+			"id": 38,
+			"intitule": "De réserver une ressource",
+			"correct": false
+		}, {
+			"id": 37,
+			"intitule": "De connaître les méthodes disponibles pour une ressource",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "La méthode Option pour la communication HTTP REST permet :",
+		"nbPoints": 2
+	}]
+}, {
+	"id": 4,
+	"nom": "SQL",
+	"duree": 5,
+	"dateCreation": "2018-12-05T11:51:54",
+	"dateModification": "2018-12-05T11:51:54",
+	"questions": [{
+		"id": 21,
+		"reponses": [{
+			"id": 58,
+			"intitule": "{ }",
+			"correct": false
+		}, {
+			"id": 60,
+			"intitule": "[ ]",
+			"correct": false
+		}, {
+			"id": 59,
+			"intitule": "( )",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Une « subquery » dans un SELECT est entourée par :",
+		"nbPoints": 2
+	}, {
+		"id": 18,
+		"reponses": [{
+			"id": 46,
+			"intitule": "INSERT",
+			"correct": false
+		}, {
+			"id": 48,
+			"intitule": "UPDATE",
+			"correct": false
+		}, {
+			"id": 49,
+			"intitule": "INVERT",
+			"correct": true
+		}, {
+			"id": 47,
+			"intitule": "SELECT",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lequel de ces mots n'est pas de SQL ?",
+		"nbPoints": 2
+	}, {
+		"id": 23,
+		"reponses": [{
+			"id": 65,
+			"intitule": "Inner Join",
+			"correct": false
+		}, {
+			"id": 66,
+			"intitule": "Cross Join",
+			"correct": true
+		}, {
+			"id": 67,
+			"intitule": "Outer Left Join",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Pour obtenir le produit cartésien de deux tables j'utilise :",
+		"nbPoints": 2
+	}, {
+		"id": 19,
+		"reponses": [{
+			"id": 52,
+			"intitule": "ADD INDEX ID ;",
+			"correct": false
+		}, {
+			"id": 53,
+			"intitule": "REMOVE INDEX ID ;",
+			"correct": false
+		}, {
+			"id": 50,
+			"intitule": "CREATE INDEX ID ;",
+			"correct": true
+		}, {
+			"id": 51,
+			"intitule": "CHANGE INDEX ID ;",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de ces commandes est valides pour un index ?",
+		"nbPoints": 2
+	}, {
+		"id": 24,
+		"reponses": [{
+			"id": 70,
+			"intitule": "Obtenir les lignes de table1, quand table2 respecte la condition",
+			"correct": false
+		}, {
+			"id": 68,
+			"intitule": "Obtenir les lignes du produit cartésien table1,table2 uniquement si table1 et table2 respecte la condition",
+			"correct": true
+		}, {
+			"id": 69,
+			"intitule": "Obtenir les lignes mêmes du produit cartésien quand table1 et/ou table2 respecte la condition",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "La requête SQL suivante : SELECT * FROM table1 INNER JOIN table2 ON table1.id = table2.fk_id\nPermet de :",
+		"nbPoints": 2
+	}, {
+		"id": 16,
+		"reponses": [{
+			"id": 42,
+			"intitule": "NULL",
+			"correct": false
+		}, {
+			"id": 40,
+			"intitule": "False",
+			"correct": true
+		}, {
+			"id": 39,
+			"intitule": "True",
+			"correct": false
+		}, {
+			"id": 41,
+			"intitule": "Undefined",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel est le résultat si deux valeurs NULL sont comparées ?",
+		"nbPoints": 2
+	}, {
+		"id": 17,
+		"reponses": [{
+			"id": 44,
+			"intitule": "ALTER TABLE..............DROP CONSTRAINT",
+			"correct": false
+		}, {
+			"id": 45,
+			"intitule": "DROP TABLE",
+			"correct": true
+		}, {
+			"id": 43,
+			"intitule": "DROP INDEX",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Supposez que vous deviez supprimer une table qui a plusieurs index qui lui sont associés. Quelle commande exécuter ?",
+		"nbPoints": 2
+	}, {
+		"id": 20,
+		"reponses": [{
+			"id": 57,
+			"intitule": "SELECT WHERE FROM",
+			"correct": false
+		}, {
+			"id": 54,
+			"intitule": "SELECT FROM WHERE",
+			"correct": true
+		}, {
+			"id": 55,
+			"intitule": "FROM WHERE SELECT",
+			"correct": false
+		}, {
+			"id": 56,
+			"intitule": "WHERE FROM SELECT",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel est le bon ordre ?",
+		"nbPoints": 2
+	}, {
+		"id": 22,
+		"reponses": [{
+			"id": 64,
+			"intitule": "Exactement comme WHERE",
+			"correct": true
+		}, {
+			"id": 61,
+			"intitule": "Comme WHERE mais pour des GROUP plutôt que des ROW",
+			"correct": false
+		}, {
+			"id": 62,
+			"intitule": "Comme WHERE mais pour des ROW plutôt que des COLUMN",
+			"correct": false
+		}, {
+			"id": 63,
+			"intitule": "Comme WHERE mais pour des COLUMN plutôt que des GROUP",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Que fait la clause HAVING ?",
+		"nbPoints": 2
+	}]
+}, {
+	"id": 5,
+	"nom": "Javascript",
+	"duree": 6,
+	"dateCreation": "2018-12-05T11:51:54",
+	"dateModification": "2018-12-05T11:51:54",
+	"questions": [{
+		"id": 25,
+		"reponses": [{
+			"id": 71,
+			"intitule": "true",
+			"correct": false
+		}, {
+			"id": 72,
+			"intitule": "false",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Le test suivant « »=== renvoie :",
+		"nbPoints": 2
+	}, {
+		"id": 27,
+		"reponses": [{
+			"id": 76,
+			"intitule": "Sont différentes ?",
+			"correct": true
+		}, {
+			"id": 75,
+			"intitule": "Sont équivalentes ?",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Les deux fonctions suivantes :\ntest(){ a=« hello » } ;\net\ntestbis(){ var a=« hello » } ;",
+		"nbPoints": 2
+	}, {
+		"id": 28,
+		"reponses": [{
+			"id": 77,
+			"intitule": "fonctionne",
+			"correct": true
+		}, {
+			"id": 78,
+			"intitule": "erreur à l’exécution",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Soit le code suivant :\nfunction test() { if(true){ a=  « hello » ;} alert(a) ; } ;",
+		"nbPoints": 2
+	}, {
+		"id": 31,
+		"reponses": [{
+			"id": 88,
+			"intitule": "Par chaînes de caractères croissantes  (ie : 10,2,27,4)",
+			"correct": true
+		}, {
+			"id": 87,
+			"intitule": "Sera identique au tableau d’entrée (ie : 27,2,10,4)",
+			"correct": false
+		}, {
+			"id": 86,
+			"intitule": "Par ordre croissant (ie: 2,4,10,27)",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Comment sera trié le tableau retourné par la fonction sort déclarée ci-après :\n<script>\nvar oneArray = new Array(27,2,10,4);\nfunction sort( theArray ){\n\treturn theArray.sort();\n}\ndocument.write(sort(oneArray));\n</script>",
+		"nbPoints": 2
+	}, {
+		"id": 32,
+		"reponses": [{
+			"id": 91,
+			"intitule": "Identique",
+			"correct": false
+		}, {
+			"id": 89,
+			"intitule": "Déclaration 1",
+			"correct": false
+		}, {
+			"id": 90,
+			"intitule": "Déclaration 2",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Soit les deux déclarations suivantes ; Quelle déclaration est plus avantageuse en terme de cout mémoire ?\nDéclaration 1\nfunction _Compute(){\n\treturn this.property_1 + this.property_2;\n};\n\nfunction NewType(arg1, arg2){\n\tthis.property_1 = arg1;\n\tthis.property_2 = arg2;\n\n\tthis.getCompute = _Compute;\n\tthis.toString = function(){\n\t\treturn (this.property_1 + ' - ' + this.property_2);\n\t};\n};\n\nDéclaration 2\nfunction NewType (arg1,arg2){\n\tthis.property_1 = arg1;\n\tthis.property_2 = arg2;\n};\n\nNewType.prototype.getCompute = function(){\n\treturn this.property_1 + this.property_2;\n};\n\nNewType.prototype.toString = function(){\n\treturn (this.property_1 + ' - ' + this.property_2);\n};",
+		"nbPoints": 2
+	}, {
+		"id": 26,
+		"reponses": [{
+			"id": 73,
+			"intitule": "oui",
+			"correct": false
+		}, {
+			"id": 74,
+			"intitule": "non",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Soit la fonction test(){ alert(« hello ») } ;\nJe peux l'appeler de la manière suivante :\ntest(3) ;",
+		"nbPoints": 2
+	}, {
+		"id": 30,
+		"reponses": [{
+			"id": 84,
+			"intitule": "Compilé par le navigateur",
+			"correct": false
+		}, {
+			"id": 83,
+			"intitule": "Compilé par le serveur",
+			"correct": false
+		}, {
+			"id": 85,
+			"intitule": "Interprété par le navigateur",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Le JavaScript est :",
+		"nbPoints": 2
+	}, {
+		"id": 29,
+		"reponses": [{
+			"id": 80,
+			"intitule": "document.getElementByName(\"p\").innerHTML = \"Hello World!\";",
+			"correct": false
+		}, {
+			"id": 79,
+			"intitule": "#demo.innerHTML = \"Hello World!\";",
+			"correct": false
+		}, {
+			"id": 81,
+			"intitule": "document.getElement(\"p\").innerHTML = \"Hello World!\";",
+			"correct": false
+		}, {
+			"id": 82,
+			"intitule": "document.getElementById(\"demo\").innerHTML = \"Hello World!\";",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle est la commande correcte pour changer le contenu de l'élément « demo » en javascript :\n<p id=\"demo\">This is a demonstration.</p>",
+		"nbPoints": 2
+	}]
+}, {
+	"id": 6,
+	"nom": "J2EE-JSP",
+	"duree": 5,
+	"dateCreation": "2018-12-05T11:51:54",
+	"dateModification": "2018-12-05T11:51:54",
+	"questions": [{
+		"id": 36,
+		"reponses": [{
+			"id": 105,
+			"intitule": "Response",
+			"correct": false
+		}, {
+			"id": 107,
+			"intitule": "Session",
+			"correct": false
+		}, {
+			"id": 104,
+			"intitule": "Request",
+			"correct": false
+		}, {
+			"id": 106,
+			"intitule": "Page",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel est le « scope » de l'objet « Response » ?",
+		"nbPoints": 2
+	}, {
+		"id": 35,
+		"reponses": [{
+			"id": 103,
+			"intitule": "System",
+			"correct": true
+		}, {
+			"id": 101,
+			"intitule": "Response",
+			"correct": false
+		}, {
+			"id": 100,
+			"intitule": "Request",
+			"correct": false
+		}, {
+			"id": 102,
+			"intitule": "Page",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lequel de ces objets n'est pas implicite dans les JSP ?",
+		"nbPoints": 2
+	}, {
+		"id": 34,
+		"reponses": [{
+			"id": 99,
+			"intitule": "getOutputStream() ;",
+			"correct": false
+		}, {
+			"id": 96,
+			"intitule": "getStream() ;",
+			"correct": false
+		}, {
+			"id": 97,
+			"intitule": "getBinaryStream() ;",
+			"correct": false
+		}, {
+			"id": 98,
+			"intitule": "getWriter() ;",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Pour renvoyer une réponse, laquelle de ces méthodes est appropriée dans la classe HttpServletResponse ?",
+		"nbPoints": 2
+	}, {
+		"id": 37,
+		"reponses": [{
+			"id": 111,
+			"intitule": "meta-inf/lib",
+			"correct": false
+		}, {
+			"id": 109,
+			"intitule": "web-inf/lib",
+			"correct": true
+		}, {
+			"id": 110,
+			"intitule": "web/classes",
+			"correct": false
+		}, {
+			"id": 108,
+			"intitule": "web-inf",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Dans une Webapp, si je veux rajouter des Jars à mon classpath, je vais les ajouter dans le répertoire :",
+		"nbPoints": 2
+	}, {
+		"id": 33,
+		"reponses": [{
+			"id": 92,
+			"intitule": "HttpServletRequest",
+			"correct": true
+		}, {
+			"id": 95,
+			"intitule": "SessionConfig",
+			"correct": false
+		}, {
+			"id": 94,
+			"intitule": "SessionContext",
+			"correct": false
+		}, {
+			"id": 93,
+			"intitule": "HttpServletResponse",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle est la classe qui contient la méthode getSession() ?",
+		"nbPoints": 2
+	}]
+}, {
+	"id": 7,
+	"nom": "Java",
+	"duree": 15,
+	"dateCreation": "2018-12-05T11:51:54",
+	"dateModification": "2018-12-05T11:51:54",
+	"questions": [{
+		"id": 40,
+		"reponses": [{
+			"id": 122,
+			"intitule": "Ce code pourra être compilé dans le cas où l’on code l’instruction qui suit à la première ligne dans le constructeur de Student:super();",
+			"correct": false
+		}, {
+			"id": 123,
+			"intitule": "Ce code pourra être compilé si l’on fait appel au constructeur de Person à partir du constructeur de Student.",
+			"correct": true
+		}, {
+			"id": 120,
+			"intitule": "Ce code pourra être compilé si l’on définit dans la classe Person un constructeur du type no-argument.",
+			"correct": true
+		}, {
+			"id": 121,
+			"intitule": "Ce code pourra être compilé si l’on définit dans la classe Student un constructeur du type no-argument.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Observez le morceau de code suivant:\n\npublic class Person{\nprivate String firstName;\npublic Person(String fn){ \nfirstName = fn; \n}\n}\n\npublic class Student extends Person{\nprivate String studentNumber;\npublic Student(String number) { \nstudentNumber = number; \n}\n}\n\nQuelles affirmations sont dès lors correctes ? (2 réponses) ",
+		"nbPoints": 2
+	}, {
+		"id": 51,
+		"reponses": [{
+			"id": 164,
+			"intitule": "Non, le garbage collector s’occupe de gérer la mémoire",
+			"correct": false
+		}, {
+			"id": 163,
+			"intitule": "Oui",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Peut-on générer des fuites mémoires en JAVA ?",
+		"nbPoints": 2
+	}, {
+		"id": 41,
+		"reponses": [{
+			"id": 124,
+			"intitule": "0 8",
+			"correct": true
+		}, {
+			"id": 125,
+			"intitule": "5 0",
+			"correct": false
+		}, {
+			"id": 126,
+			"intitule": "0 0",
+			"correct": false
+		}, {
+			"id": 127,
+			"intitule": "5 8",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Observez le morceau de code suivant:\n\nclass Person { \npublic int number; \n}\npublic class Test{\npublic void doIt(int i , Person p){\ni = 5;\np.number = 8;\n}\npublic static void main(String args[]){\nint x = 0;\nPerson p = new Person();\nnew Test().doIt(x, p);\nSystem.out.println(x + \" \" + p.number);\n}\n}\n\nQuel en sera le résultat en sortie ?",
+		"nbPoints": 2
+	}, {
+		"id": 57,
+		"reponses": [{
+			"id": 186,
+			"intitule": "Le nom dans p2 vaut toto",
+			"correct": false
+		}, {
+			"id": 187,
+			"intitule": "Le nom dans p2 vaut titi",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Après la séquence Personne p = new Personne(\"toto\"); Personne p2 = p; p.setNom(\"titi\");",
+		"nbPoints": 2
+	}, {
+		"id": 54,
+		"reponses": [{
+			"id": 177,
+			"intitule": "Deux",
+			"correct": true
+		}, {
+			"id": 174,
+			"intitule": "Aucune",
+			"correct": false
+		}, {
+			"id": 175,
+			"intitule": "Cinq",
+			"correct": false
+		}, {
+			"id": 176,
+			"intitule": "Trois",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Combien d’instances de la classe A crée le code suivant ?\n\nA x,u,v;\nx=new A();\nA y=x;\nA z=new A();",
+		"nbPoints": 2
+	}, {
+		"id": 42,
+		"reponses": [{
+			"id": 128,
+			"intitule": "Ce code pourra être compilé sans problème.",
+			"correct": false
+		}, {
+			"id": 131,
+			"intitule": "Ce code pourra être compilé si l’on rajoute dans la signature de la méthode paySalaries() “throws SalaryCalculationException”.",
+			"correct": true
+		}, {
+			"id": 130,
+			"intitule": "Ce code pourra être compilé si l’on rajoute dans paySalaries() un try-catch-block.",
+			"correct": true
+		}, {
+			"id": 129,
+			"intitule": "Ce code pourra être compilé si l’on fait renvoyer paySalaries() une valeur booléenne à la place de void.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Observez le morceau de code suivant:\n\nclass SalaryCalculationException extends Exception{}\n\nclass Person{\npublic void calculateSalary() throws SalaryCalculationException {\n//...\nthrow new SalaryCalculationException();\n//...\n}\n}\n\nclass Company{\npublic void paySalaries(){\nnew Person().calculateSalary();\n}\n}\n\nQuelles affirmations sont dès lors correctes ? (2 réponses)",
+		"nbPoints": 2
+	}, {
+		"id": 43,
+		"reponses": [{
+			"id": 134,
+			"intitule": "les méthodes statiques sont toujours du type public parce qu’elles sont définies au niveau de la classe.",
+			"correct": false
+		}, {
+			"id": 132,
+			"intitule": "les méthodes statiques sont difficiles à entretenir par leur implémentation qui ne peut plus être modifiée.",
+			"correct": false
+		}, {
+			"id": 133,
+			"intitule": "les méthodes statiques peuvent être utilisées à travers une référence objet à un objet de la classe dans laquelle les méthodes sont définies.",
+			"correct": true
+		}, {
+			"id": 135,
+			"intitule": "les méthodes statiques n’ont pas d’accès direct aux méthodes qui ne sont pas statiques et qui sont définies dans la même classe.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "A propos des méthodes statiques, quelles affirmations sont correctes ? (2 réponses)",
+		"nbPoints": 2
+	}, {
+		"id": 48,
+		"reponses": [{
+			"id": 154,
+			"intitule": "Peut contenir la référence à une instance d'une super-classe, par ex. Object",
+			"correct": false
+		}, {
+			"id": 153,
+			"intitule": "Peut contenir la référence à une instance d'une sous-classe, par ex. java.sql.Date",
+			"correct": true
+		}, {
+			"id": 152,
+			"intitule": "Doit contenir la référence à une instance de java.util.Date et à rien d'autre",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle est la réponse exacte ?\n\nUne variable qui référence un objet, par ex. ici  d1\n       \t\tjava.util.Date d1 = new java.util.Date() ;",
+		"nbPoints": 2
+	}, {
+		"id": 39,
+		"reponses": [{
+			"id": 116,
+			"intitule": "I am a Person",
+			"correct": false
+		}, {
+			"id": 118,
+			"intitule": "I am a Person I am a Student",
+			"correct": false
+		}, {
+			"id": 117,
+			"intitule": "I am a Student",
+			"correct": true
+		}, {
+			"id": 119,
+			"intitule": "I am a Student I am a Person",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Observez les classes suivantes:\n\npublic class Person{\npublic void talk(){ \nSystem.out.print(\"I am a Person \"); \n}\n}\n\npublic class Student extends Person {\npublic void talk(){ \nSystem.out.print(\"I am a Student \"); \n}\n}\n\n\nQuel sera le résultat du morceau de code qui suit:\n\npublic class Test{\npublic static void main(String args[]){\nPerson p = new Student();\np.talk();\n}\n}",
+		"nbPoints": 2
+	}, {
+		"id": 38,
+		"reponses": [{
+			"id": 112,
+			"intitule": "0 6 1 7 2 8 3 8",
+			"correct": true
+		}, {
+			"id": 115,
+			"intitule": "erreur de compilation",
+			"correct": false
+		}, {
+			"id": 114,
+			"intitule": "0 5 1 5 2 5 3 5",
+			"correct": false
+		}, {
+			"id": 113,
+			"intitule": "0 6 1 7 2 8 3 9",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Observez le morceau de code suivant:\n\npublic class Test {\npublic static void main(String args[]) {\nint i = 0, j = 5 ;\nfor( ; (i < 3) && (j++ < 10) ; i++ ) {\nSystem.out.print(\" \" + i + \" \" + j );\n}\nSystem.out.print(\" \" + i + \" \" + j );\n}\n}\n\n\nQuel en sera le résultat?",
+		"nbPoints": 2
+	}, {
+		"id": 47,
+		"reponses": [{
+			"id": 151,
+			"intitule": "\"Total cost : \" + 40",
+			"correct": false
+		}, {
+			"id": 150,
+			"intitule": "Total cost : 40",
+			"correct": true
+		}, {
+			"id": 148,
+			"intitule": "Total cost : + 40",
+			"correct": false
+		}, {
+			"id": 149,
+			"intitule": "Total cost : 8*5",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Observez le morceau de code suivant:\n\npublic class Question {\n\t\tpublic static void main (String[ ] args) {\n\t\t\tint unitCost = 8;\n\t\t\tint items = 5; \n\t\t\tSystem.out.println(\"Total cost : \" + (unitCost * items));\n\t\t}\n} \n\nQuelle sortie produit ce code ?",
+		"nbPoints": 2
+	}, {
+		"id": 52,
+		"reponses": [{
+			"id": 167,
+			"intitule": "protected : les variables, méthodes ou classes définies ne sont accessibles que par les classes filles et classes du même package",
+			"correct": true
+		}, {
+			"id": 166,
+			"intitule": "\"rien\" : les variables, méthodes ou classes sont accessibles par toute classe appartenant au même package",
+			"correct": true
+		}, {
+			"id": 168,
+			"intitule": "private : les variables, méthodes ou classes définies ne sont accessibles que par la classe dans laquelle elles sont définies",
+			"correct": true
+		}, {
+			"id": 165,
+			"intitule": "public : les variables, méthodes ou classes sont accessibles par tout objet",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quelles affirmations sont vraies ?",
+		"nbPoints": 2
+	}, {
+		"id": 53,
+		"reponses": [{
+			"id": 171,
+			"intitule": "AWT",
+			"correct": false
+		}, {
+			"id": 173,
+			"intitule": "GWT",
+			"correct": false
+		}, {
+			"id": 170,
+			"intitule": "SWING",
+			"correct": false
+		}, {
+			"id": 169,
+			"intitule": "SWT",
+			"correct": false
+		}, {
+			"id": 172,
+			"intitule": "SPRING",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Lesquels de ces termes ne désignent pas un framework graphique JAVA ?",
+		"nbPoints": 2
+	}, {
+		"id": 49,
+		"reponses": [{
+			"id": 157,
+			"intitule": "Le membre private ne peut être utilisé que dans une méthode private",
+			"correct": false
+		}, {
+			"id": 156,
+			"intitule": "Le membre private ne peut être utilisé que dans les méthodes membres de la classe",
+			"correct": true
+		}, {
+			"id": 158,
+			"intitule": "Il n'existe qu'une instance d'un membre private, quel que soit le nombre d'objets instanciés.",
+			"correct": false
+		}, {
+			"id": 155,
+			"intitule": "Le membre private ne peut être utilisé qu'à un seul endroit du programme",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel est l'effet d'une visibilité private pour un membre d'une classe (méthode ou attribut) :",
+		"nbPoints": 2
+	}, {
+		"id": 46,
+		"reponses": [{
+			"id": 144,
+			"intitule": "Lorsque l’on exécute ce programme, on reçoit toujours le résultat suivant: one two three",
+			"correct": false
+		}, {
+			"id": 145,
+			"intitule": "Lorsque l’on exécute ce programme, on reçoit toujours le résultat suivant: three one two",
+			"correct": false
+		}, {
+			"id": 147,
+			"intitule": "La compilation de ce programme va échouer.",
+			"correct": false
+		}, {
+			"id": 146,
+			"intitule": "Le résultat de ce programme est incertain.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Observez le morceau de code suivant:\n\npublic class MyThread extends Thread{\npublic String text;\npublic void run(){\nSystem.out.print(text);\n}\n}\n\npublic class Test{\npublic static void main(String args[]){\nMyThread t1 = new MyThread(); t1.text = \"one \";\nMyThread t2 = new MyThread(); t2.text = \"two \";\nt1.start();\nt2.start();\nSystem.out.print(\"three \");\n}\n}\n\nLaquelle de ces affirmations est dès lors correcte ?",
+		"nbPoints": 2
+	}, {
+		"id": 50,
+		"reponses": [{
+			"id": 159,
+			"intitule": "Non, la modification n'affectera aucun objet dont l'appelant détient la référence",
+			"correct": true
+		}, {
+			"id": 161,
+			"intitule": "Oui car l'appelant détient alors une référence sur le nouvel objet",
+			"correct": false
+		}, {
+			"id": 160,
+			"intitule": "Non car l'opération n'est pas autorisée.",
+			"correct": false
+		}, {
+			"id": 162,
+			"intitule": "Oui car le nouvel objet remplace un des objets de l'appelant.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "La modification de \"s\" a-t-elle un impact sur l'appelant de la méthode : \n\npublic void alter(String s) {\n\t\ts = \"Hello world\";\n}",
+		"nbPoints": 2
+	}, {
+		"id": 56,
+		"reponses": [{
+			"id": 182,
+			"intitule": "finalize",
+			"correct": false
+		}, {
+			"id": 185,
+			"intitule": "final",
+			"correct": true
+		}, {
+			"id": 184,
+			"intitule": "static",
+			"correct": false
+		}, {
+			"id": 183,
+			"intitule": "const",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Pour spécifier que la valeur d'une variable ne peut changer, on la déclare comme une constante avec le mot réservé :",
+		"nbPoints": 2
+	}, {
+		"id": 45,
+		"reponses": [{
+			"id": 141,
+			"intitule": "On doit faire appel à la méthode serializeObject() (qui est héritée de la classe Object) pour l’objet.",
+			"correct": false
+		}, {
+			"id": 140,
+			"intitule": "On doit implémenter l’interface Serializable dans la classe de l’objet.",
+			"correct": true
+		}, {
+			"id": 142,
+			"intitule": "On doit appeler la méthode statique serialize(Object obj) de la classe Serializer avec comme argument l’objet que l’on veut sérialiser.",
+			"correct": false
+		}, {
+			"id": 143,
+			"intitule": "On ne doit absolument rien faire car tous les objets peuvent être par défaut sérialisés.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Comment peut-on rendre un objet sérialisable ?",
+		"nbPoints": 2
+	}, {
+		"id": 55,
+		"reponses": [{
+			"id": 179,
+			"intitule": "Une classe peut implémenter plusieurs classes mais doit étendre une seule interface",
+			"correct": false
+		}, {
+			"id": 181,
+			"intitule": "Une classe doit implémenter une seule interface et étendre une seule classe",
+			"correct": false
+		}, {
+			"id": 178,
+			"intitule": "Une classe peut implémenter plusieurs interfaces mais doit étendre une seule classe",
+			"correct": true
+		}, {
+			"id": 180,
+			"intitule": "Une classe peut implémenter plusieurs classes et peut étendre plusieurs interfaces",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de ces affirmations est vraie ?",
+		"nbPoints": 2
+	}, {
+		"id": 44,
+		"reponses": [{
+			"id": 137,
+			"intitule": "L’exécution de ce programme donnera ceci:\nThere is a NullPointerException.",
+			"correct": false
+		}, {
+			"id": 136,
+			"intitule": "L’exécution de ce programme donnera ceci:\nThere is a NullPointerException. Everything went fine.",
+			"correct": true
+		}, {
+			"id": 139,
+			"intitule": "Ce code ne pourra pas être compilé parce que Java ne connaît pas les pointeurs.",
+			"correct": false
+		}, {
+			"id": 138,
+			"intitule": "L’exécution de ce programme donnera ceci:\nThere is a NullPointerException. There is an Exception.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Observez le morceau de code suivant:\n\nclass Person{ \npublic void talk(){} \n}\npublic class Test{\npublic static void main(String args[]){\nPerson p = null;\ntry{\np.talk();\n} catch(NullPointerException e){\nSystem.out.print(\"There is a NullPointerException. \");\n} catch(Exception e){\nSystem.out.print(\"There is an Exception. \");\n}\nSystem.out.print(\"Everything went fine. \");\n}\n}\n\nLaquelle de ces affirmations est juste ?",
+		"nbPoints": 2
+	}]
+}, {
+	"id": 8,
+	"nom": "PHP",
+	"duree": 60,
+	"dateCreation": "2018-12-05T11:51:55",
+	"dateModification": "2018-12-05T11:51:55",
+	"questions": [{
+		"id": 107,
+		"reponses": [{
+			"id": 332,
+			"intitule": "#(Marcel|Francis|Jacques) aime la bière#",
+			"correct": true
+		}, {
+			"id": 333,
+			"intitule": "#(Marcel||Francis||Jacques) aime la bière#",
+			"correct": false
+		}, {
+			"id": 334,
+			"intitule": "#(Marcel)|(Francis)|(Jacques) aime la bière#",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de ces regex permet de laisser le choix entre plusieurs prénoms ?",
+		"nbPoints": 1
+	}, {
+		"id": 63,
+		"reponses": [{
+			"id": 207,
+			"intitule": "Quand la condition renvoie une erreur",
+			"correct": false
+		}, {
+			"id": 205,
+			"intitule": "Quand la condition est remplie",
+			"correct": false
+		}, {
+			"id": 206,
+			"intitule": "Quand la condition n'est plus remplie",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Une boucle while s'arrête...",
+		"nbPoints": 1
+	}, {
+		"id": 110,
+		"reponses": [{
+			"id": 342,
+			"intitule": "--get",
+			"correct": false
+		}, {
+			"id": 344,
+			"intitule": "./construct",
+			"correct": false
+		}, {
+			"id": 343,
+			"intitule": "__destruct",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de ces fonctions est une fonction dite \"magique\" ?",
+		"nbPoints": 1
+	}, {
+		"id": 73,
+		"reponses": [{
+			"id": 235,
+			"intitule": "0",
+			"correct": true
+		}, {
+			"id": 236,
+			"intitule": "1",
+			"correct": false
+		}, {
+			"id": 234,
+			"intitule": "-1",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "A partir de quel nombre commence un array numéroté ?",
+		"nbPoints": 1
+	}, {
+		"id": 59,
+		"reponses": [{
+			"id": 193,
+			"intitule": "ma_variable",
+			"correct": false
+		}, {
+			"id": 194,
+			"intitule": "Rien du tout.",
+			"correct": true
+		}, {
+			"id": 192,
+			"intitule": "Hellooo !",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu'est-ce que ce code affiche ? \n<?php $ma_variable = \"Hellooo !\"; ?>",
+		"nbPoints": 1
+	}, {
+		"id": 111,
+		"reponses": [{
+			"id": 345,
+			"intitule": "public function __construct( )",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "En PHP 5, comment déclare-t-on le constructeur d’une classe « Clients » ?",
+		"nbPoints": 1
+	}, {
+		"id": 67,
+		"reponses": [{
+			"id": 219,
+			"intitule": "function",
+			"correct": true
+		}, {
+			"id": 220,
+			"intitule": "declare_function",
+			"correct": false
+		}, {
+			"id": 218,
+			"intitule": "fonction",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel est le mot-clé qui permet de déclarer une fonction ?",
+		"nbPoints": 1
+	}, {
+		"id": 101,
+		"reponses": [{
+			"id": 317,
+			"intitule": "$",
+			"correct": true
+		}, {
+			"id": 316,
+			"intitule": "^",
+			"correct": false
+		}, {
+			"id": 318,
+			"intitule": "#",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel symbole permet d'indiquer une fin de chaîne ?",
+		"nbPoints": 1
+	}, {
+		"id": 82,
+		"reponses": [{
+			"id": 265,
+			"intitule": "Une variable $_POST['age'] qui aura pour valeur \"hidden\"",
+			"correct": false
+		}, {
+			"id": 264,
+			"intitule": "Une variable $_POST['hidden'] qui aura pour valeur 18",
+			"correct": false
+		}, {
+			"id": 262,
+			"intitule": "Une variable $_POST['age'] qui aura pour valeur 18",
+			"correct": true
+		}, {
+			"id": 263,
+			"intitule": "Une variable $_POST['nbAnnees'] qui aura pour valeur 18",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Que va produire ce code HTML ?\n<input type=\"hidden\" name=\"age\" id=\"nbAnnees\" value=\"18\" />",
+		"nbPoints": 1
+	}, {
+		"id": 70,
+		"reponses": [{
+			"id": 229,
+			"intitule": "Rien du tout",
+			"correct": true
+		}, {
+			"id": 228,
+			"intitule": "La valeur de $parametre",
+			"correct": false
+		}, {
+			"id": 227,
+			"intitule": "MaFonction",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Que renvoie cette fonction ? \nfunction MaFonction($parametre) { \n         echo $parametre;\n}",
+		"nbPoints": 1
+	}, {
+		"id": 61,
+		"reponses": [{
+			"id": 200,
+			"intitule": "Non, il faut toujours utiliser des guillemets doubles",
+			"correct": false
+		}, {
+			"id": 201,
+			"intitule": "Non, il manque des points pour faire la liaison",
+			"correct": true
+		}, {
+			"id": 199,
+			"intitule": "Oui",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Cette concaténation est-elle correcte ? \n<?php\n$age_du_visiteur = 30;\necho 'Vous avez ' $age_du_visiteur ' ans';\n?>",
+		"nbPoints": 1
+	}, {
+		"id": 95,
+		"reponses": [{
+			"id": 300,
+			"intitule": "Lire et écrire dans le fichier même s'il n'existe pas.",
+			"correct": false
+		}, {
+			"id": 301,
+			"intitule": "Juste lire le fichier même s'il n'existe pas.",
+			"correct": false
+		}, {
+			"id": 302,
+			"intitule": "Lire et écrire dans le fichier à condition qu'il existe déjà.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Si j'ouvre un fichier avec le paramètre 'r+', qu'est-ce que je peux faire ?",
+		"nbPoints": 1
+	}, {
+		"id": 106,
+		"reponses": [{
+			"id": 329,
+			"intitule": "#^-{1}[0-9]{1,3}$#",
+			"correct": false
+		}, {
+			"id": 331,
+			"intitule": "#^-?[0-9]{1,3}$#",
+			"correct": true
+		}, {
+			"id": 330,
+			"intitule": "#^-*[0-9]{1,3}$#",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de ces expressions représente une regex permettant de reconnaître un nombre compris entre -999 et 999 ?",
+		"nbPoints": 1
+	}, {
+		"id": 113,
+		"reponses": [{
+			"id": 350,
+			"intitule": "$objet = new Clients",
+			"correct": false
+		}, {
+			"id": 351,
+			"intitule": "$objet = Clients( )",
+			"correct": false
+		}, {
+			"id": 349,
+			"intitule": "$objet = new Clients( )",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Comment instancie-t-on une classe « Clients »?",
+		"nbPoints": 1
+	}, {
+		"id": 118,
+		"reponses": [{
+			"id": 367,
+			"intitule": "Chemin absolu",
+			"correct": false
+		}, {
+			"id": 366,
+			"intitule": "Xpath",
+			"correct": true
+		}, {
+			"id": 365,
+			"intitule": "XML",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Comment appelle-t-on ce type d’expression : \n//boutique[@ville=’Lyon’]/nombreEmployes",
+		"nbPoints": 1
+	}, {
+		"id": 69,
+		"reponses": [{
+			"id": 225,
+			"intitule": "CalculDepenses(23 . 5);",
+			"correct": false
+		}, {
+			"id": 226,
+			"intitule": "CalculDepenses(10, 1,5);",
+			"correct": false
+		}, {
+			"id": 224,
+			"intitule": "CalculDepenses(5, 1.25);",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Voici l'en-tête d'une fonction : \nfunction CalculDepenses($nombre, $valeur)\nQuelle est la seule instruction correcte pour faire appel à cette fonction ?",
+		"nbPoints": 1
+	}, {
+		"id": 122,
+		"reponses": [{
+			"id": 381,
+			"intitule": "Convertir les sauts de lignes en balise <br />",
+			"correct": true
+		}, {
+			"id": 380,
+			"intitule": "Supprimer les sauts de lignes du texte",
+			"correct": false
+		}, {
+			"id": 382,
+			"intitule": "Mettre le texte en majuscule",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "A quoi sert la fonction nl2br($texte) ?",
+		"nbPoints": 1
+	}, {
+		"id": 119,
+		"reponses": [{
+			"id": 370,
+			"intitule": "$nodeBagues -> item(1)",
+			"correct": false
+		}, {
+			"id": 371,
+			"intitule": "$nodeBagues -> item(0)",
+			"correct": false
+		}, {
+			"id": 368,
+			"intitule": "$nodeBagues -> childNodes -> item(1)",
+			"correct": false
+		}, {
+			"id": 369,
+			"intitule": "$nodeBagues -> childNodes -> item(0)",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle expression permet de récupérer le nom de la bague dont l’identifiant est 1, à partir du nœud « bagues » ($nodeBagues) ?  \n<bijoux>\n\t<colliers>\n\n</colliers>\n\t<bagues>\n\t\t<bague id=’1’>nomBague 1</bague>\n\t\t<bague id=’2’>nomBague 2</bague>\n</bagues>\n\t<bracelets>\n\n</bracelets>\n</bijoux>",
+		"nbPoints": 1
+	}, {
+		"id": 88,
+		"reponses": [{
+			"id": 283,
+			"intitule": "isset()",
+			"correct": false
+		}, {
+			"id": 285,
+			"intitule": "start_session()",
+			"correct": false
+		}, {
+			"id": 284,
+			"intitule": "session_start()",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle fonction doit être obligatoirement appelée avant d'utiliser des variables de session ?",
+		"nbPoints": 1
+	}, {
+		"id": 103,
+		"reponses": [{
+			"id": 322,
+			"intitule": "preg_match",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Quelle fonction permet de faire une recherche dans une chaîne à l'aide d'une regex ?",
+		"nbPoints": 1
+	}, {
+		"id": 97,
+		"reponses": [{
+			"id": 307,
+			"intitule": "Le contenu d'une table",
+			"correct": false
+		}, {
+			"id": 306,
+			"intitule": "Un type d'information qu'enregistre la table",
+			"correct": true
+		}, {
+			"id": 308,
+			"intitule": "Un lieu où on récolte le blé.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu'est-ce qu'un champ ?",
+		"nbPoints": 1
+	}, {
+		"id": 78,
+		"reponses": [{
+			"id": 251,
+			"intitule": "$ville",
+			"correct": false
+		}, {
+			"id": 253,
+			"intitule": "$town",
+			"correct": false
+		}, {
+			"id": 250,
+			"intitule": "$_POST['ville']",
+			"correct": true
+		}, {
+			"id": 252,
+			"intitule": "$_POST['town']",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle variable sera créée avec cette zone de texte ?\n<input type=\"text\" name=\"ville\" id=\"town\"/>",
+		"nbPoints": 1
+	}, {
+		"id": 98,
+		"reponses": [{
+			"id": 310,
+			"intitule": "mysql_fetch_array",
+			"correct": true
+		}, {
+			"id": 311,
+			"intitule": "mysql_result_array",
+			"correct": false
+		}, {
+			"id": 309,
+			"intitule": "mysql_resultat",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Comment récupère-t-on le résultat de la requête sous forme de tableau ?",
+		"nbPoints": 1
+	}, {
+		"id": 85,
+		"reponses": [{
+			"id": 275,
+			"intitule": "$_OBI_WAN_KENOBI",
+			"correct": false
+		}, {
+			"id": 274,
+			"intitule": "$_TRUC",
+			"correct": false
+		}, {
+			"id": 276,
+			"intitule": "$MACHIN_CHOSE",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de ces variables ne peut pas être une superglobale ?",
+		"nbPoints": 1
+	}, {
+		"id": 91,
+		"reponses": [{
+			"id": 290,
+			"intitule": "?",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Comment récupère-t-on la valeur d’un cookie nommé nomCookie ?",
+		"nbPoints": 1
+	}, {
+		"id": 94,
+		"reponses": [{
+			"id": 299,
+			"intitule": "fread($fichier, 'w')",
+			"correct": false
+		}, {
+			"id": 298,
+			"intitule": "fopen($fichier, 'r')",
+			"correct": true
+		}, {
+			"id": 297,
+			"intitule": "fread($fichier, 'r')",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle instruction permet d’ouvrir un fichier en lecture seule ?",
+		"nbPoints": 1
+	}, {
+		"id": 79,
+		"reponses": [{
+			"id": 255,
+			"intitule": "$_POST['textarea'] = 'Tapez la news ici.';",
+			"correct": false
+		}, {
+			"id": 257,
+			"intitule": "$_POST['actus'] = 'Tapez la news ici.';",
+			"correct": false
+		}, {
+			"id": 254,
+			"intitule": "$_POST['news'] = NULL;",
+			"correct": false
+		}, {
+			"id": 256,
+			"intitule": "$_POST['news'] = 'Tapez la news ici.';",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle sera la variable créée, et quelle sera sa valeur, si on ne change pas le texte par défaut de la grosse zone de texte ci-dessous ?\n<textarea name=\"news\" id=\"actus\" rows=\"8\" cols=\"45\">\nTapez la news ici.\n</textarea>",
+		"nbPoints": 1
+	}, {
+		"id": 75,
+		"reponses": [{
+			"id": 241,
+			"intitule": "1",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Que vaudra $resultat à la fin de ces calculs ?\n<?php\n$nombres = array (4, 6, 2, 9, -1, 7);\n$resultat = ($nombres[2] * $nombres[4] + $nombres[0]) / ($nombres[1] - $nombres[0]);\n?>",
+		"nbPoints": 1
+	}, {
+		"id": 80,
+		"reponses": [{
+			"id": 259,
+			"intitule": "checked",
+			"correct": true
+		}, {
+			"id": 260,
+			"intitule": "signed",
+			"correct": false
+		}, {
+			"id": 258,
+			"intitule": "selected",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel est l'attribut à rajouter à une case à cocher pour qu'elle soit cochée par défaut ?",
+		"nbPoints": 1
+	}, {
+		"id": 96,
+		"reponses": [{
+			"id": 303,
+			"intitule": "Le PHP",
+			"correct": false
+		}, {
+			"id": 304,
+			"intitule": "Le SQL",
+			"correct": true
+		}, {
+			"id": 305,
+			"intitule": "Le MySQL",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel langage doit-on utiliser pour parler à MySQL ?",
+		"nbPoints": 1
+	}, {
+		"id": 65,
+		"reponses": [{
+			"id": 214,
+			"intitule": "Ca n'aurait rien changé",
+			"correct": false
+		}, {
+			"id": 212,
+			"intitule": "On aurait eu une boucle de plus",
+			"correct": true
+		}, {
+			"id": 213,
+			"intitule": "On aurait eu une boucle de moins",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Que se serait-il passé dans le code précédent si on avait mis un >= au lieu du symbole > ?",
+		"nbPoints": 1
+	}, {
+		"id": 112,
+		"reponses": [{
+			"id": 347,
+			"intitule": "Lorsqu'on modifie un objet",
+			"correct": false
+		}, {
+			"id": 348,
+			"intitule": "Lorsqu'on supprime un objet",
+			"correct": false
+		}, {
+			"id": 346,
+			"intitule": "Lorsqu'on crée un nouvel objet",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quand est appelé le constructeur d'une classe ?",
+		"nbPoints": 1
+	}, {
+		"id": 93,
+		"reponses": [{
+			"id": 295,
+			"intitule": "file($fichier)",
+			"correct": true
+		}, {
+			"id": 294,
+			"intitule": "file_get_contents($fichier)",
+			"correct": false
+		}, {
+			"id": 296,
+			"intitule": "readfile($fichier)",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle fonction permet de récupérer le contenu d’un fichier sous forme de tableau ?",
+		"nbPoints": 1
+	}, {
+		"id": 99,
+		"reponses": [{
+			"id": 312,
+			"intitule": "mysql_num_rows",
+			"correct": true
+		}, {
+			"id": 313,
+			"intitule": "mysql_number_results",
+			"correct": false
+		}, {
+			"id": 314,
+			"intitule": "mysql_result",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Comment récupère-t-on le nombre de résultats retournés par la requête ?",
+		"nbPoints": 1
+	}, {
+		"id": 90,
+		"reponses": [{
+			"id": 289,
+			"intitule": "Cela prend beaucoup de temps d'exécution",
+			"correct": false
+		}, {
+			"id": 287,
+			"intitule": "On ne peut en faire qu'un par page",
+			"correct": false
+		}, {
+			"id": 288,
+			"intitule": "On ne peut pas mettre le moindre code HTML avant",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle est la particularité de setcookie ?",
+		"nbPoints": 1
+	}, {
+		"id": 105,
+		"reponses": [{
+			"id": 326,
+			"intitule": "5-d",
+			"correct": false
+		}, {
+			"id": 328,
+			"intitule": "0-f",
+			"correct": true
+		}, {
+			"id": 327,
+			"intitule": "#3.u#",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de ces chaînes sera reconnue par la regex suivante ?\n#[0-9]-[e-u]#",
+		"nbPoints": 1
+	}, {
+		"id": 87,
+		"reponses": [{
+			"id": 282,
+			"intitule": "L'url de la page qui a amené le visiteur ici",
+			"correct": false
+		}, {
+			"id": 280,
+			"intitule": "L'adresse IP du visiteur",
+			"correct": true
+		}, {
+			"id": 281,
+			"intitule": "L'adresse du serveur",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Que contient $_SERVER['REMOTE_ADDR'] ?",
+		"nbPoints": 1
+	}, {
+		"id": 64,
+		"reponses": [{
+			"id": 209,
+			"intitule": "20",
+			"correct": false
+		}, {
+			"id": 211,
+			"intitule": "8",
+			"correct": false
+		}, {
+			"id": 208,
+			"intitule": "10",
+			"correct": false
+		}, {
+			"id": 210,
+			"intitule": "5",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Combien de fois cette boucle sera-t-elle exécutée ?\n<?php\n$boucle = 10;\n\nwhile ($boucle > 0)\n{\n    // Instructions\n    $boucle = $boucle - 2;\n}\n?>",
+		"nbPoints": 1
+	}, {
+		"id": 71,
+		"reponses": [{
+			"id": 230,
+			"intitule": "global $var;",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Que faut-il ajouter à cette fonction pour rendre la variable $var accessible ? (2 solutions)\n$var = 3 ;\nfunction MaFonction2($nombre) {\n\t[add your code here]\n\treturn $var ;\n}",
+		"nbPoints": 1
+	}, {
+		"id": 81,
+		"reponses": [{
+			"id": 261,
+			"intitule": "on",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Quelle est la valeur d'une variable correspondant à une case à cocher cochée ?",
+		"nbPoints": 1
+	}, {
+		"id": 89,
+		"reponses": [{
+			"id": 286,
+			"intitule": "$_SESSION['var'] = 'valeur'",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Comment enregistre-t-on une variable de session nommée « var » ayant pour valeur « valeur »?",
+		"nbPoints": 1
+	}, {
+		"id": 102,
+		"reponses": [{
+			"id": 319,
+			"intitule": "_",
+			"correct": true
+		}, {
+			"id": 320,
+			"intitule": "\\",
+			"correct": false
+		}, {
+			"id": 321,
+			"intitule": "$",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lequel de ces caractères n'est pas un métacaractère ?",
+		"nbPoints": 1
+	}, {
+		"id": 92,
+		"reponses": [{
+			"id": 291,
+			"intitule": "file_get_contents($fichier)",
+			"correct": true
+		}, {
+			"id": 293,
+			"intitule": "readfile($fichier)",
+			"correct": false
+		}, {
+			"id": 292,
+			"intitule": "file($fichier)",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle fonction permet de récupérer le contenu d’un fichier sous forme de chaîne de caractère ?",
+		"nbPoints": 1
+	}, {
+		"id": 108,
+		"reponses": [{
+			"id": 337,
+			"intitule": "#^[a-z]?[a-z0-9-]{4,8}[a-z]?$#",
+			"correct": false
+		}, {
+			"id": 336,
+			"intitule": "#^[-a-z0-9]{8}$#",
+			"correct": false
+		}, {
+			"id": 335,
+			"intitule": "#^[a-z][-a-z0-9]{2,6}[a-z]$#",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de ces Regex va permettre de reconnaître un mot de passe de 4 à 8 lettres, acceptant uniquement des minuscules, des chiffres et des tirets mais à condition que le mot de passe commence et se termine par une lettre ?",
+		"nbPoints": 1
+	}, {
+		"id": 123,
+		"reponses": [{
+			"id": 385,
+			"intitule": "var_dump($var)",
+			"correct": false
+		}, {
+			"id": 383,
+			"intitule": "echo $var",
+			"correct": false
+		}, {
+			"id": 384,
+			"intitule": "write $var",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de ces expression ne permet pas d’afficher le contenu de la variable $var ?",
+		"nbPoints": 1
+	}, {
+		"id": 116,
+		"reponses": [{
+			"id": 359,
+			"intitule": "class VL heritage Vehicule",
+			"correct": false
+		}, {
+			"id": 361,
+			"intitule": "class VL extends Vehicule",
+			"correct": true
+		}, {
+			"id": 360,
+			"intitule": "class VL[Vehicule]",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel est l’instruction exacte ?",
+		"nbPoints": 1
+	}, {
+		"id": 117,
+		"reponses": [{
+			"id": 362,
+			"intitule": "DOMDocument",
+			"correct": true
+		}, {
+			"id": 363,
+			"intitule": "ReadXml",
+			"correct": false
+		}, {
+			"id": 364,
+			"intitule": "Xml",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle est la classe native de PHP qui permet de manipuler du code XML ?",
+		"nbPoints": 1
+	}, {
+		"id": 84,
+		"reponses": [{
+			"id": 272,
+			"intitule": "$_FILES['fichierEnvoye']['fe']",
+			"correct": false
+		}, {
+			"id": 271,
+			"intitule": "$_FILES['fe']['nom']",
+			"correct": false
+		}, {
+			"id": 270,
+			"intitule": "$_FILES['fichierEnvoye']",
+			"correct": false
+		}, {
+			"id": 273,
+			"intitule": "$_FILES['fichierEnvoye']['name']",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Comment récupère-t-on le nom du fichier envoyé via le champ suivant ?\n<input type=’file’ name=’fichierEnvoye’ id=’fe’ />",
+		"nbPoints": 1
+	}, {
+		"id": 62,
+		"reponses": [{
+			"id": 204,
+			"intitule": "exists($variable)",
+			"correct": false
+		}, {
+			"id": 202,
+			"intitule": "isset($variable)",
+			"correct": true
+		}, {
+			"id": 203,
+			"intitule": "empty($variable)",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quelle(s) instruction(s) permettent de détecter l’existence d’une variable ?",
+		"nbPoints": 1
+	}, {
+		"id": 124,
+		"reponses": [{
+			"id": 387,
+			"intitule": "Supprime tous les caractères $caract de la chaine $chaine",
+			"correct": false
+		}, {
+			"id": 388,
+			"intitule": "Trouve la dernière occurrence du caractere $caract dans la chaine $chaine",
+			"correct": true
+		}, {
+			"id": 386,
+			"intitule": "Trouve la première occurrence du caractere $caract dans la chaine $chaine",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "A quoi sert la fonction strrchr($chaine, $caract) ?",
+		"nbPoints": 1
+	}, {
+		"id": 115,
+		"reponses": [{
+			"id": 356,
+			"intitule": "Table hérite de Meuble",
+			"correct": true
+		}, {
+			"id": 358,
+			"intitule": "Chaise hérite de Table",
+			"correct": false
+		}, {
+			"id": 357,
+			"intitule": "Meuble hérite de Tabouret",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de ces phrases correspondrait vraiment à un héritage ?",
+		"nbPoints": 1
+	}, {
+		"id": 83,
+		"reponses": [{
+			"id": 268,
+			"intitule": "$_POST",
+			"correct": true
+		}, {
+			"id": 269,
+			"intitule": "$_REQUEST",
+			"correct": true
+		}, {
+			"id": 266,
+			"intitule": "$_FILES",
+			"correct": true
+		}, {
+			"id": 267,
+			"intitule": "$_GET",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quels sont les noms des tableaux qui peuvent contenir des informations envoyées via un formulaire ?",
+		"nbPoints": 1
+	}, {
+		"id": 114,
+		"reponses": [{
+			"id": 354,
+			"intitule": "Clients => getListe( )",
+			"correct": false
+		}, {
+			"id": 352,
+			"intitule": "Clients -> getListe( )",
+			"correct": false
+		}, {
+			"id": 353,
+			"intitule": "$Clients -> getListe( )",
+			"correct": false
+		}, {
+			"id": 355,
+			"intitule": "Clients :: getListe( )",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Comment appelle-t-on la méthode suivante contenue dans la classe « Clients »?\nPublic static function getListe( ) {\n\t// instructions\n}",
+		"nbPoints": 1
+	}, {
+		"id": 86,
+		"reponses": [{
+			"id": 278,
+			"intitule": "Les fichiers contenus sur le serveur",
+			"correct": false
+		}, {
+			"id": 279,
+			"intitule": "Les fichiers uploadés via un formulaire",
+			"correct": true
+		}, {
+			"id": 277,
+			"intitule": "Le fichier PHP en cours d'exécution",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "$_FILES contient des informations sur...",
+		"nbPoints": 1
+	}, {
+		"id": 66,
+		"reponses": [{
+			"id": 215,
+			"intitule": "La valeur de la variable augmente de 1",
+			"correct": true
+		}, {
+			"id": 216,
+			"intitule": "La variable double de valeur",
+			"correct": false
+		}, {
+			"id": 217,
+			"intitule": "On ajoute à la variable sa propre valeur",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Que signifie $variable++; ?",
+		"nbPoints": 1
+	}, {
+		"id": 74,
+		"reponses": [{
+			"id": 238,
+			"intitule": "Tous les prénoms",
+			"correct": false
+		}, {
+			"id": 240,
+			"intitule": "Array",
+			"correct": true
+		}, {
+			"id": 239,
+			"intitule": "Autre :",
+			"correct": true
+		}, {
+			"id": 237,
+			"intitule": "Un prénom au hasard",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu'affiche ce code ?\n<?php\n$prenoms = array (\"François\", \"Michel\", \"Nicole\", \"Véronique\", \"Benoît\");\necho $prenoms;\n?>",
+		"nbPoints": 1
+	}, {
+		"id": 120,
+		"reponses": [{
+			"id": 376,
+			"intitule": "//bague[id=1]",
+			"correct": false
+		}, {
+			"id": 372,
+			"intitule": "/bijoux/bagues/bague[1]",
+			"correct": false
+		}, {
+			"id": 373,
+			"intitule": "/bijoux/bagues/bague[id=1]",
+			"correct": false
+		}, {
+			"id": 375,
+			"intitule": "//bague[@id=1]",
+			"correct": true
+		}, {
+			"id": 374,
+			"intitule": "/bijoux/bagues/bague[@id=1]",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quel est le chemin xpath du nœud « bague » dont l’identifiant est 1 (le même que précédemment) ? (2 réponses)",
+		"nbPoints": 1
+	}, {
+		"id": 58,
+		"reponses": [{
+			"id": 189,
+			"intitule": "$",
+			"correct": true
+		}, {
+			"id": 191,
+			"intitule": "§",
+			"correct": false
+		}, {
+			"id": 188,
+			"intitule": "#",
+			"correct": false
+		}, {
+			"id": 190,
+			"intitule": "(aucun)",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel symbole indique la présence d'une variable ?",
+		"nbPoints": 1
+	}, {
+		"id": 104,
+		"reponses": [{
+			"id": 325,
+			"intitule": "#ah si j’etais riche#i",
+			"correct": true
+		}, {
+			"id": 323,
+			"intitule": "#ah si j’etais riche#",
+			"correct": false
+		}, {
+			"id": 324,
+			"intitule": "#ah si j’etais riche#o",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de ces regex permettra de reconnaître la chaîne : \"Ah Si J’Etais Riche\" ?",
+		"nbPoints": 1
+	}, {
+		"id": 121,
+		"reponses": [{
+			"id": 379,
+			"intitule": "Détecter la présence d’un fichier",
+			"correct": false
+		}, {
+			"id": 378,
+			"intitule": "Uploader un fichier",
+			"correct": false
+		}, {
+			"id": 377,
+			"intitule": "Déplacer un fichier",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "A quoi sert la fonction move_uploaded_file($fichier) ?",
+		"nbPoints": 1
+	}, {
+		"id": 68,
+		"reponses": [{
+			"id": 221,
+			"intitule": "Un morceau de fonction",
+			"correct": false
+		}, {
+			"id": 223,
+			"intitule": "Une information dont la fonction a besoin pour travailler",
+			"correct": true
+		}, {
+			"id": 222,
+			"intitule": "Un élément qui permet de délimiter la fonction",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu'est-ce qu'un paramètre ?",
+		"nbPoints": 1
+	}, {
+		"id": 60,
+		"reponses": [{
+			"id": 196,
+			"intitule": "4",
+			"correct": false
+		}, {
+			"id": 198,
+			"intitule": "1",
+			"correct": false
+		}, {
+			"id": 197,
+			"intitule": "3",
+			"correct": true
+		}, {
+			"id": 195,
+			"intitule": "8/3",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Que vaut $nombre ? \n<?php $nombre = (2 * 5 - 1) / 3; ?>",
+		"nbPoints": 1
+	}, {
+		"id": 76,
+		"reponses": [{
+			"id": 242,
+			"intitule": "array_key_exists",
+			"correct": false
+		}, {
+			"id": 243,
+			"intitule": "print_r",
+			"correct": true
+		}, {
+			"id": 245,
+			"intitule": "var_dump",
+			"correct": true
+		}, {
+			"id": 246,
+			"intitule": "var_export",
+			"correct": true
+		}, {
+			"id": 244,
+			"intitule": "in_array",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quelles fonctions permettent d'afficher rapidement tout le contenu d'un array ?",
+		"nbPoints": 1
+	}, {
+		"id": 77,
+		"reponses": [{
+			"id": 249,
+			"intitule": "On va afficher une erreur 404",
+			"correct": false
+		}, {
+			"id": 247,
+			"intitule": "On va afficher une page vide",
+			"correct": false
+		}, {
+			"id": 248,
+			"intitule": "On va recharger la même page",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Si on ne met pas d'attribut action au formulaire, que va-t-il se passer ?",
+		"nbPoints": 1
+	}, {
+		"id": 100,
+		"reponses": [{
+			"id": 315,
+			"intitule": "mysql_insert_id",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Par quelle fonction récupère-t-on l’identifiant de l’enregistrement que l’on vient d’insérer en bdd en PHP ?",
+		"nbPoints": 1
+	}, {
+		"id": 72,
+		"reponses": [{
+			"id": 233,
+			"intitule": "Un ensemble de variables mélangées en une seule",
+			"correct": false
+		}, {
+			"id": 231,
+			"intitule": "Un truc pas comestible dans le poisson",
+			"correct": false
+		}, {
+			"id": 232,
+			"intitule": "Un tableau",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu'est-ce qu'un array ?",
+		"nbPoints": 1
+	}, {
+		"id": 109,
+		"reponses": [{
+			"id": 340,
+			"intitule": "2",
+			"correct": false
+		}, {
+			"id": 338,
+			"intitule": "0",
+			"correct": false
+		}, {
+			"id": 341,
+			"intitule": "Une infinité",
+			"correct": true
+		}, {
+			"id": 339,
+			"intitule": "1",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Une fois qu'une classe a été définie, combien est-il possible de créer d'objets basés sur cette classe ?",
+		"nbPoints": 1
+	}]
+}, {
+	"id": 9,
+	"nom": "C# .NET français",
+	"duree": 90,
+	"dateCreation": "2018-12-05T11:51:56",
+	"dateModification": "2018-12-05T11:51:56",
+	"questions": [{
+		"id": 148,
+		"reponses": [{
+			"id": 478,
+			"intitule": "La classe doit avoir un constructeur parameterless",
+			"correct": true
+		}, {
+			"id": 476,
+			"intitule": "La classe doit être publique",
+			"correct": true
+		}, {
+			"id": 479,
+			"intitule": "La classe doit avoir un constructeur qui accepte un paramètre SerializationInfo",
+			"correct": false
+		}, {
+			"id": 477,
+			"intitule": "La classe doit être privée",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Lequel des éléments suivants sont des exigences pour une classe à sérialiser avec XMLserialization?",
+		"nbPoints": 1
+	}, {
+		"id": 171,
+		"reponses": [{
+			"id": 552,
+			"intitule": "Direct events",
+			"correct": false
+		}, {
+			"id": 553,
+			"intitule": "Tunneling events",
+			"correct": true
+		}, {
+			"id": 551,
+			"intitule": "Bubbling events",
+			"correct": false
+		}, {
+			"id": 554,
+			"intitule": "Routed event",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "PreviewMouseUp est:",
+		"nbPoints": 1
+	}, {
+		"id": 223,
+		"reponses": [{
+			"id": 749,
+			"intitule": "Une session est basée par utilisateur, mais la mise en cache ne se base pas par utilisateur",
+			"correct": true
+		}, {
+			"id": 750,
+			"intitule": "Une session ne se base pas par utilisateur, mais la mise en cache est basé par utilisateur",
+			"correct": false
+		}, {
+			"id": 752,
+			"intitule": "Les données de mise en cache sont stockées au niveau de l'utilisateur et partagé par tous les utilisateurs",
+			"correct": false
+		}, {
+			"id": 751,
+			"intitule": "Les données de session sont stockées au niveau de l'utilisateur",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quelle est la diférence entre la session et la mise en cache?",
+		"nbPoints": 1
+	}, {
+		"id": 158,
+		"reponses": [{
+			"id": 515,
+			"intitule": "Modèle, Vue, Vue-modèle",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Qu'est-ce que ça veut dire ?",
+		"nbPoints": 1
+	}, {
+		"id": 126,
+		"reponses": [{
+			"id": 394,
+			"intitule": "Ne peut pas être héritée",
+			"correct": false
+		}, {
+			"id": 396,
+			"intitule": "A la même valeur pour toutes les instances de la classe",
+			"correct": true
+		}, {
+			"id": 393,
+			"intitule": "est constante",
+			"correct": false
+		}, {
+			"id": 395,
+			"intitule": "Ne peut être accéder depuis une autre classe",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Dans une classe, un champ statique:",
+		"nbPoints": 1
+	}, {
+		"id": 135,
+		"reponses": [{
+			"id": 428,
+			"intitule": "public override void a()  {...}",
+			"correct": true
+		}, {
+			"id": 425,
+			"intitule": "public virtual void a() {...}",
+			"correct": false
+		}, {
+			"id": 427,
+			"intitule": "public abstract void a();",
+			"correct": false
+		}, {
+			"id": 426,
+			"intitule": "public void a()  {...}",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quelles déclarations sont autorisés dans une classe scellée:",
+		"nbPoints": 1
+	}, {
+		"id": 232,
+		"reponses": [{
+			"id": 782,
+			"intitule": "Pour spécifier la syntaxe et la sémantique de définition de données SQL langage",
+			"correct": false
+		}, {
+			"id": 784,
+			"intitule": "Pour spécifier la syntaxe et la sémantique du langage de manipulation de données SQL",
+			"correct": false
+		}, {
+			"id": 785,
+			"intitule": "Tout ce qui précède",
+			"correct": true
+		}, {
+			"id": 783,
+			"intitule": "Pour définir les structures de données",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lequel des éléments suivants est l'objectif initial de SQL?",
+		"nbPoints": 1
+	}, {
+		"id": 151,
+		"reponses": [{
+			"id": 490,
+			"intitule": "Union",
+			"correct": false
+		}, {
+			"id": 489,
+			"intitule": "Intersect",
+			"correct": false
+		}, {
+			"id": 487,
+			"intitule": "Distinct",
+			"correct": false
+		}, {
+			"id": 488,
+			"intitule": "Except",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lequel de l'opérateur de requête standard suivant renvoie les différences entre deux collections?",
+		"nbPoints": 1
+	}, {
+		"id": 225,
+		"reponses": [{
+			"id": 757,
+			"intitule": "Le verrouillage est un processus, qui enregistre l'utilisation de la base de données.",
+			"correct": false
+		}, {
+			"id": 759,
+			"intitule": "Le verrouillage est un processus qui empêche les utilisateurs de lire les données en cours de modification par d'autres utilisateurs, et empêche les utilisateurs de modifier simultanément les mêmes données.",
+			"correct": true
+		}, {
+			"id": 758,
+			"intitule": "Le verrouillage est le processus d'authentification de base de données.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "A quoi fait référence le terme « verrouillage »?",
+		"nbPoints": 1
+	}, {
+		"id": 188,
+		"reponses": [{
+			"id": 621,
+			"intitule": "Contract",
+			"correct": false
+		}, {
+			"id": 622,
+			"intitule": "Tout ce qui précède",
+			"correct": true
+		}, {
+			"id": 619,
+			"intitule": "Address",
+			"correct": false
+		}, {
+			"id": 620,
+			"intitule": "Binding",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Les endpoint WCF comprennent ________.",
+		"nbPoints": 1
+	}, {
+		"id": 170,
+		"reponses": [{
+			"id": 550,
+			"intitule": "Routed event",
+			"correct": true
+		}, {
+			"id": 547,
+			"intitule": "Bubbling events",
+			"correct": true
+		}, {
+			"id": 548,
+			"intitule": "Direct events",
+			"correct": false
+		}, {
+			"id": 549,
+			"intitule": "Tunneling events",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "MouseDown est:",
+		"nbPoints": 1
+	}, {
+		"id": 142,
+		"reponses": [{
+			"id": 454,
+			"intitule": "Il permet l'affectation de null à une classe statique.",
+			"correct": false
+		}, {
+			"id": 453,
+			"intitule": "Il permet l'affectation de null au type valeur.",
+			"correct": true
+		}, {
+			"id": 455,
+			"intitule": "Aucune de ces réponses.",
+			"correct": false
+		}, {
+			"id": 452,
+			"intitule": "Il permet l'affectation de null au type référence.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu’est ce que le type Nullable?",
+		"nbPoints": 1
+	}, {
+		"id": 233,
+		"reponses": [{
+			"id": 786,
+			"intitule": "DDL",
+			"correct": true
+		}, {
+			"id": 788,
+			"intitule": "DML",
+			"correct": false
+		}, {
+			"id": 787,
+			"intitule": "HTML",
+			"correct": false
+		}, {
+			"id": 789,
+			"intitule": "XML",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Les commandes SQL de définition de données constituent un  _______",
+		"nbPoints": 1
+	}, {
+		"id": 139,
+		"reponses": [{
+			"id": 440,
+			"intitule": "Utility function",
+			"correct": false
+		}, {
+			"id": 443,
+			"intitule": "classe générique",
+			"correct": false
+		}, {
+			"id": 442,
+			"intitule": "Event",
+			"correct": false
+		}, {
+			"id": 441,
+			"intitule": "Delegate",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Func et action sont des types de ______.",
+		"nbPoints": 1
+	}, {
+		"id": 222,
+		"reponses": [{
+			"id": 745,
+			"intitule": "Le framework ASP.NET MVC est le même que modèle ASP.NET Web Forms",
+			"correct": false
+		}, {
+			"id": 748,
+			"intitule": "Par défaut, il supporte l'authentification Facebook et Google.",
+			"correct": true
+		}, {
+			"id": 746,
+			"intitule": "Le framework MVC ne permet pas le contrôle total sur l'HTML, le JavaScript et le CSS.",
+			"correct": true
+		}, {
+			"id": 747,
+			"intitule": "Il n'utilise pas view state ou server-based forms",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Qu'est-ce que MVC?",
+		"nbPoints": 1
+	}, {
+		"id": 236,
+		"reponses": [{
+			"id": 800,
+			"intitule": "Vues matérialisées",
+			"correct": false
+		}, {
+			"id": 798,
+			"intitule": "Normalisation",
+			"correct": false
+		}, {
+			"id": 801,
+			"intitule": "Tout ce qui précède",
+			"correct": false
+		}, {
+			"id": 799,
+			"intitule": "Intégrité des données",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Parmi les éléments suivants, qu’assure ON UPDATE CASCADE?",
+		"nbPoints": 1
+	}, {
+		"id": 176,
+		"reponses": [{
+			"id": 573,
+			"intitule": "Entity",
+			"correct": false
+		}, {
+			"id": 572,
+			"intitule": "DbSet",
+			"correct": false
+		}, {
+			"id": 571,
+			"intitule": "DbContext",
+			"correct": true
+		}, {
+			"id": 574,
+			"intitule": "DbSession",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Une instance de classe __________ représente une session avec la base de données sous-jacente.",
+		"nbPoints": 1
+	}, {
+		"id": 125,
+		"reponses": [{
+			"id": 389,
+			"intitule": "class B : A",
+			"correct": false
+		}, {
+			"id": 392,
+			"intitule": "class A : B",
+			"correct": true
+		}, {
+			"id": 391,
+			"intitule": "class B implements A",
+			"correct": false
+		}, {
+			"id": 390,
+			"intitule": "class A inherits B",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Comment déclarer que la classe A hérite de la classe B?",
+		"nbPoints": 1
+	}, {
+		"id": 209,
+		"reponses": [{
+			"id": 701,
+			"intitule": "Tous les champs membres, les propriétés et les fonctions doivent être déclarées comme statiques",
+			"correct": true
+		}, {
+			"id": 702,
+			"intitule": "Ils sont accessibles par l'objet instance de classe.",
+			"correct": false
+		}, {
+			"id": 700,
+			"intitule": "Si la classe est déclarée comme statique alors le compilateur crée une instance de la classe.",
+			"correct": false
+		}, {
+			"id": 699,
+			"intitule": "Une classe statique est déclarée en utilisant le mot-clé « static ».",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Classes statiques",
+		"nbPoints": 1
+	}, {
+		"id": 132,
+		"reponses": [{
+			"id": 421,
+			"intitule": "Non",
+			"correct": true
+		}, {
+			"id": 420,
+			"intitule": "Oui",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Cette phrase est elle correcte: private virtual void method() { /*... */ }",
+		"nbPoints": 1
+	}, {
+		"id": 210,
+		"reponses": [{
+			"id": 705,
+			"intitule": "private: Accessibilité dans la classe dérivée",
+			"correct": false
+		}, {
+			"id": 703,
+			"intitule": "L'accessibilité définit la visibilité des membres ou types dérivés en dehors de l'assembly.",
+			"correct": true
+		}, {
+			"id": 704,
+			"intitule": "L'accessibilité définit la visibilité des membres ou types dérivés à l'intérieur de l'assembly.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Accessiblité d'un champ",
+		"nbPoints": 1
+	}, {
+		"id": 150,
+		"reponses": [{
+			"id": 486,
+			"intitule": "VB",
+			"correct": false
+		}, {
+			"id": 484,
+			"intitule": "Method syntax",
+			"correct": false
+		}, {
+			"id": 485,
+			"intitule": "Query syntax",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Cette requête est un exemple de syntaxe ________.\nvar teenAgerStudent = from s in studentList where s.Age > 12 && s.Age < 20 select s;",
+		"nbPoints": 1
+	}, {
+		"id": 195,
+		"reponses": [{
+			"id": 648,
+			"intitule": "IErrorHandler",
+			"correct": true
+		}, {
+			"id": 649,
+			"intitule": "IExceptionHandler",
+			"correct": false
+		}, {
+			"id": 647,
+			"intitule": "IWCFException",
+			"correct": false
+		}, {
+			"id": 650,
+			"intitule": "Aucune de ces réponses",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Vous devez implémenter quelle interface pour la gestion des exceptions globales dans WCF?",
+		"nbPoints": 1
+	}, {
+		"id": 240,
+		"reponses": [{
+			"id": 814,
+			"intitule": "Data Manipulation langage, langage de manipulation de données",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Que signifie l'acronyme DML?",
+		"nbPoints": 1
+	}, {
+		"id": 130,
+		"reponses": [{
+			"id": 414,
+			"intitule": "Oui",
+			"correct": true
+		}, {
+			"id": 415,
+			"intitule": "Non",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Le mot «this» est interdit dans une méthode statique?",
+		"nbPoints": 1
+	}, {
+		"id": 204,
+		"reponses": [{
+			"id": 679,
+			"intitule": "Une classe « private » est visible à l'extérieur de classe actuelle.",
+			"correct": false
+		}, {
+			"id": 680,
+			"intitule": "Une classe « protected » est visible à l'intérieur de la classe actuelle et des classes dérivées.",
+			"correct": true
+		}, {
+			"id": 681,
+			"intitule": "Une classe « internal » est visible à l'extérieur de l’assembly.",
+			"correct": false
+		}, {
+			"id": 682,
+			"intitule": "Une classe « protected internal » est visible à l'intérieur de l'assembly et aux descendants de la classe actuelle.",
+			"correct": true
+		}, {
+			"id": 678,
+			"intitule": "Une classe « public » est visible dans l'assembly courante et celles référencées.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Les attributs d'une classe",
+		"nbPoints": 1
+	}, {
+		"id": 219,
+		"reponses": [{
+			"id": 738,
+			"intitule": "RegularExpressionValidator est un validateur côté serveur.",
+			"correct": true
+		}, {
+			"id": 737,
+			"intitule": "Le contrôle RangeValidator est un validateur côté client.",
+			"correct": false
+		}, {
+			"id": 736,
+			"intitule": "JavaScript est utilisé pour la validation coté client.",
+			"correct": true
+		}, {
+			"id": 735,
+			"intitule": "Il n'y a que 2 type de validation en ASP: côté serveur et côté client",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Validateurs dans ASP .net",
+		"nbPoints": 1
+	}, {
+		"id": 144,
+		"reponses": [{
+			"id": 461,
+			"intitule": "2\n\tMain\n\t20\n\tMethod2\n\t5\n\tInvoker",
+			"correct": true
+		}, {
+			"id": 462,
+			"intitule": "2\n\tMain\n\t2\n\tMain\n\t5\n\tInvoker",
+			"correct": false
+		}, {
+			"id": 460,
+			"intitule": "10\n\tMethod1\n\t20\n\tMethod2\n\t5\n\tInvoker",
+			"correct": false
+		}, {
+			"id": 463,
+			"intitule": "2\n\tMain\n\t20\n\tMethod2\n\t20\n\tMethod2",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu'affiche le programme suivant?\nstatic void Main(string[] args)\n{\n    int a = 2;\n    string s = \"Main\";\n\n    Method1(a, s);\n    Console.WriteLine(a);\n    Console.WriteLine(s);\n\n    Method2(ref a, ref s);\n    Console.WriteLine(a);\n    Console.WriteLine(s);\n\n    Action invoker = () =>\n    {\n        a = 5;\n        s = \"Invoker\";\n    };\n    invoker();\n    Console.WriteLine(a);\n    Console.WriteLine(s);\n}\n\npublic static void Method1(int a, string s)\n{\n    a = 10;\n    s = \"Method1\";\n}\n\npublic static void Method2(ref int a, ref string s)\n{\n    a = 20;\n    s = \"Method2\";\n}\n\nRésultats possible :",
+		"nbPoints": 1
+	}, {
+		"id": 178,
+		"reponses": [{
+			"id": 581,
+			"intitule": "SaveChanges()",
+			"correct": true
+		}, {
+			"id": 579,
+			"intitule": "Save()",
+			"correct": false
+		}, {
+			"id": 580,
+			"intitule": "Execute()",
+			"correct": false
+		}, {
+			"id": 582,
+			"intitule": "Add()",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle des méthodes suivantes de DbContext permet d'enregistrer les entités dans la base de données?",
+		"nbPoints": 1
+	}, {
+		"id": 166,
+		"reponses": [{
+			"id": 535,
+			"intitule": "ListBox",
+			"correct": true
+		}, {
+			"id": 537,
+			"intitule": "ItemsControl",
+			"correct": false
+		}, {
+			"id": 536,
+			"intitule": "ListView",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quel(s) contrôle(s) supporte(nt) la sélection",
+		"nbPoints": 1
+	}, {
+		"id": 161,
+		"reponses": [{
+			"id": 520,
+			"intitule": "TwoWay",
+			"correct": true
+		}, {
+			"id": 521,
+			"intitule": "OneWayToSource",
+			"correct": true
+		}, {
+			"id": 522,
+			"intitule": "OneTime",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Quels sont les modes disponibles en plus de « OneWay »:",
+		"nbPoints": 1
+	}, {
+		"id": 162,
+		"reponses": [{
+			"id": 523,
+			"intitule": "Default",
+			"correct": true
+		}, {
+			"id": 526,
+			"intitule": "Explicit",
+			"correct": true
+		}, {
+			"id": 524,
+			"intitule": "PropertyChanged",
+			"correct": true
+		}, {
+			"id": 525,
+			"intitule": "LostFocus",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Il y a quatre modes par lesquels « UpdateSourceTrigger » peut être défini:",
+		"nbPoints": 1
+	}, {
+		"id": 141,
+		"reponses": [{
+			"id": 449,
+			"intitule": "Immutable",
+			"correct": true
+		}, {
+			"id": 451,
+			"intitule": "Type valeur",
+			"correct": false
+		}, {
+			"id": 448,
+			"intitule": "Mutable",
+			"correct": false
+		}, {
+			"id": 450,
+			"intitule": "Static",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "String est un type ______.",
+		"nbPoints": 1
+	}, {
+		"id": 198,
+		"reponses": [{
+			"id": 659,
+			"intitule": "Le mot-clé abstract est utilisé pour créer une classe ou comme méthode en C #",
+			"correct": true
+		}, {
+			"id": 660,
+			"intitule": "Le mot-clé abstract est utilisé pour créer un contructeur en C #",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Mot-clé abstract",
+		"nbPoints": 1
+	}, {
+		"id": 163,
+		"reponses": [{
+			"id": 527,
+			"intitule": "Avec ICommand. Par exemple, créez une classe implémentant l'interface ICommand qui appelle la méthode, puis liez l'action de commande du bouton à cette commande.\nLa mauvaise méthode est d'utiliser l’événement Click_Event ou OnClick",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Comment appeler une méthode lorsque vous cliquez sur un bouton?",
+		"nbPoints": 1
+	}, {
+		"id": 172,
+		"reponses": [{
+			"id": 555,
+			"intitule": "Self",
+			"correct": true
+		}, {
+			"id": 557,
+			"intitule": "Previousdata",
+			"correct": true
+		}, {
+			"id": 558,
+			"intitule": "Templated parent",
+			"correct": true
+		}, {
+			"id": 556,
+			"intitule": "Ancestor",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Il y a quatre façons de lier relativement en WPF:",
+		"nbPoints": 1
+	}, {
+		"id": 197,
+		"reponses": [{
+			"id": 657,
+			"intitule": "Service",
+			"correct": false
+		}, {
+			"id": 656,
+			"intitule": "System.ServiceModel",
+			"correct": true
+		}, {
+			"id": 655,
+			"intitule": "System.Service",
+			"correct": false
+		}, {
+			"id": 658,
+			"intitule": "Aucun",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel est l'élément racine dans le fichier de configuration pour la déclaration de service WCF?",
+		"nbPoints": 1
+	}, {
+		"id": 140,
+		"reponses": [{
+			"id": 447,
+			"intitule": "Void",
+			"correct": false
+		}, {
+			"id": 445,
+			"intitule": "String",
+			"correct": false
+		}, {
+			"id": 444,
+			"intitule": "Integer",
+			"correct": false
+		}, {
+			"id": 446,
+			"intitule": "Boolean",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Le type de retour de Predicate <T>() est toujours un ______.",
+		"nbPoints": 1
+	}, {
+		"id": 149,
+		"reponses": [{
+			"id": 482,
+			"intitule": "Dénombrable ou Queryable",
+			"correct": false
+		}, {
+			"id": 483,
+			"intitule": "Aucune de ces réponses",
+			"correct": false
+		}, {
+			"id": 480,
+			"intitule": "IEnumerator ou IQueryable",
+			"correct": false
+		}, {
+			"id": 481,
+			"intitule": "IEnumerable ou IQueryable",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Une classe doit implémenter l'interface ____________ afin de permettre l'interrogation avec LINQ.",
+		"nbPoints": 1
+	}, {
+		"id": 183,
+		"reponses": [{
+			"id": 599,
+			"intitule": "myDBContext.Database.LazyLoadingEnabled = false;",
+			"correct": false
+		}, {
+			"id": 600,
+			"intitule": "myDBContext.Configuration.LazyLoadingEnabled = false;",
+			"correct": true
+		}, {
+			"id": 602,
+			"intitule": "myDBContext.Students.LazyLoadingEnabled = false;",
+			"correct": false
+		}, {
+			"id": 601,
+			"intitule": "myDBContext.LazyLoadingEnabled = false;",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Comment désactiver le Lazy loading à l'aide DBContext?",
+		"nbPoints": 1
+	}, {
+		"id": 226,
+		"reponses": [{
+			"id": 761,
+			"intitule": "Les mots-clés ne peuvent pas être divisés sur plusieurs lignes.",
+			"correct": false
+		}, {
+			"id": 763,
+			"intitule": "Les mots-clés peuvent être abrégés.",
+			"correct": true
+		}, {
+			"id": 760,
+			"intitule": "Les instructions SQL peuvent être sur une ou plusieurs lignes.",
+			"correct": false
+		}, {
+			"id": 762,
+			"intitule": "Les instructions SQL ne sont pas sensibles à la casse, à moins d'indication contraire.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lequel des énoncés suivants au sujet d'une instruction SQL n’est pas correct?",
+		"nbPoints": 1
+	}, {
+		"id": 205,
+		"reponses": [{
+			"id": 684,
+			"intitule": "Static : La classe contient des membres uniquement statiques.",
+			"correct": true
+		}, {
+			"id": 683,
+			"intitule": "Sealed : La classe peut être héritée par une classe dérivée.",
+			"correct": false
+		}, {
+			"id": 685,
+			"intitule": "Unsafe: n'est pas un modificateur de classe",
+			"correct": false
+		}, {
+			"id": 686,
+			"intitule": "Abstract : L'instance de la classe est créée si la classe est abstraite.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Modificateurs d'une classe",
+		"nbPoints": 1
+	}, {
+		"id": 168,
+		"reponses": [{
+			"id": 539,
+			"intitule": "Bubbling events",
+			"correct": true
+		}, {
+			"id": 540,
+			"intitule": "Tunneling events",
+			"correct": false
+		}, {
+			"id": 542,
+			"intitule": "Routed event",
+			"correct": true
+		}, {
+			"id": 541,
+			"intitule": "Direct events",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quels sont les événements qui remonte l’arbre visuel.",
+		"nbPoints": 1
+	}, {
+		"id": 173,
+		"reponses": [{
+			"id": 560,
+			"intitule": "AncestorName",
+			"correct": false
+		}, {
+			"id": 561,
+			"intitule": "AncestorLevel",
+			"correct": true
+		}, {
+			"id": 559,
+			"intitule": "AncestorType",
+			"correct": true
+		}, {
+			"id": 562,
+			"intitule": "StaticResource",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Avec la liaison Ancestor, qu’elle propriétés pouvez vous définir sur la liaison ?",
+		"nbPoints": 1
+	}, {
+		"id": 213,
+		"reponses": [{
+			"id": 717,
+			"intitule": "Si une méthode est virtuelle dans la classe de base alors nous n'avons à fournir le mot-clé de override dans la classe dérivée.",
+			"correct": false
+		}, {
+			"id": 716,
+			"intitule": "En déclarant une fonction de classe de base comme virtuelle, vous autorisez la fonction à être substitué dans une classe dérivée.",
+			"correct": true
+		}, {
+			"id": 719,
+			"intitule": "Les fonctions statiques peuvent être déclarées comme virtuelles.",
+			"correct": false
+		}, {
+			"id": 718,
+			"intitule": "Les champs membres peuvent être déclarés comme virtuels.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Méthodes virtuelles?",
+		"nbPoints": 1
+	}, {
+		"id": 155,
+		"reponses": [{
+			"id": 505,
+			"intitule": "Partout dans la requête",
+			"correct": false
+		}, {
+			"id": 504,
+			"intitule": "Dans la projection finale seulement",
+			"correct": true
+		}, {
+			"id": 506,
+			"intitule": "Pas du tout",
+			"correct": false
+		}, {
+			"id": 503,
+			"intitule": "Dans les clauses Where seulement",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Une requête LINQ to SQL peut inclure des appels à vos propres méthodes locales:",
+		"nbPoints": 1
+	}, {
+		"id": 129,
+		"reponses": [{
+			"id": 411,
+			"intitule": "interface est un type référence",
+			"correct": true
+		}, {
+			"id": 410,
+			"intitule": "string est un type valeur",
+			"correct": false
+		}, {
+			"id": 412,
+			"intitule": "Datetime peut être nul",
+			"correct": false
+		}, {
+			"id": 407,
+			"intitule": "Les types valeur sont stockés dans la pile",
+			"correct": true
+		}, {
+			"id": 408,
+			"intitule": "Les types référence sont stockés sur la pile",
+			"correct": false
+		}, {
+			"id": 409,
+			"intitule": "Enum est un type valeur",
+			"correct": true
+		}, {
+			"id": 413,
+			"intitule": "Un type référence peut être null",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quelles phrases sont correctes?",
+		"nbPoints": 1
+	}, {
+		"id": 218,
+		"reponses": [{
+			"id": 734,
+			"intitule": "Un délégué ne contient pas la référence à une méthode.",
+			"correct": false
+		}, {
+			"id": 733,
+			"intitule": "Un délégué est une variable qui contient la référence à une méthode.",
+			"correct": true
+		}, {
+			"id": 732,
+			"intitule": "Tout les délégués sont issus de l'espace de noms Microsoft.AspNetCore.Mvc.",
+			"correct": false
+		}, {
+			"id": 731,
+			"intitule": "Le délégués et le méthode qu'il réfère peuvent avoir la même signature.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Qu'est-ce qu'un délégué?",
+		"nbPoints": 1
+	}, {
+		"id": 212,
+		"reponses": [{
+			"id": 713,
+			"intitule": "Modifier : protected, Outside Assembly : Non",
+			"correct": true
+		}, {
+			"id": 711,
+			"intitule": "Modifier : private, Outside Assembly : Non",
+			"correct": true
+		}, {
+			"id": 712,
+			"intitule": "Modifier : public, Outside Assembly : Non",
+			"correct": false
+		}, {
+			"id": 715,
+			"intitule": "Modifier : internal protected, Outside Assembly : Oui",
+			"correct": true
+		}, {
+			"id": 714,
+			"intitule": "Modifier : internal, Outside Assembly : Non",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Accessiblity d'un champ et de l'assembly",
+		"nbPoints": 1
+	}, {
+		"id": 165,
+		"reponses": [{
+			"id": 533,
+			"intitule": "ClearValue",
+			"correct": true
+		}, {
+			"id": 532,
+			"intitule": "SetValue",
+			"correct": true
+		}, {
+			"id": 534,
+			"intitule": "GetValue",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Nommez les méthodes présentes dans un DependencyObject.",
+		"nbPoints": 1
+	}, {
+		"id": 146,
+		"reponses": [{
+			"id": 468,
+			"intitule": "NameValueCollection AllAppSettings = ConfigurationManager.AppSettings; Console.WriteLine(AllAppSettings[\"Hello World!\"]);",
+			"correct": false
+		}, {
+			"id": 471,
+			"intitule": "NameValueCollection AllAppSettings = ConfigurationManager.AppSettings; Console.WriteLine(AllAppSettings[\"Foo\"]);",
+			"correct": true
+		}, {
+			"id": 469,
+			"intitule": "Console.WriteLine(ConfigurationSettings.AppSettings[\"Foo\"]);",
+			"correct": false
+		}, {
+			"id": 470,
+			"intitule": "NameValueCollection AllAppSettings = ConfigurationManager.AppSettings; Console.WriteLine(AllAppSettings[5]);",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel segment de code montre la meilleure façon de récupérer la valeur « Foo » du fichier de configuration suivant?\n<?xml version=”1.0” encoding=”utf-8” ?>\n<configuration>\n\t<appSettings>\n\t\t<add key=”Foo” value=”Hello World!”/>\n\t</appSettings>\n</configuration>",
+		"nbPoints": 1
+	}, {
+		"id": 190,
+		"reponses": [{
+			"id": 628,
+			"intitule": "OperationContract",
+			"correct": false
+		}, {
+			"id": 629,
+			"intitule": "MessageContract",
+			"correct": true
+		}, {
+			"id": 630,
+			"intitule": "ServiceContract",
+			"correct": false
+		}, {
+			"id": 627,
+			"intitule": "DataContract",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "_________ associe les données des contrats à des enveloppes SOAP.",
+		"nbPoints": 1
+	}, {
+		"id": 156,
+		"reponses": [{
+			"id": 507,
+			"intitule": "1",
+			"correct": false
+		}, {
+			"id": 508,
+			"intitule": "2",
+			"correct": false
+		}, {
+			"id": 510,
+			"intitule": "4",
+			"correct": true
+		}, {
+			"id": 509,
+			"intitule": "3",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Combien de fois la sous-requête Max exécuter dans l'exemple ci-dessous?\nvar query = from c in colors where c.Length == colors.Max(x => x.Length) select c;",
+		"nbPoints": 1
+	}, {
+		"id": 167,
+		"reponses": [{
+			"id": 538,
+			"intitule": "MultiBinding et IMultiValueConverter\nie: Créer un convertisseur qui implémente ImultiValueConverter et qui additionne les deux valeurs. Utilisez ensuite le MultiBinding.",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Votre ViewModel expose deux valeurs ‘int’, vous ne pouvez pas le modifier, mais vous souhaitez afficher la somme dans votre vue. Quel concept avez-vous besoin d'utiliser si vous voulez une solution réutilisable?",
+		"nbPoints": 1
+	}, {
+		"id": 181,
+		"reponses": [{
+			"id": 591,
+			"intitule": "Ajouté, modifié, supprimé, sauvegardé",
+			"correct": false
+		}, {
+			"id": 592,
+			"intitule": "Ajouté, modifié, supprimé, sans changement, Changé",
+			"correct": false
+		}, {
+			"id": 593,
+			"intitule": "Ajouté, modifié, supprimé, sans changement, Détaché",
+			"correct": true
+		}, {
+			"id": 594,
+			"intitule": "Aucune de ces réponses",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lequel des suivants sont des états d'entités valides dans EF 6?",
+		"nbPoints": 1
+	}, {
+		"id": 237,
+		"reponses": [{
+			"id": 802,
+			"intitule": "LIKE uniquement.",
+			"correct": false
+		}, {
+			"id": 803,
+			"intitule": "IN uniquement.",
+			"correct": false
+		}, {
+			"id": 805,
+			"intitule": "IN et NOT IN.",
+			"correct": true
+		}, {
+			"id": 804,
+			"intitule": "NOT uniquement.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lorsque trois ou plus conditions AND et OR sont réunies, il est plus simple d'utiliser le(s) mot(s)-clé(s) SQL:",
+		"nbPoints": 1
+	}, {
+		"id": 136,
+		"reponses": [{
+			"id": 429,
+			"intitule": "Oui",
+			"correct": false
+		}, {
+			"id": 430,
+			"intitule": "Non",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Est-ce valable? Assembly.Load(\"foo.dll\");",
+		"nbPoints": 1
+	}, {
+		"id": 152,
+		"reponses": [{
+			"id": 493,
+			"intitule": "Opérateurs Grouping",
+			"correct": false
+		}, {
+			"id": 491,
+			"intitule": "Opérateurs 'To'",
+			"correct": true
+		}, {
+			"id": 492,
+			"intitule": "Opérateurs Casting",
+			"correct": false
+		}, {
+			"id": 494,
+			"intitule": "Opérateurs Joining",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lequel des opérateurs suivants exécute la requête LINQ immédiatement et obtient le résultat?",
+		"nbPoints": 1
+	}, {
+		"id": 131,
+		"reponses": [{
+			"id": 417,
+			"intitule": "Les interfaces définissent un contrat entre les types",
+			"correct": true
+		}, {
+			"id": 416,
+			"intitule": "L'héritage définit un contrat entre les types",
+			"correct": false
+		}, {
+			"id": 418,
+			"intitule": "L'héritage dérive d'un type à partir d'un type de base",
+			"correct": true
+		}, {
+			"id": 419,
+			"intitule": "Les interfaces dérivent d'un type à partir d'un type de base",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Lesquels des énoncés suivants sont vrais?",
+		"nbPoints": 1
+	}, {
+		"id": 234,
+		"reponses": [{
+			"id": 793,
+			"intitule": "IN et NOT IN",
+			"correct": false
+		}, {
+			"id": 792,
+			"intitule": "NOT uniquement",
+			"correct": false
+		}, {
+			"id": 791,
+			"intitule": "WHERE uniquement",
+			"correct": false
+		}, {
+			"id": 790,
+			"intitule": "LIKE uniquement",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Le mot clé SQL _________ est utilisé avec des '*'.",
+		"nbPoints": 1
+	}, {
+		"id": 196,
+		"reponses": [{
+			"id": 654,
+			"intitule": "EndpointBehavior",
+			"correct": false
+		}, {
+			"id": 652,
+			"intitule": "OperationBehavior",
+			"correct": false
+		}, {
+			"id": 653,
+			"intitule": "MessageBehavior",
+			"correct": false
+		}, {
+			"id": 651,
+			"intitule": "ServiceBehavior",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Vous devez configurer quel type de comportement pour retourner le détail des exceptions du service WCF?",
+		"nbPoints": 1
+	}, {
+		"id": 211,
+		"reponses": [{
+			"id": 706,
+			"intitule": "Modifier : private, Derived Class : Oui",
+			"correct": false
+		}, {
+			"id": 710,
+			"intitule": "Modifier : internal protected, Derived Class : Non",
+			"correct": false
+		}, {
+			"id": 708,
+			"intitule": "Modifier : protected, Derived Class : Oui",
+			"correct": false
+		}, {
+			"id": 707,
+			"intitule": "Modifier : public, Derived Class : Oui",
+			"correct": true
+		}, {
+			"id": 709,
+			"intitule": "Modifier : internal, Derived Class : Non",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Accessiblité d'un champ et classe dérivée",
+		"nbPoints": 1
+	}, {
+		"id": 175,
+		"reponses": [{
+			"id": 567,
+			"intitule": "Code-First",
+			"correct": false
+		}, {
+			"id": 569,
+			"intitule": "Model-First",
+			"correct": false
+		}, {
+			"id": 570,
+			"intitule": "Tout ce qui précède",
+			"correct": true
+		}, {
+			"id": 568,
+			"intitule": "Database-First",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle des approches de développement suivantes sont prises en charge dans Entity Framework?",
+		"nbPoints": 1
+	}, {
+		"id": 194,
+		"reponses": [{
+			"id": 644,
+			"intitule": "SystemException",
+			"correct": false
+		}, {
+			"id": 643,
+			"intitule": "Exception",
+			"correct": false
+		}, {
+			"id": 645,
+			"intitule": "ApplicationException",
+			"correct": false
+		}, {
+			"id": 646,
+			"intitule": "FaultException",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel type d'exception peut être jeté par un service WCF?",
+		"nbPoints": 1
+	}, {
+		"id": 160,
+		"reponses": [{
+			"id": 519,
+			"intitule": "Avec une classe de convertisseur qui implémente IValueConverter (ie: Ajouter un BoolToVisibilityConverter à vos ressources, puis l'utiliser comme convertisseur dans votre liaison de données.)",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Comment lier-vous une valeur booléenne à la visibilité?",
+		"nbPoints": 1
+	}, {
+		"id": 230,
+		"reponses": [{
+			"id": 776,
+			"intitule": "Une correspondance exacte est nécessaire dans une instruction CREATE.",
+			"correct": false
+		}, {
+			"id": 775,
+			"intitule": "Une correspondance exacte est impossible dans une instruction SELECT.",
+			"correct": true
+		}, {
+			"id": 777,
+			"intitule": "Une correspondance exacte est impossible dans une instruction CREATE.",
+			"correct": false
+		}, {
+			"id": 774,
+			"intitule": "Une correspondance exacte est nécessaire dans une instruction SELECT.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Le caractère générique (*) dans une clause WHERE est utile quand?",
+		"nbPoints": 1
+	}, {
+		"id": 180,
+		"reponses": [{
+			"id": 587,
+			"intitule": "DbContext",
+			"correct": false
+		}, {
+			"id": 590,
+			"intitule": "DbInfo",
+			"correct": false
+		}, {
+			"id": 588,
+			"intitule": "DbSet",
+			"correct": false
+		}, {
+			"id": 589,
+			"intitule": "DbEntityEntry",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle de la classe suivante fournit des informations sur une entité existante dans un contexte?",
+		"nbPoints": 1
+	}, {
+		"id": 202,
+		"reponses": [{
+			"id": 671,
+			"intitule": "Vous pouvez remplacer le constructeur par défaut d'une structure.",
+			"correct": false
+		}, {
+			"id": 672,
+			"intitule": "Vous pouvez définir pour un destructor pour une structure.",
+			"correct": false
+		}, {
+			"id": 670,
+			"intitule": "Vous devriez passer les struct comme paramètres référence aux méthodes afin d’éviter la perte de performance associée à la copie de données.",
+			"correct": true
+		}, {
+			"id": 673,
+			"intitule": "Struct ne peut pas être hérité et nous pouvons dire qu'elles sont scellés.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Propriétés d'un struct",
+		"nbPoints": 1
+	}, {
+		"id": 208,
+		"reponses": [{
+			"id": 698,
+			"intitule": "Lors de la compilation, les éléments des types partiels ne sont pas combinés ensemble dans une unique assembly.",
+			"correct": false
+		}, {
+			"id": 697,
+			"intitule": "Le mot-clé partial permet à une classe d’être définie dans plusieurs fichiers source.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Classes partielles",
+		"nbPoints": 1
+	}, {
+		"id": 133,
+		"reponses": [{
+			"id": 423,
+			"intitule": "Non",
+			"correct": true
+		}, {
+			"id": 422,
+			"intitule": "Oui",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Est-ce correct phrase: private const int MyConstValue;",
+		"nbPoints": 1
+	}, {
+		"id": 217,
+		"reponses": [{
+			"id": 729,
+			"intitule": "Les méthodes d'extension permettent d'ajouter des méthodes à des types existant sans créer un nouveau type dérivé",
+			"correct": true
+		}, {
+			"id": 730,
+			"intitule": "Une méthode d'extension est une méthode qui retourne un type structure.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Que sont les méthodes d'extension en C #?",
+		"nbPoints": 1
+	}, {
+		"id": 238,
+		"reponses": [{
+			"id": 808,
+			"intitule": "Agit comme une clause WHERE mais est utilisé pour les colonnes plutôt que des groupes.",
+			"correct": false
+		}, {
+			"id": 809,
+			"intitule": "Agit EXACTEMENT comme une clause WHERE.",
+			"correct": false
+		}, {
+			"id": 806,
+			"intitule": "Agit comme une clause WHERE mais est utilisé pour les groupes plutôt que des lignes.",
+			"correct": true
+		}, {
+			"id": 807,
+			"intitule": "Agit comme une clause WHERE, mais est utilisé pour les lignes plutôt que des colonnes.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Parmi les propositions suivantes, que fait la clause HAVING?",
+		"nbPoints": 1
+	}, {
+		"id": 214,
+		"reponses": [{
+			"id": 722,
+			"intitule": "Toute langue qui est écrit avec .NET Framework est du code managé",
+			"correct": true
+		}, {
+			"id": 720,
+			"intitule": "Le code, qui est développé dans le framework .NET n'est pas reconnu comme code managé.",
+			"correct": false
+		}, {
+			"id": 721,
+			"intitule": "Le code managé est directement exécuté par le CLR",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Qu'est ce que le code managé?",
+		"nbPoints": 1
+	}, {
+		"id": 174,
+		"reponses": [{
+			"id": 564,
+			"intitule": "EDM est une représentation en mémoire de l’ensemble des métadonnées : modèle conceptuel, le modèle de stockage et mise en correspondance entre eux.",
+			"correct": true
+		}, {
+			"id": 566,
+			"intitule": "EDM est responsable de l'exécution des commandes de base de données.",
+			"correct": false
+		}, {
+			"id": 563,
+			"intitule": "EDM est un modèle pour la base de données sous-jacente.",
+			"correct": false
+		}, {
+			"id": 565,
+			"intitule": "EDM est responsable de la mise en cache des données dans EF.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu'est-ce qu'un Entity Data Model (EDM de)?",
+		"nbPoints": 1
+	}, {
+		"id": 200,
+		"reponses": [{
+			"id": 663,
+			"intitule": "La mise en œuvre d'une méthode abstraite est faite par une classe dérivée.",
+			"correct": true
+		}, {
+			"id": 665,
+			"intitule": "Lorsque la classe dérivée hérite de la méthode abstraite de la classe abstraite, il doit remplacer la méthode abstraite.",
+			"correct": true
+		}, {
+			"id": 664,
+			"intitule": "La mise en œuvre d'une méthode abstraite est faite par la mère de classe.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Méthode abstraite",
+		"nbPoints": 1
+	}, {
+		"id": 235,
+		"reponses": [{
+			"id": 796,
+			"intitule": "Une table de base qui peut être accessible via des commandes SQL",
+			"correct": false
+		}, {
+			"id": 797,
+			"intitule": "Une table de base qui ne peut être accessible par les commandes SQL",
+			"correct": false
+		}, {
+			"id": 795,
+			"intitule": "Une table virtuelle qui ne peut être accessible par les commandes SQL",
+			"correct": false
+		}, {
+			"id": 794,
+			"intitule": "Une table virtuelle qui peut être accessible par les commandes SQL",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Une vue est un des éléments suivants?",
+		"nbPoints": 1
+	}, {
+		"id": 127,
+		"reponses": [{
+			"id": 400,
+			"intitule": "private",
+			"correct": true
+		}, {
+			"id": 401,
+			"intitule": "il n'y a pas de visibilité par défaut",
+			"correct": false
+		}, {
+			"id": 397,
+			"intitule": "public",
+			"correct": false
+		}, {
+			"id": 399,
+			"intitule": "protected",
+			"correct": false
+		}, {
+			"id": 398,
+			"intitule": "internal",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle est la visibilité par défaut pour une méthode dans une classe",
+		"nbPoints": 1
+	}, {
+		"id": 164,
+		"reponses": [{
+			"id": 530,
+			"intitule": "En debug, un message est affiché dans la fenêtre de sortie",
+			"correct": true
+		}, {
+			"id": 531,
+			"intitule": "Il y a une erreur lors de la compilation",
+			"correct": false
+		}, {
+			"id": 529,
+			"intitule": "L'application plante",
+			"correct": false
+		}, {
+			"id": 528,
+			"intitule": "Une exception est levée",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Qu’arrive t il, si la valeur que vous liez (Bind) n'existe pas",
+		"nbPoints": 1
+	}, {
+		"id": 220,
+		"reponses": [{
+			"id": 741,
+			"intitule": "Il peut être codé et compressé",
+			"correct": true
+		}, {
+			"id": 740,
+			"intitule": "View state est désactivé par défaut",
+			"correct": false
+		}, {
+			"id": 742,
+			"intitule": "View state conserve la valeur du contrôle après post-back sans utiliser une session.",
+			"correct": true
+		}, {
+			"id": 739,
+			"intitule": "View state est la méthode pour preserve la valeur de la page et les contrôles entre les allers-retours.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Qu'est ce que view state dans ASP .net?",
+		"nbPoints": 1
+	}, {
+		"id": 239,
+		"reponses": [{
+			"id": 810,
+			"intitule": "Ne peut être utilisé avec deux tables.",
+			"correct": false
+		}, {
+			"id": 812,
+			"intitule": "A une forme distincte qui ne peut pas être dupliquée par une jointure.",
+			"correct": false
+		}, {
+			"id": 811,
+			"intitule": "Peut toujours être dupliqué par une jointure.",
+			"correct": true
+		}, {
+			"id": 813,
+			"intitule": "Ne peut pas avoir ses résultats triés à l'aide ORDER BY.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Une sous-requête dans une instruction SQL SELECT :",
+		"nbPoints": 1
+	}, {
+		"id": 147,
+		"reponses": [{
+			"id": 474,
+			"intitule": "Les domaines d'application améliorer les performances",
+			"correct": false
+		}, {
+			"id": 475,
+			"intitule": "Les domaines d'application fournissent une couche de séparation et de sécurité",
+			"correct": true
+		}, {
+			"id": 472,
+			"intitule": "Il est le seul moyen de lancer un processus distinct",
+			"correct": false
+		}, {
+			"id": 473,
+			"intitule": "Vous pouvez supprimer le domaine d'application pour libérer des ressources",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Lequel des éléments suivants sont des raisons valables pour créer un domaine d'application?",
+		"nbPoints": 1
+	}, {
+		"id": 201,
+		"reponses": [{
+			"id": 667,
+			"intitule": "Une structure est un type complexe défini par l'utilisateur",
+			"correct": false
+		}, {
+			"id": 668,
+			"intitule": "Leurs objets ou instances sont stockés sur la pile.",
+			"correct": true
+		}, {
+			"id": 666,
+			"intitule": "Comme il est le type de valeur , tout membre d’une struct doit être initialisé.",
+			"correct": true
+		}, {
+			"id": 669,
+			"intitule": "Les struct ne supportent pas les modificateurs d'accès, les constructeurs, les indexeurs, les méthodes, les champs, les types imbriqués, les opérateurs et les propriétés.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Struct",
+		"nbPoints": 1
+	}, {
+		"id": 231,
+		"reponses": [{
+			"id": 779,
+			"intitule": "SUM, MIN, AVG, MAX, MULT",
+			"correct": false
+		}, {
+			"id": 780,
+			"intitule": "MULT, DIV, MIN, SUM, AVG",
+			"correct": false
+		}, {
+			"id": 778,
+			"intitule": "COUNT, SUM, MAX, MIN, AVG",
+			"correct": true
+		}, {
+			"id": 781,
+			"intitule": "AVG, MIN, MAX, NOM, SUM",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lequel des suivants sont les cinq fonctions intégrées fournies par SQL?",
+		"nbPoints": 1
+	}, {
+		"id": 182,
+		"reponses": [{
+			"id": 598,
+			"intitule": "myDbContext.SqlQuery(\"Select * from Student where studentid=1\")",
+			"correct": true
+		}, {
+			"id": 596,
+			"intitule": "myDbContext.Students.SqlQuery(\"Select * from Student where studentid=1\")",
+			"correct": false
+		}, {
+			"id": 595,
+			"intitule": "myDbContext.Database.SqlQuery(\"Select * from Student where studentid=1\")",
+			"correct": true
+		}, {
+			"id": 597,
+			"intitule": "myDbContext.Configuration.SqlQuery(\"Select * from Student where studentid=1\")",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Lequel des éléments suivants exécute une requête SQL brute sur la base de données dans EF 6?",
+		"nbPoints": 1
+	}, {
+		"id": 137,
+		"reponses": [{
+			"id": 433,
+			"intitule": "Pour vérifier qu'elle n'a pas été falsifié.",
+			"correct": true
+		}, {
+			"id": 434,
+			"intitule": "Pour la référencer dans une autre assembly.",
+			"correct": true
+		}, {
+			"id": 435,
+			"intitule": "Pour interdire le chargement de plusieurs versions de l'assembly dans l'application.",
+			"correct": false
+		}, {
+			"id": 431,
+			"intitule": "Pour la référencer dans une autre solution.",
+			"correct": false
+		}, {
+			"id": 432,
+			"intitule": "Pour l'ajouter dans le GAC.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Pourquoi devrais-je nommer fortement mon assembly?",
+		"nbPoints": 1
+	}, {
+		"id": 134,
+		"reponses": [{
+			"id": 424,
+			"intitule": "Avec le mot-clé read-only",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Comment définir une valeur constante qui doit être initialisé dans le constructeur?",
+		"nbPoints": 1
+	}, {
+		"id": 215,
+		"reponses": [{
+			"id": 723,
+			"intitule": "Les applications qui ne fonctionnent pas sous le contrôle du CLR sont dites comme non managé.",
+			"correct": true
+		}, {
+			"id": 724,
+			"intitule": "Les applications qui run sous le contrôle du CLR sont dites comme non managé.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu'est ce que le code non managé?",
+		"nbPoints": 1
+	}, {
+		"id": 153,
+		"reponses": [{
+			"id": 495,
+			"intitule": "IEnumerable",
+			"correct": false
+		}, {
+			"id": 498,
+			"intitule": "IEnumerator",
+			"correct": false
+		}, {
+			"id": 496,
+			"intitule": "IQueryable",
+			"correct": true
+		}, {
+			"id": 497,
+			"intitule": "ICollection",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Les fournisseurs de données externes  doivent mettre en œuvre l’interface ________, afin d’être compatible avec LINQ.",
+		"nbPoints": 1
+	}, {
+		"id": 227,
+		"reponses": [{
+			"id": 766,
+			"intitule": "L'accès, Contrainte, Index, Données.",
+			"correct": false
+		}, {
+			"id": 765,
+			"intitule": "Atomicité, Cohérence, Isolation, Durabilité.",
+			"correct": true
+		}, {
+			"id": 764,
+			"intitule": "L'accès, Cohérence, Isolation, Données.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Que veut dire ACID?",
+		"nbPoints": 1
+	}, {
+		"id": 221,
+		"reponses": [{
+			"id": 743,
+			"intitule": "La mise en cache permet de fournir les solutions ou les résultats aux utilisateurs en fonction de leur demande",
+			"correct": true
+		}, {
+			"id": 744,
+			"intitule": "Un cache est le même que view state",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu'est-ce que la mise en cache dans ASP .Net?",
+		"nbPoints": 1
+	}, {
+		"id": 185,
+		"reponses": [{
+			"id": 607,
+			"intitule": "Operation contract",
+			"correct": false
+		}, {
+			"id": 609,
+			"intitule": "Service contract",
+			"correct": true
+		}, {
+			"id": 610,
+			"intitule": "Data contract",
+			"correct": false
+		}, {
+			"id": 608,
+			"intitule": "Message contract",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel type de contrat est applicable à une interface dans WCF?",
+		"nbPoints": 1
+	}, {
+		"id": 189,
+		"reponses": [{
+			"id": 623,
+			"intitule": "basicHttpBinding",
+			"correct": false
+		}, {
+			"id": 624,
+			"intitule": "netHttpBinding",
+			"correct": false
+		}, {
+			"id": 626,
+			"intitule": "WSDualHttpBinding",
+			"correct": true
+		}, {
+			"id": 625,
+			"intitule": "wsHttpBinding",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "La liaison http __________ est utilisée pour les contrats en duplex.",
+		"nbPoints": 1
+	}, {
+		"id": 169,
+		"reponses": [{
+			"id": 543,
+			"intitule": "Bubbling event",
+			"correct": false
+		}, {
+			"id": 544,
+			"intitule": "Direct event",
+			"correct": true
+		}, {
+			"id": 545,
+			"intitule": "Tunneling event",
+			"correct": false
+		}, {
+			"id": 546,
+			"intitule": "Routed event",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "MouseEnter est:",
+		"nbPoints": 1
+	}, {
+		"id": 179,
+		"reponses": [{
+			"id": 583,
+			"intitule": "DbContext",
+			"correct": false
+		}, {
+			"id": 584,
+			"intitule": "ObjectContext",
+			"correct": false
+		}, {
+			"id": 585,
+			"intitule": "Entity",
+			"correct": false
+		}, {
+			"id": 586,
+			"intitule": "DbSet",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lequel des éléments suivants est un classe représentant une entité créée?",
+		"nbPoints": 1
+	}, {
+		"id": 228,
+		"reponses": [{
+			"id": 768,
+			"intitule": "NOT NULL",
+			"correct": false
+		}, {
+			"id": 767,
+			"intitule": "NULL",
+			"correct": true
+		}, {
+			"id": 770,
+			"intitule": "Aucune de ces réponses",
+			"correct": false
+		}, {
+			"id": 769,
+			"intitule": "La fonction NVL2 n'est pas définie",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle sortie produira la déclaration suivante?\nSelect NVL2(NULL, ‘NOT NULL’, NULL) from dual ;",
+		"nbPoints": 1
+	}, {
+		"id": 216,
+		"reponses": [{
+			"id": 725,
+			"intitule": "Boxing est le processus de conversion d'un type de valeur en un type de données objet ou en n'importe quelle type de données interface qui est mis en oeuvre par ce type de valeur.",
+			"correct": true
+		}, {
+			"id": 728,
+			"intitule": "Unboxing doit être déclaré explicitement par le code.",
+			"correct": true
+		}, {
+			"id": 726,
+			"intitule": "Unboxing est un processus qui est utilisé pour extraire le type de valeur de l'objet ou tout autre type d'interface mises en œuvre.",
+			"correct": true
+		}, {
+			"id": 727,
+			"intitule": "Unboxing ne doit pas être déclaré explicitement par le code.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Qu'est-ce que le boxing et l'unboxing?",
+		"nbPoints": 1
+	}, {
+		"id": 203,
+		"reponses": [{
+			"id": 674,
+			"intitule": "Class est un mot-clé dans C # .NET qui est utilisé pour créer une classe",
+			"correct": true
+		}, {
+			"id": 675,
+			"intitule": "Les classes sont des types particuliers de modèles à partir desquels vous pouvez créer des objets.",
+			"correct": true
+		}, {
+			"id": 676,
+			"intitule": "L'objet ne contient pas de données et méthodes pour manipuler et accéder à ces données.",
+			"correct": false
+		}, {
+			"id": 677,
+			"intitule": "La classe définit les données et les fonctions que chaque objet de cette classe peut contenir.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Classe",
+		"nbPoints": 1
+	}, {
+		"id": 154,
+		"reponses": [{
+			"id": 502,
+			"intitule": "First retourne vide alors que FirstOrDefault renvoie la valeur NULL, si aucun élément n’est trouvé pour les critères spécifiés.",
+			"correct": false
+		}, {
+			"id": 501,
+			"intitule": "First lève une exception alors que FirstOrDefault renvoie NULL, si aucun élément n’est trouvé pour les critères spécifiés.",
+			"correct": false
+		}, {
+			"id": 500,
+			"intitule": "First retourne NULL alors que FirstOrDefault renvoie la valeur par défaut, si aucun élément n’est trouvé pour les critères spécifiés.",
+			"correct": false
+		}, {
+			"id": 499,
+			"intitule": "First lève une exception alors FirstOrDefault renvoie la valeur par défaut, si aucun élément n’est trouvé pour les critères spécifiés.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle est la différence entre First et FirstOrDefault?",
+		"nbPoints": 1
+	}, {
+		"id": 159,
+		"reponses": [{
+			"id": 517,
+			"intitule": "INotifyPropertyChanged",
+			"correct": true
+		}, {
+			"id": 518,
+			"intitule": "IViewModelBase",
+			"correct": false
+		}, {
+			"id": 516,
+			"intitule": "IObservableObject",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle interface devrait mettre en œuvre un ViewModels",
+		"nbPoints": 1
+	}, {
+		"id": 191,
+		"reponses": [{
+			"id": 632,
+			"intitule": "IIS",
+			"correct": false
+		}, {
+			"id": 631,
+			"intitule": "Self",
+			"correct": false
+		}, {
+			"id": 633,
+			"intitule": "Window service",
+			"correct": false
+		}, {
+			"id": 634,
+			"intitule": "Tout ce qui précède",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Les services WCF peuvent être hébergé dans ________.",
+		"nbPoints": 1
+	}, {
+		"id": 184,
+		"reponses": [{
+			"id": 605,
+			"intitule": "Query()",
+			"correct": false
+		}, {
+			"id": 604,
+			"intitule": "AsNoTracking()",
+			"correct": true
+		}, {
+			"id": 606,
+			"intitule": "ToList()",
+			"correct": false
+		}, {
+			"id": 603,
+			"intitule": "Attach()",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle des méthodes suivantes retourne une nouvelle requête où les entités renvoyées ne seront pas mises en cache dans le DbContext.?",
+		"nbPoints": 1
+	}, {
+		"id": 207,
+		"reponses": [{
+			"id": 696,
+			"intitule": "Une classe abstraite contient des champs, mais les interfaces ne peuvent pas.",
+			"correct": true
+		}, {
+			"id": 695,
+			"intitule": "Une classe abstraite ne peut pas contenir de constructeurs et ni de destructeurs, mais une interface peut.",
+			"correct": false
+		}, {
+			"id": 693,
+			"intitule": "Une classe abstraite peut contenir certaines implémentations, mais une interface ne peut pas.",
+			"correct": true
+		}, {
+			"id": 694,
+			"intitule": "Une interface peut hériter d'autres interfaces, mais les classes abstraites ne peuvent pas hériter d'autres classes et interfaces.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Quels sont différences entre l'interface et la classe abstraite?",
+		"nbPoints": 1
+	}, {
+		"id": 138,
+		"reponses": [{
+			"id": 436,
+			"intitule": "string s = @”Hello {world}”;",
+			"correct": false
+		}, {
+			"id": 439,
+			"intitule": "string s = $”Hello {world}”;",
+			"correct": true
+		}, {
+			"id": 437,
+			"intitule": "It doesn’t exist in C#.",
+			"correct": false
+		}, {
+			"id": 438,
+			"intitule": "string s = #”Hello {world}”;",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle phrase permet l'interpolation de chaîne?",
+		"nbPoints": 1
+	}, {
+		"id": 193,
+		"reponses": [{
+			"id": 642,
+			"intitule": "WCFBase",
+			"correct": false
+		}, {
+			"id": 640,
+			"intitule": "ClientBase",
+			"correct": true
+		}, {
+			"id": 639,
+			"intitule": "ServiceBase",
+			"correct": false
+		}, {
+			"id": 641,
+			"intitule": "ProxyBase",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle des classes suivantes doit être hérité afin de créer un proxy WCF manuellement.",
+		"nbPoints": 1
+	}, {
+		"id": 177,
+		"reponses": [{
+			"id": 575,
+			"intitule": "LINQ to Entity",
+			"correct": false
+		}, {
+			"id": 576,
+			"intitule": "Entity SQL",
+			"correct": false
+		}, {
+			"id": 577,
+			"intitule": "Native SQL",
+			"correct": false
+		}, {
+			"id": 578,
+			"intitule": "Tout ce qui précède",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Laquelle des syntaxes de requêtes suivante peut être utilisée pour interroger dans EF 6?",
+		"nbPoints": 1
+	}, {
+		"id": 143,
+		"reponses": [{
+			"id": 458,
+			"intitule": "public class MyClass<T:IComparable>",
+			"correct": false
+		}, {
+			"id": 456,
+			"intitule": "public class MyClass<T> where T : IComparable{}",
+			"correct": true
+		}, {
+			"id": 457,
+			"intitule": "public class MyClass<T> where T is IComparable{}",
+			"correct": false
+		}, {
+			"id": 459,
+			"intitule": "Vous ne pouvez pas définir une contrainte sur un générique",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel code permet de définir une classe «MyClass» mettant en œuvre un type générique T devant implémenter l'interface «IComparable»?",
+		"nbPoints": 1
+	}, {
+		"id": 157,
+		"reponses": [{
+			"id": 511,
+			"intitule": "MVC",
+			"correct": false
+		}, {
+			"id": 513,
+			"intitule": "MVP",
+			"correct": false
+		}, {
+			"id": 514,
+			"intitule": "XAML",
+			"correct": false
+		}, {
+			"id": 512,
+			"intitule": "MVVM",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel est le modèle mis en œuvre dans WPF",
+		"nbPoints": 1
+	}, {
+		"id": 229,
+		"reponses": [{
+			"id": 771,
+			"intitule": "Une ligne verticale clignotante qui indique l'emplacement de l'entrée suivante sur l'écran d'affichage.",
+			"correct": false
+		}, {
+			"id": 773,
+			"intitule": "Le curseur est l'acronyme de Current Set Of Records et est un objet de base de données pointant vers un ensemble d'enregistrements sélectionnés.",
+			"correct": true
+		}, {
+			"id": 772,
+			"intitule": "Un curseur est mot-clé SQL spécifiant l'ordre des données récupérées.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu'est-ce qu'un curseur de base de données?",
+		"nbPoints": 1
+	}, {
+		"id": 224,
+		"reponses": [{
+			"id": 753,
+			"intitule": "Vrai",
+			"correct": false
+		}, {
+			"id": 754,
+			"intitule": "Faux",
+			"correct": false
+		}, {
+			"id": 756,
+			"intitule": "NULL",
+			"correct": true
+		}, {
+			"id": 755,
+			"intitule": "Indéfini",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quel est le résultat si deux valeurs NULL sont comparées?",
+		"nbPoints": 1
+	}, {
+		"id": 186,
+		"reponses": [{
+			"id": 612,
+			"intitule": "Svc.exe",
+			"correct": false
+		}, {
+			"id": 613,
+			"intitule": "ILDASM.exe",
+			"correct": false
+		}, {
+			"id": 614,
+			"intitule": "SvcUtil.exe",
+			"correct": true
+		}, {
+			"id": 611,
+			"intitule": "Wcf.exe",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle utilitaire peut être utilisé pour créer un WSDL du service WCF?",
+		"nbPoints": 1
+	}, {
+		"id": 199,
+		"reponses": [{
+			"id": 662,
+			"intitule": "Si une classe est définie comme abstraite, nous pouvons alors créer une instance de cette classe.",
+			"correct": false
+		}, {
+			"id": 661,
+			"intitule": "Si une classe est définie comme abstraite alors nous ne pouvons pas créer une instance de cette classe.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Classe abstraite",
+		"nbPoints": 1
+	}, {
+		"id": 145,
+		"reponses": [{
+			"id": 464,
+			"intitule": "Begin Main\n\tCreate a instance of MyClass\n\tInvoke Static Ctor of MyClass\n\tInvoke Method 1\n\tDispose MyClass\n\tEnd Main",
+			"correct": false
+		}, {
+			"id": 467,
+			"intitule": "Invoke Static Ctor of MyClass\n\tBegin Main\n\tCreate a instance of MyClass\n\tInvoke Method 1\n\tEnd Main\n\tDispose MyClass",
+			"correct": false
+		}, {
+			"id": 465,
+			"intitule": "Invoke Static Ctor of MyClass\n\tBegin Main\n\tCreate a instance of MyClass\n\tInvoke Method 1\n\tDispose MyClass\n\tEnd Main",
+			"correct": false
+		}, {
+			"id": 466,
+			"intitule": "Begin Main\n\tInvoke Static Ctor of MyClass\n\tCreate a instance of MyClass\n\tInvoke Method 1\n\tDispose MyClass\n\tEnd Main",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Qu'affiche le programme suivant?\n\npublic class MyClass : IDisposable\n{\n    staticMyClass()\n    {\n        Console.WriteLine(\"Invoke Static Ctor of MyClass\");\n    }\n    public MyClass()\n    {\n        Console.WriteLine(\"Create a instance of MyClass\");\n    } \n    public void Method1()\n    {\n        Console.WriteLine(\"Invoke Method 1\");\n    } \n    public void Dispose()\n    {\n        Console.WriteLine(\"Dispose MyClass\");\n    }\n} \nclass Program\n{\n    static void Main(string[] args)\n    {\n        Console.WriteLine(\"Begin Main\"); \n        using(MyClass myClass = new MyClass())\n        {\n            myClass.Method1();\n        } \n        Console.WriteLine(\"End Main\");\n    }\n}\n\nRésultats possible :",
+		"nbPoints": 1
+	}, {
+		"id": 187,
+		"reponses": [{
+			"id": 615,
+			"intitule": "Faux",
+			"correct": false
+		}, {
+			"id": 616,
+			"intitule": "Vrai",
+			"correct": true
+		}, {
+			"id": 618,
+			"intitule": "Pas possible",
+			"correct": false
+		}, {
+			"id": 617,
+			"intitule": "Parfois",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Un contrat de service peut hériter d'un autre contrat de service.",
+		"nbPoints": 1
+	}, {
+		"id": 206,
+		"reponses": [{
+			"id": 688,
+			"intitule": "Une interface est un ensemble de fonctions connexes qui ne doivent pas être mises en œuvre dans une classe dérivée.",
+			"correct": false
+		}, {
+			"id": 687,
+			"intitule": "Une interface est un ensemble de fonctions connexes qui doivent être mises en œuvre dans une classe dérivée.",
+			"correct": true
+		}, {
+			"id": 690,
+			"intitule": "Les membres d'une interface sont implicitement abstraite.",
+			"correct": true
+		}, {
+			"id": 692,
+			"intitule": "Vous ne pouvez pas créer une instance d'une interface",
+			"correct": false
+		}, {
+			"id": 689,
+			"intitule": "Les membres d'une interface sont implicitement privée",
+			"correct": false
+		}, {
+			"id": 691,
+			"intitule": "Les interfaces et les classes abstraites sont similaires",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Interface",
+		"nbPoints": 1
+	}, {
+		"id": 192,
+		"reponses": [{
+			"id": 637,
+			"intitule": "Par session",
+			"correct": false
+		}, {
+			"id": 638,
+			"intitule": "Statique",
+			"correct": true
+		}, {
+			"id": 635,
+			"intitule": "Unique",
+			"correct": false
+		}, {
+			"id": 636,
+			"intitule": "Par appel",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Lequel des comportements d’instanciation suivant est pas pris en charge dans WCF?",
+		"nbPoints": 1
+	}, {
+		"id": 128,
+		"reponses": [{
+			"id": 406,
+			"intitule": "il n'y a pas de visibilité par défaut",
+			"correct": false
+		}, {
+			"id": 403,
+			"intitule": "internal",
+			"correct": true
+		}, {
+			"id": 404,
+			"intitule": "protected",
+			"correct": false
+		}, {
+			"id": 402,
+			"intitule": "public",
+			"correct": false
+		}, {
+			"id": 405,
+			"intitule": "private",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Quelle est la visibilité par défaut pour une classe définie dans un espace de noms",
+		"nbPoints": 1
+	}]
+}, {
+	"id": 10,
+	"nom": "C# .NET anglais",
+	"duree": 90,
+	"dateCreation": "2018-12-05T11:51:58",
+	"dateModification": "2018-12-05T11:51:58",
+	"questions": [{
+		"id": 355,
+		"reponses": [{
+			"id": 1237,
+			"intitule": "Can always be duplicated by a join.",
+			"correct": true
+		}, {
+			"id": 1238,
+			"intitule": "Has a distinct form that cannot be duplicated by a join.",
+			"correct": false
+		}, {
+			"id": 1239,
+			"intitule": "Cannot have its results sorted using ORDER BY.",
+			"correct": false
+		}, {
+			"id": 1236,
+			"intitule": "Can only be used with two tables.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "A subquery in a SQL SELECT statement :",
+		"nbPoints": 1
+	}, {
+		"id": 331,
+		"reponses": [{
+			"id": 1150,
+			"intitule": "Applications that do run under the control of the CLR are said to be unmanaged",
+			"correct": false
+		}, {
+			"id": 1149,
+			"intitule": "Applications that do not run under the control of the CLR are said to be unmanaged",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Unmanaged code",
+		"nbPoints": 1
+	}, {
+		"id": 317,
+		"reponses": [{
+			"id": 1094,
+			"intitule": "Their object or instance is stored on the stack.",
+			"correct": true
+		}, {
+			"id": 1092,
+			"intitule": "All the member of the struct has to be initialized, as it is value type.",
+			"correct": true
+		}, {
+			"id": 1095,
+			"intitule": "Struct does not support access modifiers, constructors, indexers, methods, fields, nested types, operators, and properties.",
+			"correct": false
+		}, {
+			"id": 1093,
+			"intitule": "A struct is a complex user-defined type",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Struct",
+		"nbPoints": 1
+	}, {
+		"id": 333,
+		"reponses": [{
+			"id": 1155,
+			"intitule": "Extension methods enable you to add methods to existing types without creating a new derived type",
+			"correct": true
+		}, {
+			"id": 1156,
+			"intitule": "An extension method is a method that return a struct type",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What are extension method in C# ?",
+		"nbPoints": 1
+	}, {
+		"id": 326,
+		"reponses": [{
+			"id": 1130,
+			"intitule": "Accessibility sets the visibility of the member to inside assemblies or derived types.",
+			"correct": false
+		}, {
+			"id": 1129,
+			"intitule": "Accessibility sets the visibility of the member to outside assemblies or derived types.",
+			"correct": true
+		}, {
+			"id": 1131,
+			"intitule": "Private : Accessibility in the derived class",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Accessiblity of a field",
+		"nbPoints": 1
+	}, {
+		"id": 346,
+		"reponses": [{
+			"id": 1200,
+			"intitule": "An exact match is necessary in a SELECT statement.",
+			"correct": false
+		}, {
+			"id": 1201,
+			"intitule": "An exact match is not possible in a SELECT statement.",
+			"correct": true
+		}, {
+			"id": 1202,
+			"intitule": "An exact match is necessary in a CREATE statement.",
+			"correct": false
+		}, {
+			"id": 1203,
+			"intitule": "An exact match is not possible in a CREATE statement.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "The wildcard in a WHERE clause is useful when ?",
+		"nbPoints": 1
+	}, {
+		"id": 353,
+		"reponses": [{
+			"id": 1228,
+			"intitule": "LIKE only.",
+			"correct": false
+		}, {
+			"id": 1230,
+			"intitule": "NOT IN only.",
+			"correct": false
+		}, {
+			"id": 1231,
+			"intitule": "Both IN and NOT IN.",
+			"correct": true
+		}, {
+			"id": 1229,
+			"intitule": "IN only.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "When three or more AND and OR conditions are combined, it is easier to use SQL keyword(s) :",
+		"nbPoints": 1
+	}, {
+		"id": 328,
+		"reponses": [{
+			"id": 1137,
+			"intitule": "Modifier : private, Outside Assembly : No",
+			"correct": true
+		}, {
+			"id": 1140,
+			"intitule": "Modifier : internal, Outside Assembly : No",
+			"correct": false
+		}, {
+			"id": 1141,
+			"intitule": "Modifier : internal protected, Outside Assembly : Yes",
+			"correct": true
+		}, {
+			"id": 1138,
+			"intitule": "Modifier : public, Outside Assembly : No",
+			"correct": false
+		}, {
+			"id": 1139,
+			"intitule": "Modifier : protected, Outside Assembly : No",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Accessiblity of a field and assembly",
+		"nbPoints": 1
+	}, {
+		"id": 308,
+		"reponses": [{
+			"id": 1064,
+			"intitule": "Static",
+			"correct": true
+		}, {
+			"id": 1061,
+			"intitule": "Single",
+			"correct": false
+		}, {
+			"id": 1062,
+			"intitule": "PerCall",
+			"correct": false
+		}, {
+			"id": 1063,
+			"intitule": "PerSession",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following instancing behaviour is not supported in WCF?",
+		"nbPoints": 1
+	}, {
+		"id": 307,
+		"reponses": [{
+			"id": 1058,
+			"intitule": "IIS",
+			"correct": false
+		}, {
+			"id": 1059,
+			"intitule": "Window service",
+			"correct": false
+		}, {
+			"id": 1060,
+			"intitule": "All of the above",
+			"correct": true
+		}, {
+			"id": 1057,
+			"intitule": "Self",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "WCF service can be host in________.",
+		"nbPoints": 1
+	}, {
+		"id": 247,
+		"reponses": [{
+			"id": 844,
+			"intitule": "Inheritance derives a type from a base type",
+			"correct": true
+		}, {
+			"id": 845,
+			"intitule": "Interfaces derive a type from a base type",
+			"correct": false
+		}, {
+			"id": 843,
+			"intitule": "Interfaces define a contract between types",
+			"correct": true
+		}, {
+			"id": 842,
+			"intitule": "Inheritance defines a contract between types",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Which of the following statements are true?",
+		"nbPoints": 1
+	}, {
+		"id": 261,
+		"reponses": [{
+			"id": 893,
+			"intitule": "Invoke Static Ctor of MyClass\n\tBegin Main\n\tCreate a instance of MyClass\n\tInvoke Method 1\n\tEnd Main\n\tDispose MyClass",
+			"correct": false
+		}, {
+			"id": 890,
+			"intitule": "Begin Main\n\tCreate a instance of MyClass\n\tInvoke Static Ctor of MyClass\n\tInvoke Method 1\n\tDispose MyClass\n\tEnd Main",
+			"correct": false
+		}, {
+			"id": 892,
+			"intitule": "Begin Main\n\tInvoke Static Ctor of MyClass\n\tCreate a instance of MyClass\n\tInvoke Method 1\n\tDispose MyClass\n\tEnd Main",
+			"correct": true
+		}, {
+			"id": 891,
+			"intitule": "Invoke Static Ctor of MyClass\n\tBegin Main\n\tCreate a instance of MyClass\n\tInvoke Method 1\n\tDispose MyClass\n\tEnd Main",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What will be displayed with the following program ?\n\npublicclassMyClass : IDisposable\n{\nstatic MyClass()\n{\nConsole.WriteLine(\"Invoke Static Ctor of MyClass\");\n}\npublic MyClass()\n{\nConsole.WriteLine(\"Create a instance of MyClass\");\n} \npublicvoid Method1()\n{\nConsole.WriteLine(\"Invoke Method 1\");\n} \npublicvoid Dispose()\n{\nConsole.WriteLine(\"Dispose MyClass\");\n}\n} \nclassProgram\n{\nstaticvoidMain(string[] args)\n{\nConsole.WriteLine(\"Begin Main\"); \nusing(MyClass myClass = newMyClass())\n{\nmyClass.Method1();\n} \nConsole.WriteLine(\"End Main\");\n}\n}\n\nPossible Result:",
+		"nbPoints": 1
+	}, {
+		"id": 323,
+		"reponses": [{
+			"id": 1121,
+			"intitule": "An Abstract class cannot contain constructors and destructors but an interface can.",
+			"correct": false
+		}, {
+			"id": 1119,
+			"intitule": "An Abstract class can contain some implementations but an interface can't.",
+			"correct": true
+		}, {
+			"id": 1120,
+			"intitule": "An Interface can inherit other interfaces but abstract classes cannot inherit from other classes and interfaces.",
+			"correct": false
+		}, {
+			"id": 1122,
+			"intitule": "An Abstract class contains fields but interfaces don't.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Differences between interface and abstract class",
+		"nbPoints": 1
+	}, {
+		"id": 249,
+		"reponses": [{
+			"id": 848,
+			"intitule": "Yes",
+			"correct": false
+		}, {
+			"id": 849,
+			"intitule": "No",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Is this phrase correct : private const int MyConstValue;",
+		"nbPoints": 1
+	}, {
+		"id": 271,
+		"reponses": [{
+			"id": 929,
+			"intitule": "In Where clauses only",
+			"correct": false
+		}, {
+			"id": 932,
+			"intitule": "Not at all",
+			"correct": false
+		}, {
+			"id": 931,
+			"intitule": "Anywhere in the query",
+			"correct": false
+		}, {
+			"id": 930,
+			"intitule": "In the final projection only",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "A LINQ to SQL query can include calls to your own local methods:",
+		"nbPoints": 1
+	}, {
+		"id": 318,
+		"reponses": [{
+			"id": 1097,
+			"intitule": "You can replace the default constructor of a structure.",
+			"correct": false
+		}, {
+			"id": 1098,
+			"intitule": "You can define destructor for struct.",
+			"correct": false
+		}, {
+			"id": 1096,
+			"intitule": "You should pass structs to method as ref parameters in order to avoid the performance loss associated with copying data.",
+			"correct": true
+		}, {
+			"id": 1099,
+			"intitule": "Structs can't be inherited and we can say they are sealed.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Properties of a struct",
+		"nbPoints": 1
+	}, {
+		"id": 335,
+		"reponses": [{
+			"id": 1164,
+			"intitule": "RegularExpressionValidator is a server side validator.",
+			"correct": true
+		}, {
+			"id": 1162,
+			"intitule": "JavaScript is used to do Client-Side Validation.",
+			"correct": true
+		}, {
+			"id": 1163,
+			"intitule": "RangeValidator control is a client side validator.",
+			"correct": false
+		}, {
+			"id": 1161,
+			"intitule": "There are only 2 type of validation in ASP : server side and client side",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Validators in ASP .net",
+		"nbPoints": 1
+	}, {
+		"id": 278,
+		"reponses": [{
+			"id": 949,
+			"intitule": "Default",
+			"correct": true
+		}, {
+			"id": 950,
+			"intitule": "PropertyChanged",
+			"correct": true
+		}, {
+			"id": 952,
+			"intitule": "Explicit",
+			"correct": true
+		}, {
+			"id": 951,
+			"intitule": "LostFocus",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "There are four modes by which “UpdateSourceTrigger” can be defined:",
+		"nbPoints": 1
+	}, {
+		"id": 268,
+		"reponses": [{
+			"id": 920,
+			"intitule": "Joining operators",
+			"correct": false
+		}, {
+			"id": 917,
+			"intitule": "'To' operators",
+			"correct": true
+		}, {
+			"id": 919,
+			"intitule": "Grouping operators",
+			"correct": false
+		}, {
+			"id": 918,
+			"intitule": "Casting operators",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following operators executes LINQ query immediately and gets the result?",
+		"nbPoints": 1
+	}, {
+		"id": 241,
+		"reponses": [{
+			"id": 817,
+			"intitule": "class B implements A",
+			"correct": false
+		}, {
+			"id": 816,
+			"intitule": "class A inherits B",
+			"correct": false
+		}, {
+			"id": 815,
+			"intitule": "class B : A",
+			"correct": false
+		}, {
+			"id": 818,
+			"intitule": "class A : B",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "How to declare that the class A inherits from class B?",
+		"nbPoints": 1
+	}, {
+		"id": 325,
+		"reponses": [{
+			"id": 1126,
+			"intitule": "If the class is declared as static then the compiler creates an instance of the class.",
+			"correct": false
+		}, {
+			"id": 1127,
+			"intitule": "All the member fields, properties and functions must be declared as static",
+			"correct": true
+		}, {
+			"id": 1128,
+			"intitule": "They are accessed by the class instance object.",
+			"correct": false
+		}, {
+			"id": 1125,
+			"intitule": "A static class is declared using the \"static\" keyword.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Static classes",
+		"nbPoints": 1
+	}, {
+		"id": 256,
+		"reponses": [{
+			"id": 872,
+			"intitule": "Boolean",
+			"correct": true
+		}, {
+			"id": 871,
+			"intitule": "String",
+			"correct": false
+		}, {
+			"id": 870,
+			"intitule": "Integer",
+			"correct": false
+		}, {
+			"id": 873,
+			"intitule": "Void",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Return type of Predicate <T>() is always a ______.",
+		"nbPoints": 1
+	}, {
+		"id": 313,
+		"reponses": [{
+			"id": 1082,
+			"intitule": "System.ServiceModel",
+			"correct": true
+		}, {
+			"id": 1084,
+			"intitule": "None",
+			"correct": false
+		}, {
+			"id": 1081,
+			"intitule": "System.Service",
+			"correct": false
+		}, {
+			"id": 1083,
+			"intitule": "Service",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which is the root element in configuration file for WCF Service declaration?",
+		"nbPoints": 1
+	}, {
+		"id": 246,
+		"reponses": [{
+			"id": 840,
+			"intitule": "Yes",
+			"correct": true
+		}, {
+			"id": 841,
+			"intitule": "No",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Is the word « this » forbidden in a static method ?",
+		"nbPoints": 1
+	}, {
+		"id": 336,
+		"reponses": [{
+			"id": 1167,
+			"intitule": "It can be encoded and compressed",
+			"correct": true
+		}, {
+			"id": 1168,
+			"intitule": "Retains the value of the Control after post-back without using a session.",
+			"correct": true
+		}, {
+			"id": 1165,
+			"intitule": "View State is the method to preserve the Value of the Page and Controls between round trips.",
+			"correct": true
+		}, {
+			"id": 1166,
+			"intitule": "View State is turned off by default",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "What is view state in ASP .net ?",
+		"nbPoints": 1
+	}, {
+		"id": 293,
+		"reponses": [{
+			"id": 1001,
+			"intitule": "LINQ to Entity",
+			"correct": false
+		}, {
+			"id": 1002,
+			"intitule": "Entity SQL",
+			"correct": false
+		}, {
+			"id": 1003,
+			"intitule": "Native SQL",
+			"correct": false
+		}, {
+			"id": 1004,
+			"intitule": "All of the above",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following query syntax can be use to query in EF 6?",
+		"nbPoints": 1
+	}, {
+		"id": 245,
+		"reponses": [{
+			"id": 836,
+			"intitule": "string is a value type",
+			"correct": false
+		}, {
+			"id": 837,
+			"intitule": "interface is a reference type",
+			"correct": true
+		}, {
+			"id": 834,
+			"intitule": "Reference types are stored on the stack",
+			"correct": false
+		}, {
+			"id": 839,
+			"intitule": "Reference type can be null",
+			"correct": true
+		}, {
+			"id": 833,
+			"intitule": "Value types are stored in the stack",
+			"correct": true
+		}, {
+			"id": 835,
+			"intitule": "Enum is a value type",
+			"correct": true
+		}, {
+			"id": 838,
+			"intitule": "Datetime can be null",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Which phrases are correct ?",
+		"nbPoints": 1
+	}, {
+		"id": 270,
+		"reponses": [{
+			"id": 925,
+			"intitule": "First throws an exception whereas FirstOrDefault returns default value, if no elements found for specified criteria.",
+			"correct": true
+		}, {
+			"id": 928,
+			"intitule": "First returns void whereas FirstOrDefault returns NULL value, if no elements found for specified criteria.",
+			"correct": false
+		}, {
+			"id": 926,
+			"intitule": "First returns NULL whereas FirstOrDefault returns default value, if no elements found for specified criteria.",
+			"correct": false
+		}, {
+			"id": 927,
+			"intitule": "First throws an exception whereas FirstOrDefault returns NULL, if no elements found for specified criteria.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What is the difference between First and FirstOrDefault?",
+		"nbPoints": 1
+	}, {
+		"id": 327,
+		"reponses": [{
+			"id": 1133,
+			"intitule": "Modifier : public, Derived Class : Yes",
+			"correct": true
+		}, {
+			"id": 1135,
+			"intitule": "Modifier : internal, Derived Class : No",
+			"correct": false
+		}, {
+			"id": 1134,
+			"intitule": "Modifier : protected, Derived Class : Yes",
+			"correct": false
+		}, {
+			"id": 1132,
+			"intitule": "Modifier : private, Derived Class : Yes",
+			"correct": false
+		}, {
+			"id": 1136,
+			"intitule": "Modifier : internal protected, Derived Class : No",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Accessiblity of a field and derived class",
+		"nbPoints": 1
+	}, {
+		"id": 252,
+		"reponses": [{
+			"id": 855,
+			"intitule": "Yes",
+			"correct": false
+		}, {
+			"id": 856,
+			"intitule": "No",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Is this valid? Assembly.Load(\"foo.dll\");",
+		"nbPoints": 1
+	}, {
+		"id": 266,
+		"reponses": [{
+			"id": 912,
+			"intitule": "VB",
+			"correct": false
+		}, {
+			"id": 911,
+			"intitule": "Query syntax",
+			"correct": true
+		}, {
+			"id": 910,
+			"intitule": "Method syntax",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "This query is an example of ________ syntax.\nvar teenAgerStudent = from s in studentList where s.Age > 12 && s.Age < 20 select s;",
+		"nbPoints": 1
+	}, {
+		"id": 290,
+		"reponses": [{
+			"id": 990,
+			"intitule": "EDM is an in-memory representation of the entire metadata: conceptual model, storage model, and mapping between them.",
+			"correct": true
+		}, {
+			"id": 991,
+			"intitule": "EDM is responsible for caching data in EF.",
+			"correct": false
+		}, {
+			"id": 989,
+			"intitule": "EDM is a model for the underlying database.",
+			"correct": false
+		}, {
+			"id": 992,
+			"intitule": "EDM is responsible for executing database commands.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What is an Entity Data Model (EDM)?",
+		"nbPoints": 1
+	}, {
+		"id": 262,
+		"reponses": [{
+			"id": 897,
+			"intitule": "NameValueCollection AllAppSettings = ConfigurationManager.AppSettings; Console.WriteLine(AllAppSettings[\"Foo\"]);",
+			"correct": true
+		}, {
+			"id": 896,
+			"intitule": "NameValueCollection AllAppSettings = ConfigurationManager.AppSettings; Console.WriteLine(AllAppSettings[5]);",
+			"correct": false
+		}, {
+			"id": 894,
+			"intitule": "NameValueCollection AllAppSettings = ConfigurationManager.AppSettings; Console.WriteLine(AllAppSettings[\"Hello World!\"]);",
+			"correct": false
+		}, {
+			"id": 895,
+			"intitule": "Console.WriteLine(ConfigurationSettings.AppSettings[\"Foo\"]);",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which code segment shows the best way to retrieve the ‘Foo’ value of the following configuration file?\n<?xml version=”1.0” encoding=”utf-8” ?>\n<configuration>\n\t<appSettings>\n\t\t<add key=”Foo” value=”Hello World!”/>\n\t</appSettings>\n</configuration>",
+		"nbPoints": 1
+	}, {
+		"id": 340,
+		"reponses": [{
+			"id": 1180,
+			"intitule": "False",
+			"correct": false
+		}, {
+			"id": 1179,
+			"intitule": "True",
+			"correct": false
+		}, {
+			"id": 1182,
+			"intitule": "NULL",
+			"correct": true
+		}, {
+			"id": 1181,
+			"intitule": "Undefined",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What is the result if two NULL values are compared each other ?",
+		"nbPoints": 1
+	}, {
+		"id": 285,
+		"reponses": [{
+			"id": 971,
+			"intitule": "Tunneling event",
+			"correct": false
+		}, {
+			"id": 970,
+			"intitule": "Direct event",
+			"correct": true
+		}, {
+			"id": 972,
+			"intitule": "Routed event",
+			"correct": true
+		}, {
+			"id": 969,
+			"intitule": "Bubbling event",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "MouseEnter is a :",
+		"nbPoints": 1
+	}, {
+		"id": 334,
+		"reponses": [{
+			"id": 1157,
+			"intitule": "Both Delegate and the method that it refers can have the same signature.",
+			"correct": true
+		}, {
+			"id": 1158,
+			"intitule": "All Delegates are derived from Microsoft.AspNetCore.Mvc namespace.",
+			"correct": false
+		}, {
+			"id": 1160,
+			"intitule": "A Delegate does not  hold the reference to a method.",
+			"correct": false
+		}, {
+			"id": 1159,
+			"intitule": "A Delegate is a variable that holds the reference to a method.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "What is a delegate ?",
+		"nbPoints": 1
+	}, {
+		"id": 341,
+		"reponses": [{
+			"id": 1184,
+			"intitule": "Locking is the process of database authentication.",
+			"correct": false
+		}, {
+			"id": 1183,
+			"intitule": "Locking is a process, which logs database usage.",
+			"correct": false
+		}, {
+			"id": 1185,
+			"intitule": "Locking is a process preventing users from reading data being changed by other users, and prevents concurrent users from changing the same data at the same time.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What does the term ‘locking’ refer to ?",
+		"nbPoints": 1
+	}, {
+		"id": 309,
+		"reponses": [{
+			"id": 1065,
+			"intitule": "ServiceBase",
+			"correct": false
+		}, {
+			"id": 1067,
+			"intitule": "ProxyBase",
+			"correct": false
+		}, {
+			"id": 1066,
+			"intitule": "ClientBase",
+			"correct": true
+		}, {
+			"id": 1068,
+			"intitule": "WCFBase",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following must be implements in order to create WCF proxy manually.",
+		"nbPoints": 1
+	}, {
+		"id": 302,
+		"reponses": [{
+			"id": 1040,
+			"intitule": "SvcUtil.exe",
+			"correct": true
+		}, {
+			"id": 1037,
+			"intitule": "Wcf.exe",
+			"correct": false
+		}, {
+			"id": 1038,
+			"intitule": "Svc.exe",
+			"correct": false
+		}, {
+			"id": 1039,
+			"intitule": "ILDASM.exe",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which utility can be used to create WSDL from WCF service?",
+		"nbPoints": 1
+	}, {
+		"id": 299,
+		"reponses": [{
+			"id": 1026,
+			"intitule": "myDBContext.Configuration.LazyLoadingEnabled = false;",
+			"correct": true
+		}, {
+			"id": 1028,
+			"intitule": "myDBContext.Students.LazyLoadingEnabled = false;",
+			"correct": false
+		}, {
+			"id": 1027,
+			"intitule": "myDBContext.LazyLoadingEnabled = false;",
+			"correct": false
+		}, {
+			"id": 1025,
+			"intitule": "myDBContext.Database.LazyLoadingEnabled = false;",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "How to disable Lazy loading using DBContext?",
+		"nbPoints": 1
+	}, {
+		"id": 273,
+		"reponses": [{
+			"id": 937,
+			"intitule": "MVC",
+			"correct": false
+		}, {
+			"id": 938,
+			"intitule": "MVVM",
+			"correct": true
+		}, {
+			"id": 939,
+			"intitule": "MVP",
+			"correct": false
+		}, {
+			"id": 940,
+			"intitule": "XAML",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What is the pattern implemented in WPF",
+		"nbPoints": 1
+	}, {
+		"id": 248,
+		"reponses": [{
+			"id": 847,
+			"intitule": "No",
+			"correct": true
+		}, {
+			"id": 846,
+			"intitule": "Yes",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Is this phrase correct ?: private virtual void method() { /*... */ }",
+		"nbPoints": 1
+	}, {
+		"id": 303,
+		"reponses": [{
+			"id": 1041,
+			"intitule": "False",
+			"correct": false
+		}, {
+			"id": 1043,
+			"intitule": "Some time",
+			"correct": false
+		}, {
+			"id": 1042,
+			"intitule": "True",
+			"correct": true
+		}, {
+			"id": 1044,
+			"intitule": "Not Possible",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "One Service contract can inherit another service contract.",
+		"nbPoints": 1
+	}, {
+		"id": 254,
+		"reponses": [{
+			"id": 862,
+			"intitule": "string s = @”Hello {world}”;",
+			"correct": false
+		}, {
+			"id": 865,
+			"intitule": "string s = $”Hello {world}”;",
+			"correct": true
+		}, {
+			"id": 863,
+			"intitule": "It doesn’t exist in C#.",
+			"correct": false
+		}, {
+			"id": 864,
+			"intitule": "string s = #”Hello {world}”;",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which phrase allow string interpolation?",
+		"nbPoints": 1
+	}, {
+		"id": 253,
+		"reponses": [{
+			"id": 858,
+			"intitule": "To add it in the GAC.",
+			"correct": true
+		}, {
+			"id": 861,
+			"intitule": "To prevent loading multiple versions of the assembly into the application.",
+			"correct": false
+		}, {
+			"id": 857,
+			"intitule": "To reference it in another solution.",
+			"correct": false
+		}, {
+			"id": 859,
+			"intitule": "To check that it hasn't been tampered with.",
+			"correct": true
+		}, {
+			"id": 860,
+			"intitule": "To reference it by another strong name assembly.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Why should I strongly named my assembly?",
+		"nbPoints": 1
+	}, {
+		"id": 304,
+		"reponses": [{
+			"id": 1047,
+			"intitule": "Contract",
+			"correct": false
+		}, {
+			"id": 1048,
+			"intitule": "All of the above.",
+			"correct": true
+		}, {
+			"id": 1045,
+			"intitule": "Address",
+			"correct": false
+		}, {
+			"id": 1046,
+			"intitule": "Binding",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "WCF endpoint includes ________.",
+		"nbPoints": 1
+	}, {
+		"id": 244,
+		"reponses": [{
+			"id": 828,
+			"intitule": "public",
+			"correct": false
+		}, {
+			"id": 830,
+			"intitule": "protected",
+			"correct": false
+		}, {
+			"id": 832,
+			"intitule": "there is no default visibility",
+			"correct": false
+		}, {
+			"id": 829,
+			"intitule": "internal",
+			"correct": true
+		}, {
+			"id": 831,
+			"intitule": "private",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What is the default visibility for a class define in a namespace",
+		"nbPoints": 1
+	}, {
+		"id": 281,
+		"reponses": [{
+			"id": 960,
+			"intitule": "GetValue",
+			"correct": true
+		}, {
+			"id": 959,
+			"intitule": "ClearValue",
+			"correct": true
+		}, {
+			"id": 958,
+			"intitule": "SetValue",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Name the methods present in the DependencyObject.",
+		"nbPoints": 1
+	}, {
+		"id": 301,
+		"reponses": [{
+			"id": 1033,
+			"intitule": "Operation contract",
+			"correct": false
+		}, {
+			"id": 1034,
+			"intitule": "Message contract",
+			"correct": false
+		}, {
+			"id": 1035,
+			"intitule": "Service contract",
+			"correct": true
+		}, {
+			"id": 1036,
+			"intitule": "Data contract",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which type of contract is applicable to interface in WCF?",
+		"nbPoints": 1
+	}, {
+		"id": 322,
+		"reponses": [{
+			"id": 1115,
+			"intitule": "Members of an interface are implicitly private",
+			"correct": false
+		}, {
+			"id": 1117,
+			"intitule": "Interfaces and abstract classes are similar",
+			"correct": true
+		}, {
+			"id": 1114,
+			"intitule": "An interface is a set of related functions that must not be implemented in a derived class.",
+			"correct": false
+		}, {
+			"id": 1116,
+			"intitule": "Members of an interface are implicitly abstract.",
+			"correct": true
+		}, {
+			"id": 1118,
+			"intitule": "You cannot create an instance of an interface",
+			"correct": false
+		}, {
+			"id": 1113,
+			"intitule": "An interface is a set of related functions that must be implemented in a derived class.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Interface",
+		"nbPoints": 1
+	}, {
+		"id": 300,
+		"reponses": [{
+			"id": 1031,
+			"intitule": "Query()",
+			"correct": false
+		}, {
+			"id": 1030,
+			"intitule": "AsNoTracking()",
+			"correct": true
+		}, {
+			"id": 1032,
+			"intitule": "ToList()",
+			"correct": false
+		}, {
+			"id": 1029,
+			"intitule": "Attach()",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following method returns a new query where the entities returned will not be cached in the DbContext.?",
+		"nbPoints": 1
+	}, {
+		"id": 345,
+		"reponses": [{
+			"id": 1198,
+			"intitule": "A cursor is SQL keyword specifying a retrieved data order.",
+			"correct": false
+		}, {
+			"id": 1197,
+			"intitule": "A blinking vertical line that indicates the location of the next input on the display screen.",
+			"correct": false
+		}, {
+			"id": 1199,
+			"intitule": "Cursor is acronym from Current Set Of Records and is a database object pointing to a currently selected set of records.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What is a database cursor ?",
+		"nbPoints": 1
+	}, {
+		"id": 319,
+		"reponses": [{
+			"id": 1100,
+			"intitule": "Class is a keyword in C#.NET which is used to create a class",
+			"correct": true
+		}, {
+			"id": 1102,
+			"intitule": "Object does not contain data and methods to manipulate and access that data.",
+			"correct": false
+		}, {
+			"id": 1101,
+			"intitule": "Classes are special kinds of templates from which you can create objects.",
+			"correct": true
+		}, {
+			"id": 1103,
+			"intitule": "The class defines the data and the functionality that each object of the class can contain.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Class",
+		"nbPoints": 1
+	}, {
+		"id": 291,
+		"reponses": [{
+			"id": 993,
+			"intitule": "Code-First",
+			"correct": false
+		}, {
+			"id": 994,
+			"intitule": "Database-First",
+			"correct": false
+		}, {
+			"id": 996,
+			"intitule": "All of the above",
+			"correct": true
+		}, {
+			"id": 995,
+			"intitule": "Model-First",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following development approaches are supported in Entity Framework?",
+		"nbPoints": 1
+	}, {
+		"id": 297,
+		"reponses": [{
+			"id": 1020,
+			"intitule": "None of the above",
+			"correct": false
+		}, {
+			"id": 1017,
+			"intitule": "Added, Modified, Deleted, Saved",
+			"correct": false
+		}, {
+			"id": 1018,
+			"intitule": "Added, Modified, Deleted, Unchanged, Changed",
+			"correct": false
+		}, {
+			"id": 1019,
+			"intitule": "Added, Modified, Deleted, Unchanged, Detached",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the followings are valid entity states in EF 6?",
+		"nbPoints": 1
+	}, {
+		"id": 296,
+		"reponses": [{
+			"id": 1013,
+			"intitule": "DbContext",
+			"correct": false
+		}, {
+			"id": 1016,
+			"intitule": "DbInfo",
+			"correct": false
+		}, {
+			"id": 1015,
+			"intitule": "DbEntityEntry",
+			"correct": true
+		}, {
+			"id": 1014,
+			"intitule": "DbSet",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following class provides information about an existing entity in a context?",
+		"nbPoints": 1
+	}, {
+		"id": 332,
+		"reponses": [{
+			"id": 1151,
+			"intitule": "Boxing is the process of converting a value type data type to the object or to any interface data type which is implemented by this value type.",
+			"correct": true
+		}, {
+			"id": 1152,
+			"intitule": "Unboxing is a process which is used to extract the value type from the object or any implemented interface type.",
+			"correct": true
+		}, {
+			"id": 1153,
+			"intitule": "Unboxing have not to be explicit by code.",
+			"correct": false
+		}, {
+			"id": 1154,
+			"intitule": "Unboxing have to be explicit by code.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Boxing and Unboxing",
+		"nbPoints": 1
+	}, {
+		"id": 347,
+		"reponses": [{
+			"id": 1206,
+			"intitule": "MULT, DIV, MIN, SUM, AVG",
+			"correct": false
+		}, {
+			"id": 1204,
+			"intitule": "COUNT, SUM, MAX, MIN, AVG",
+			"correct": true
+		}, {
+			"id": 1205,
+			"intitule": "SUM, MIN, AVG, MAX, MULT",
+			"correct": false
+		}, {
+			"id": 1207,
+			"intitule": "AVG, MIN, MAX, NAME, SUM",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following are the five built-in functions provided by SQL ?",
+		"nbPoints": 1
+	}, {
+		"id": 269,
+		"reponses": [{
+			"id": 924,
+			"intitule": "IEnumerator",
+			"correct": false
+		}, {
+			"id": 923,
+			"intitule": "ICollection",
+			"correct": false
+		}, {
+			"id": 922,
+			"intitule": "IQueryable",
+			"correct": true
+		}, {
+			"id": 921,
+			"intitule": "IEnumerable",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Third party data providers must implement ________ interface, in order to support LINQ.",
+		"nbPoints": 1
+	}, {
+		"id": 260,
+		"reponses": [{
+			"id": 888,
+			"intitule": "2\n\tMain\n\t2\n\tMain\n\t5\n\tInvoker",
+			"correct": false
+		}, {
+			"id": 887,
+			"intitule": "2\n\tMain\n\t20\n\tMethod2\n\t5\n\tInvoker",
+			"correct": true
+		}, {
+			"id": 889,
+			"intitule": "2\n\tMain\n\t20\n\tMethod2\n\t20\n\tMethod2",
+			"correct": false
+		}, {
+			"id": 886,
+			"intitule": "10\n\tMethod1\n\t20\n\tMethod2\n\t5\n\tInvoker",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What will be displayed with the following program ?\nstatic void Main(string[] args)\n{\n    int a = 2;\n    string s = \"Main\";\n\n    Method1(a, s);\n    Console.WriteLine(a);\n    Console.WriteLine(s);\n\n    Method2(ref a, ref s);\n    Console.WriteLine(a);\n    Console.WriteLine(s);\n\n    Action invoker = () =>\n    {\n        a = 5;\n        s = \"Invoker\";\n    };\n    invoker();\n    Console.WriteLine(a);\n    Console.WriteLine(s);\n}\n\npublic static void Method1(int a, string s)\n{\n    a = 10;\n    s = \"Method1\";\n}\n\npublic static void Method2(ref int a, ref string s)\n{\n    a = 20;\n    s = \"Method2\";\n}\n\nPossible Result:",
+		"nbPoints": 1
+	}, {
+		"id": 251,
+		"reponses": [{
+			"id": 852,
+			"intitule": "public void a()  {...}",
+			"correct": true
+		}, {
+			"id": 853,
+			"intitule": "public abstract void a();",
+			"correct": false
+		}, {
+			"id": 854,
+			"intitule": "public override void a()  {...}",
+			"correct": true
+		}, {
+			"id": 851,
+			"intitule": "public virtual void a() {...}",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Which declaration are allowed in a sealed class:",
+		"nbPoints": 1
+	}, {
+		"id": 339,
+		"reponses": [{
+			"id": 1176,
+			"intitule": "A session is not per-user based but caching is per-user based",
+			"correct": false
+		}, {
+			"id": 1177,
+			"intitule": "Session data is stored at the user level",
+			"correct": true
+		}, {
+			"id": 1178,
+			"intitule": "Caching data is stored at the user  level and shared by all the users",
+			"correct": false
+		}, {
+			"id": 1175,
+			"intitule": "A session is per-user based but caching is not per-user based",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "What is the diference between session and caching  ?",
+		"nbPoints": 1
+	}, {
+		"id": 288,
+		"reponses": [{
+			"id": 984,
+			"intitule": "Templated parent",
+			"correct": true
+		}, {
+			"id": 983,
+			"intitule": "Previousdata",
+			"correct": true
+		}, {
+			"id": 981,
+			"intitule": "Self",
+			"correct": true
+		}, {
+			"id": 982,
+			"intitule": "Ancestor",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "There are four ways of binding relatively in WPF :",
+		"nbPoints": 1
+	}, {
+		"id": 330,
+		"reponses": [{
+			"id": 1147,
+			"intitule": "Managed code is directly executed by CLR",
+			"correct": true
+		}, {
+			"id": 1146,
+			"intitule": "The code, which is developed in .NET framework is not know as managed code.",
+			"correct": false
+		}, {
+			"id": 1148,
+			"intitule": "Any language that is written in .NET Framework is managed code",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Managed code",
+		"nbPoints": 1
+	}, {
+		"id": 315,
+		"reponses": [{
+			"id": 1087,
+			"intitule": "If a class is defined as abstract then we can't create an instance of that class.",
+			"correct": true
+		}, {
+			"id": 1088,
+			"intitule": "If a class is defined as abstract then we can create an instance of that class.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Abstract class",
+		"nbPoints": 1
+	}, {
+		"id": 243,
+		"reponses": [{
+			"id": 825,
+			"intitule": "protected",
+			"correct": false
+		}, {
+			"id": 823,
+			"intitule": "public",
+			"correct": false
+		}, {
+			"id": 827,
+			"intitule": "there is no default visibility",
+			"correct": false
+		}, {
+			"id": 824,
+			"intitule": "internal",
+			"correct": false
+		}, {
+			"id": 826,
+			"intitule": "private",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What is the default visibility for a method in a class",
+		"nbPoints": 1
+	}, {
+		"id": 276,
+		"reponses": [{
+			"id": 945,
+			"intitule": "With a converter class which implements IValueConverter (ie :Add a BoolToVisibilityConverter to your resources and then use it as the converter in your Binding.))",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "How do you bind a bool value to Visibility?",
+		"nbPoints": 1
+	}, {
+		"id": 292,
+		"reponses": [{
+			"id": 997,
+			"intitule": "DbContext",
+			"correct": true
+		}, {
+			"id": 998,
+			"intitule": "DbSet",
+			"correct": false
+		}, {
+			"id": 1000,
+			"intitule": "DbSession",
+			"correct": false
+		}, {
+			"id": 999,
+			"intitule": "Entity",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "An instance of __________ class represents a session with the underlying database.",
+		"nbPoints": 1
+	}, {
+		"id": 258,
+		"reponses": [{
+			"id": 880,
+			"intitule": "It allows assignment of null to static class.",
+			"correct": false
+		}, {
+			"id": 881,
+			"intitule": "None of the above.",
+			"correct": false
+		}, {
+			"id": 879,
+			"intitule": "It allows assignment of null to value type.",
+			"correct": true
+		}, {
+			"id": 878,
+			"intitule": "It allows assignment of null to reference type.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What is Nullable type?",
+		"nbPoints": 1
+	}, {
+		"id": 250,
+		"reponses": [{
+			"id": 850,
+			"intitule": "With the read-only keyword",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "How to define a constant value which need tbe initialized in the constructor?",
+		"nbPoints": 1
+	}, {
+		"id": 344,
+		"reponses": [{
+			"id": 1193,
+			"intitule": "NULL",
+			"correct": true
+		}, {
+			"id": 1196,
+			"intitule": "None of the above",
+			"correct": false
+		}, {
+			"id": 1195,
+			"intitule": "Function NVL2 is not defined",
+			"correct": false
+		}, {
+			"id": 1194,
+			"intitule": "NOT NULL",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What output will the following statement produce ?\nSelect NVL2(NULL, ‘NOT NULL’, NULL) from dual ;",
+		"nbPoints": 1
+	}, {
+		"id": 348,
+		"reponses": [{
+			"id": 1209,
+			"intitule": "To define the data structures",
+			"correct": false
+		}, {
+			"id": 1211,
+			"intitule": "All of the above",
+			"correct": true
+		}, {
+			"id": 1210,
+			"intitule": "To specify the syntax and semantics of SQL manipulation language",
+			"correct": false
+		}, {
+			"id": 1208,
+			"intitule": "To specify the syntax and semantics of SQL data definition langage",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following is the original purpose of SQL ?",
+		"nbPoints": 1
+	}, {
+		"id": 294,
+		"reponses": [{
+			"id": 1007,
+			"intitule": "SaveChanges()",
+			"correct": true
+		}, {
+			"id": 1005,
+			"intitule": "Save()",
+			"correct": false
+		}, {
+			"id": 1008,
+			"intitule": "Add()",
+			"correct": false
+		}, {
+			"id": 1006,
+			"intitule": "Execute()",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following method of DbContext is used to save entities in the database?",
+		"nbPoints": 1
+	}, {
+		"id": 275,
+		"reponses": [{
+			"id": 944,
+			"intitule": "IViewModelBase",
+			"correct": false
+		}, {
+			"id": 942,
+			"intitule": "IObservableObject",
+			"correct": false
+		}, {
+			"id": 943,
+			"intitule": "INotifyPropertyChanged",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which interface should implement a ViewModels",
+		"nbPoints": 1
+	}, {
+		"id": 356,
+		"reponses": [{
+			"id": 1240,
+			"intitule": "Data Manipulation Langage",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "What is the DML acronym ?",
+		"nbPoints": 1
+	}, {
+		"id": 283,
+		"reponses": [{
+			"id": 964,
+			"intitule": "MultiBinding and IMultiValueConverter\nie : Create a converter which implements IMultiValueConverter and which sum two values. Then use it with multibinding.",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "Your ViewModel exposes two int value, you cannot modify it, but you want to display the sum in your view. Which concept do you need to use if you want a reusable solution?",
+		"nbPoints": 1
+	}, {
+		"id": 272,
+		"reponses": [{
+			"id": 936,
+			"intitule": "4 times",
+			"correct": true
+		}, {
+			"id": 935,
+			"intitule": "3 times",
+			"correct": false
+		}, {
+			"id": 934,
+			"intitule": "twice",
+			"correct": false
+		}, {
+			"id": 933,
+			"intitule": "once",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "How many times does the Max subquery execute in the example below?\nvar query = from c in colors where c.Length == colors.Max(x => x.Length) select c;",
+		"nbPoints": 1
+	}, {
+		"id": 342,
+		"reponses": [{
+			"id": 1188,
+			"intitule": "SQL statements are not case-sensitive, unless indicated.",
+			"correct": false
+		}, {
+			"id": 1189,
+			"intitule": "Keywords can be abbreviated.",
+			"correct": true
+		}, {
+			"id": 1187,
+			"intitule": "Keywords cannot be split across lines.",
+			"correct": false
+		}, {
+			"id": 1186,
+			"intitule": "SQL statements can be on one or more lines.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following statements about an SQL statement are not correct ?",
+		"nbPoints": 1
+	}, {
+		"id": 350,
+		"reponses": [{
+			"id": 1216,
+			"intitule": "LIKE only",
+			"correct": true
+		}, {
+			"id": 1217,
+			"intitule": "IN only",
+			"correct": false
+		}, {
+			"id": 1218,
+			"intitule": "NOT IN only",
+			"correct": false
+		}, {
+			"id": 1219,
+			"intitule": "IN and NOT IN",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "The SQL keyword(s) _________ is used with wildcards.",
+		"nbPoints": 1
+	}, {
+		"id": 352,
+		"reponses": [{
+			"id": 1225,
+			"intitule": "Data Integrity",
+			"correct": true
+		}, {
+			"id": 1227,
+			"intitule": "All of the above",
+			"correct": false
+		}, {
+			"id": 1224,
+			"intitule": "Normalization",
+			"correct": false
+		}, {
+			"id": 1226,
+			"intitule": "Materialized views",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "ON UPDATE CASCADE ensures which of the following ?",
+		"nbPoints": 1
+	}, {
+		"id": 343,
+		"reponses": [{
+			"id": 1192,
+			"intitule": "Access, Constraint, Index, Data.",
+			"correct": false
+		}, {
+			"id": 1190,
+			"intitule": "Access, Consistency, Isolation, Data.",
+			"correct": false
+		}, {
+			"id": 1191,
+			"intitule": "Atomicity, Consistency, Isolation, Durability.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What does ACID stand for ?",
+		"nbPoints": 1
+	}, {
+		"id": 274,
+		"reponses": [{
+			"id": 941,
+			"intitule": "Model, View, View-Model",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "What does it means ?",
+		"nbPoints": 1
+	}, {
+		"id": 324,
+		"reponses": [{
+			"id": 1124,
+			"intitule": "When compiled, the elements of the partial types are not combined into single assembly.",
+			"correct": false
+		}, {
+			"id": 1123,
+			"intitule": "The partial keywords allow a class to span multiple source files.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Partial classes",
+		"nbPoints": 1
+	}, {
+		"id": 263,
+		"reponses": [{
+			"id": 900,
+			"intitule": "Application domains improve performance",
+			"correct": false
+		}, {
+			"id": 898,
+			"intitule": "It is the only way to launch a separate process",
+			"correct": false
+		}, {
+			"id": 901,
+			"intitule": "Application domains provide a layer of separation and security",
+			"correct": true
+		}, {
+			"id": 899,
+			"intitule": "You can remove the application domain to free up resources",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Which of the following are valid reasons to create an application domain?",
+		"nbPoints": 1
+	}, {
+		"id": 257,
+		"reponses": [{
+			"id": 876,
+			"intitule": "Static",
+			"correct": false
+		}, {
+			"id": 877,
+			"intitule": "Value type",
+			"correct": false
+		}, {
+			"id": 874,
+			"intitule": "Mutable",
+			"correct": false
+		}, {
+			"id": 875,
+			"intitule": "Immutable",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "String data type is ______.",
+		"nbPoints": 1
+	}, {
+		"id": 321,
+		"reponses": [{
+			"id": 1109,
+			"intitule": "Sealed : Class can be inherited by a derived class.",
+			"correct": false
+		}, {
+			"id": 1112,
+			"intitule": "Abstract : The instance of the class is created if the Class is abstract.",
+			"correct": false
+		}, {
+			"id": 1110,
+			"intitule": "Static : Class contains only static members.",
+			"correct": true
+		}, {
+			"id": 1111,
+			"intitule": "Unsafe : is not a class modifier",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Modifiers of a class",
+		"nbPoints": 1
+	}, {
+		"id": 354,
+		"reponses": [{
+			"id": 1234,
+			"intitule": "Acts like a WHERE clause but is used for columns rather than groups.",
+			"correct": false
+		}, {
+			"id": 1235,
+			"intitule": "Acts EXACTLY like a WHERE clause.",
+			"correct": false
+		}, {
+			"id": 1233,
+			"intitule": "Acts like a WHERE clause but is used for rows rather than columns.",
+			"correct": false
+		}, {
+			"id": 1232,
+			"intitule": "Acts like a WHERE clause but is used for groups rather than rows.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "The HAVING clause does which of the following ?",
+		"nbPoints": 1
+	}, {
+		"id": 267,
+		"reponses": [{
+			"id": 913,
+			"intitule": "Distinct",
+			"correct": false
+		}, {
+			"id": 915,
+			"intitule": "Intersect",
+			"correct": false
+		}, {
+			"id": 914,
+			"intitule": "Except",
+			"correct": true
+		}, {
+			"id": 916,
+			"intitule": "Union",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following standard query operator returns the differences between the two collections?",
+		"nbPoints": 1
+	}, {
+		"id": 314,
+		"reponses": [{
+			"id": 1086,
+			"intitule": "Abstract keyword is used to create contructor in C#",
+			"correct": false
+		}, {
+			"id": 1085,
+			"intitule": "Abstract keyword is used to create class or as a method in C#",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Abstract keyword",
+		"nbPoints": 1
+	}, {
+		"id": 277,
+		"reponses": [{
+			"id": 947,
+			"intitule": "OneWayToSource",
+			"correct": true
+		}, {
+			"id": 946,
+			"intitule": "TwoWay",
+			"correct": true
+		}, {
+			"id": 948,
+			"intitule": "OneTime",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "What modes are available besides One Way:",
+		"nbPoints": 1
+	}, {
+		"id": 316,
+		"reponses": [{
+			"id": 1089,
+			"intitule": "The implementation of an abstract method is done by a derived class.",
+			"correct": true
+		}, {
+			"id": 1090,
+			"intitule": "The implementation of an abstract method is done by the class mother.",
+			"correct": false
+		}, {
+			"id": 1091,
+			"intitule": "When the derived class inherits the abstract method from the abstract class, it must override the abstract method.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Abstract method",
+		"nbPoints": 1
+	}, {
+		"id": 351,
+		"reponses": [{
+			"id": 1223,
+			"intitule": "A base table that cannot be accessed via SQL commands",
+			"correct": false
+		}, {
+			"id": 1222,
+			"intitule": "A base table that can be accessed via SQL commands",
+			"correct": false
+		}, {
+			"id": 1221,
+			"intitule": "A virtual table that cannot be accessed via SQL commands",
+			"correct": false
+		}, {
+			"id": 1220,
+			"intitule": "A virtual table that can be accessed via SQL commands",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "A view is which of the following ?",
+		"nbPoints": 1
+	}, {
+		"id": 289,
+		"reponses": [{
+			"id": 988,
+			"intitule": "StaticResource",
+			"correct": false
+		}, {
+			"id": 987,
+			"intitule": "AncestorLevel",
+			"correct": true
+		}, {
+			"id": 986,
+			"intitule": "AncestorName",
+			"correct": false
+		}, {
+			"id": 985,
+			"intitule": "AncestorType",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "With Ancestor binding, what properties can you set on the binding",
+		"nbPoints": 1
+	}, {
+		"id": 310,
+		"reponses": [{
+			"id": 1070,
+			"intitule": "SystemException",
+			"correct": false
+		}, {
+			"id": 1069,
+			"intitule": "Exception",
+			"correct": false
+		}, {
+			"id": 1071,
+			"intitule": "ApplicationException",
+			"correct": false
+		}, {
+			"id": 1072,
+			"intitule": "FaultException",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which type of exception can be thrown from WCF service?",
+		"nbPoints": 1
+	}, {
+		"id": 280,
+		"reponses": [{
+			"id": 956,
+			"intitule": "In debug, a message is logged in the output window",
+			"correct": true
+		}, {
+			"id": 955,
+			"intitule": "The application crashes",
+			"correct": false
+		}, {
+			"id": 954,
+			"intitule": "An exception is raised",
+			"correct": true
+		}, {
+			"id": 957,
+			"intitule": "There is an error during compilation",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "What happens, if the value you are binding does not exist",
+		"nbPoints": 1
+	}, {
+		"id": 349,
+		"reponses": [{
+			"id": 1212,
+			"intitule": "DDL",
+			"correct": true
+		}, {
+			"id": 1214,
+			"intitule": "DML",
+			"correct": false
+		}, {
+			"id": 1215,
+			"intitule": "XML",
+			"correct": false
+		}, {
+			"id": 1213,
+			"intitule": "HTML",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "SQL data definition commands make up a(n) _______",
+		"nbPoints": 1
+	}, {
+		"id": 320,
+		"reponses": [{
+			"id": 1104,
+			"intitule": "Public class is visible in the current and referencing assembly.",
+			"correct": true
+		}, {
+			"id": 1107,
+			"intitule": "Internal class is Visible outside containing assembly.",
+			"correct": false
+		}, {
+			"id": 1106,
+			"intitule": "Protected class is Visible inside current and derived class.",
+			"correct": true
+		}, {
+			"id": 1105,
+			"intitule": "Private class is visible outside current class.",
+			"correct": false
+		}, {
+			"id": 1108,
+			"intitule": "Internal protected class is Visible inside containing assembly and descendent of the current class.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Attributes of a class",
+		"nbPoints": 1
+	}, {
+		"id": 338,
+		"reponses": [{
+			"id": 1172,
+			"intitule": "The MVC framework does not provide full control over HTML, JavaScript and CSS.",
+			"correct": true
+		}, {
+			"id": 1173,
+			"intitule": "It does not use view state or server-based forms.",
+			"correct": false
+		}, {
+			"id": 1171,
+			"intitule": "The ASP.NET MVC framework is same as ASP.NET Web Forms pattern",
+			"correct": false
+		}, {
+			"id": 1174,
+			"intitule": "By default support of Facebook and Google Authentication.",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "What is MVC  ?",
+		"nbPoints": 1
+	}, {
+		"id": 264,
+		"reponses": [{
+			"id": 904,
+			"intitule": "The class must have a parameterless constructor",
+			"correct": true
+		}, {
+			"id": 903,
+			"intitule": "The class must be private",
+			"correct": false
+		}, {
+			"id": 905,
+			"intitule": "The class must have a constructor that accepts a SerializationInfo parameter",
+			"correct": false
+		}, {
+			"id": 902,
+			"intitule": "The class must be public",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Which of the following are requirements for a class to be serialized with XML serialization?",
+		"nbPoints": 1
+	}, {
+		"id": 279,
+		"reponses": [{
+			"id": 953,
+			"intitule": "With Icommand. \nIe : Create a class implementing ICommand interface which call the method, then bind the command action of the Button to that command class.\nThe bad way is to use the click_eventor OnClick",
+			"correct": true
+		}],
+		"typeQuestion": "REPONSE_LIBRE",
+		"enonce": "How to call a method when you click on a button?",
+		"nbPoints": 1
+	}, {
+		"id": 255,
+		"reponses": [{
+			"id": 868,
+			"intitule": "Event",
+			"correct": false
+		}, {
+			"id": 869,
+			"intitule": "Generic class",
+			"correct": false
+		}, {
+			"id": 866,
+			"intitule": "Utility function",
+			"correct": false
+		}, {
+			"id": 867,
+			"intitule": "Delegate",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Func and Action are the types of ______.",
+		"nbPoints": 1
+	}, {
+		"id": 312,
+		"reponses": [{
+			"id": 1078,
+			"intitule": "OperationBehavior",
+			"correct": false
+		}, {
+			"id": 1077,
+			"intitule": "ServiceBehavior",
+			"correct": true
+		}, {
+			"id": 1079,
+			"intitule": "MessageBehavior",
+			"correct": false
+		}, {
+			"id": 1080,
+			"intitule": "EndpointBehavior",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "You need to configure which type of behaviour to return exception detail from WCF service?",
+		"nbPoints": 1
+	}, {
+		"id": 329,
+		"reponses": [{
+			"id": 1143,
+			"intitule": "If a method is virtual in the base class then we have not to provide the override keyword in the derived class.",
+			"correct": false
+		}, {
+			"id": 1142,
+			"intitule": "By declaring a base class function as virtual, you allow the function to be overridden in any derived class.",
+			"correct": true
+		}, {
+			"id": 1144,
+			"intitule": "Member fields can be declared as virtual.",
+			"correct": false
+		}, {
+			"id": 1145,
+			"intitule": "Static functions can be declared as virtual.",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Virtual methods",
+		"nbPoints": 1
+	}, {
+		"id": 242,
+		"reponses": [{
+			"id": 821,
+			"intitule": "Can't be access from another class",
+			"correct": false
+		}, {
+			"id": 822,
+			"intitule": "Has the same value for all instance of the class",
+			"correct": true
+		}, {
+			"id": 820,
+			"intitule": "Can't be inherited",
+			"correct": false
+		}, {
+			"id": 819,
+			"intitule": "Is constant",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "In a class, a static field:",
+		"nbPoints": 1
+	}, {
+		"id": 265,
+		"reponses": [{
+			"id": 908,
+			"intitule": "Enumerable or Queryable",
+			"correct": false
+		}, {
+			"id": 907,
+			"intitule": "IEnumerable or IQueryable",
+			"correct": true
+		}, {
+			"id": 909,
+			"intitule": "None of the above",
+			"correct": false
+		}, {
+			"id": 906,
+			"intitule": "IEnumerator or IQueryable",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "A class must implement ____________ interface in order to provide querying facility using LINQ.",
+		"nbPoints": 1
+	}, {
+		"id": 284,
+		"reponses": [{
+			"id": 965,
+			"intitule": "Bubbling events",
+			"correct": true
+		}, {
+			"id": 967,
+			"intitule": "Direct events",
+			"correct": false
+		}, {
+			"id": 966,
+			"intitule": "Tunneling events",
+			"correct": false
+		}, {
+			"id": 968,
+			"intitule": "Routed event",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "What are the events which travel up the visual hierarchy tree.",
+		"nbPoints": 1
+	}, {
+		"id": 311,
+		"reponses": [{
+			"id": 1074,
+			"intitule": "IErrorHandler",
+			"correct": true
+		}, {
+			"id": 1075,
+			"intitule": "IExceptionHandler",
+			"correct": false
+		}, {
+			"id": 1073,
+			"intitule": "IWCFException",
+			"correct": false
+		}, {
+			"id": 1076,
+			"intitule": "None of the above",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "You need to implement which interface for global exception handling in WCF?",
+		"nbPoints": 1
+	}, {
+		"id": 337,
+		"reponses": [{
+			"id": 1170,
+			"intitule": "A cache is same as viewstate",
+			"correct": false
+		}, {
+			"id": 1169,
+			"intitule": "Caching is for providing solutions or the results to the users depending on their request",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "What is caching  in ASP .net ?",
+		"nbPoints": 1
+	}, {
+		"id": 287,
+		"reponses": [{
+			"id": 980,
+			"intitule": "Routed event",
+			"correct": true
+		}, {
+			"id": 979,
+			"intitule": "Tunneling events",
+			"correct": true
+		}, {
+			"id": 977,
+			"intitule": "Bubbling events",
+			"correct": false
+		}, {
+			"id": 978,
+			"intitule": "Direct events",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "PreviewMouseUp is a:",
+		"nbPoints": 1
+	}, {
+		"id": 306,
+		"reponses": [{
+			"id": 1055,
+			"intitule": "MessageContract",
+			"correct": true
+		}, {
+			"id": 1053,
+			"intitule": "DataContract",
+			"correct": false
+		}, {
+			"id": 1056,
+			"intitule": "ServiceContract",
+			"correct": false
+		}, {
+			"id": 1054,
+			"intitule": "OperationContract",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "_________ maps data contracts to SOAP envelopes.",
+		"nbPoints": 1
+	}, {
+		"id": 259,
+		"reponses": [{
+			"id": 883,
+			"intitule": "public class MyClass<T> where T is IComparable{}",
+			"correct": false
+		}, {
+			"id": 885,
+			"intitule": "You can not set a constraint on a generic",
+			"correct": false
+		}, {
+			"id": 882,
+			"intitule": "public class MyClass<T> where T : IComparable{}",
+			"correct": true
+		}, {
+			"id": 884,
+			"intitule": "public class MyClass<T:IComparable>",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which code allows to define a class« MyClass » implementing a generic T having timplement the « IComparable » interface?",
+		"nbPoints": 1
+	}, {
+		"id": 305,
+		"reponses": [{
+			"id": 1049,
+			"intitule": "basicHttpBinding",
+			"correct": false
+		}, {
+			"id": 1051,
+			"intitule": "wsHttpBinding",
+			"correct": false
+		}, {
+			"id": 1050,
+			"intitule": "netHttpBinding",
+			"correct": false
+		}, {
+			"id": 1052,
+			"intitule": "WSDualHttpBinding",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "__________ http binding is used for duplex contracts.",
+		"nbPoints": 1
+	}, {
+		"id": 286,
+		"reponses": [{
+			"id": 976,
+			"intitule": "Routed event",
+			"correct": true
+		}, {
+			"id": 975,
+			"intitule": "Tunneling events",
+			"correct": false
+		}, {
+			"id": 973,
+			"intitule": "Bubbling events",
+			"correct": true
+		}, {
+			"id": 974,
+			"intitule": "Direct events",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "MouseDown is a :",
+		"nbPoints": 1
+	}, {
+		"id": 298,
+		"reponses": [{
+			"id": 1024,
+			"intitule": "myDbContext.SqlQuery(\"Select * from Student where studentid=1\")",
+			"correct": true
+		}, {
+			"id": 1022,
+			"intitule": "myDbContext.Students.SqlQuery(\"Select * from Student where studentid=1\")",
+			"correct": false
+		}, {
+			"id": 1021,
+			"intitule": "myDbContext.Database.SqlQuery(\"Select * from Student where studentid=1\")",
+			"correct": true
+		}, {
+			"id": 1023,
+			"intitule": "myDbContext.Configuration.SqlQuery(\"Select * from Student where studentid=1\")",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Which of the following executes a raw SQL query the database in EF 6?",
+		"nbPoints": 1
+	}, {
+		"id": 295,
+		"reponses": [{
+			"id": 1012,
+			"intitule": "DbSet",
+			"correct": true
+		}, {
+			"id": 1009,
+			"intitule": "DbContext",
+			"correct": false
+		}, {
+			"id": 1011,
+			"intitule": "Entity",
+			"correct": false
+		}, {
+			"id": 1010,
+			"intitule": "ObjectContext",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "Which of the following class represents an entity set?",
+		"nbPoints": 1
+	}, {
+		"id": 282,
+		"reponses": [{
+			"id": 962,
+			"intitule": "ListView",
+			"correct": true
+		}, {
+			"id": 961,
+			"intitule": "ListBox",
+			"correct": true
+		}, {
+			"id": 963,
+			"intitule": "ItemsControl",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "Which control(s) support(s) selection",
+		"nbPoints": 1
+	}]
+}, {
+	"id": 17,
+	"nom": "teeeeeest",
+	"duree": 6,
+	"dateCreation": "2018-12-14T10:32:35",
+	"dateModification": "2018-12-14T10:32:36",
+	"questions": [{
+		"id": 359,
+		"reponses": [{
+			"id": 1242,
+			"intitule": "Non",
+			"correct": false
+		}, {
+			"id": 1241,
+			"intitule": "Oui",
+			"correct": true
+		}],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "QUESTION ?",
+		"nbPoints": 1
+	}, {
+		"id": 360,
+		"reponses": [{
+			"id": 1243,
+			"intitule": "reponse 1",
+			"correct": false
+		}],
+		"typeQuestion": "CHOIX_MULTIPLE",
+		"enonce": "je test une reponse",
+		"nbPoints": 1
+	}, {
+		"id": 361,
+		"reponses": [],
+		"typeQuestion": "CHOIX_UNIQUE",
+		"enonce": "hfhfhfh",
+		"nbPoints": 2
+	}]
+}]

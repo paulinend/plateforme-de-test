@@ -18,6 +18,7 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.JsonCreator;
 
 
 @Entity
@@ -56,6 +57,25 @@ public class Question {
 		public String getTypeQuestion() {
 			return this.typeQuestion;
 		}
+
+		@Override 
+		public String toString() { 
+			return typeQuestion; 
+		}
+
+		@JsonCreator
+		public static TypeQuestion create(String value) {
+			if(value == null) {
+				throw new IllegalArgumentException();
+			}
+			for(TypeQuestion v : values()) {
+				if(value.equals(v.getTypeQuestion())) {
+					return v;
+				}
+			}
+			throw new IllegalArgumentException();
+		}
+
 	}
 	
 	

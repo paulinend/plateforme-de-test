@@ -12,7 +12,7 @@
       <label for="typeQuestion" class="col-sm-5 col-form-label">Type de la réponse</label>
       <div class="form-group row col-sm-7">
         <select id="typeQuestion" class="form-control" formControlName="typeQuestion">
-          <option *ngFor="let typeQuestion of (typeQuestions | async)" [value]="typeQuestion.code">{{ typeQuestion.label }}</option>
+          <option *ngFor="let typeQuestion of (typeQuestions | async)" [value]="typeQuestion.label">{{ typeQuestion.label }}</option>
         </select>
       </div>
     </div>

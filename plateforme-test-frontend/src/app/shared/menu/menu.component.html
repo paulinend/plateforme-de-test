@@ -1,18 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/']">Utilisateurs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['creer']">Candidats</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['test']">Tests</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [routerLink]="['creer']">Statistiques</a>
-      </li>
-    </ul>
-  </div>
+<nav class="navbar navbar-expand-lg justify-content-between">
+  <button type="button" class="btn btn-outline-primary nav-link btn-style" [routerLink]="['/']">Utilisateurs</button>
+  <button type="button" class="btn btn-outline-primary nav-link btn-style" [routerLink]="['creer']">Candidats</button>
+  <button type="button" class="btn btn-outline-primary nav-link btn-style" [routerLink]="['test']" routerLinkActive #route="routerLinkActive" [ngClass]="{active: route.isActive}">Tests</button>
+  <button type="button" class="btn btn-outline-primary nav-link btn-style" [routerLink]="['creer']">Statistiques</button>
 </nav>
