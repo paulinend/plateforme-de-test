@@ -1,0 +1,53 @@
+<table class="table table-bordered" *ngIf="(users$ | async) as users; else noUser">
+  <thead class="thead-light">
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Mail</th>
+      <th>Crée le</th>
+      <th>Mis à jour le</th>
+      <th>Profil</th>
+      <th>Statut</th>
+      <th>Gérer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; trackBy: identify">
+      <th>{{ user.nom }}</th>
+      <th>{{ user.prenom }} </th>
+      <th>{{ user.mail }} </th>
+      <th>{{ user.dateCreation | date: "shortDate" }}</th>
+      <th>{{ user.dateModification | date: "shortDate" }}</th>
+      <th>{{ user.profil }} </th>
+      <th *ngIf="user.enable">Actif</th>
+      <th *ngIf="!user.enable">Inactif</th>
+      <th>
+        <a [routerLink]="['editer', user.id]">
+          <img class="icon-style" src="../../../assets/icons/pencil.svg" alt="stylo">
+        </a>
+        <a [routerLink]="['consulter', user.id]">
+          <img class="icon-style"src="../../../assets/icons/magnifier-tool.svg" alt="loupe">
+        </a>
+        <a>
+            <img class="icon-style" src="../../../assets/icons/rubbish-bin.svg" alt="poubelle">
+          <!-- <img class="icon-style" (click)="delete(.id)" src="../../../assets/icons/rubbish-bin.svg" alt="poubelle"> -->
+        </a>
+      </th>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td><a class="font-weight-bold text-dark" [routerLink]="['/user/creer']">+ Ajouter</a></td>
+    </tr>
+  </tfoot>
+</table>
+<ng-template #noUser>
+  <p>Aucun utilisateur.</p>
+</ng-template>

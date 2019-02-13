@@ -15,11 +15,11 @@ export class QuestionService {
   ) { }
 
   getQuestions(idTest: number): Observable<Question[]> {
-    const url = `http://localhost:8080/test/${idTest}/question/liste`;
-    return this._http.get<Question[]>(url);
-    // return this._http.get<Test[]>('../../assets/mocks/tests.json').pipe(
-    //   map((tests: Test[]) => tests.find(test => test.id === idTest).questions)
-    // );
+    // const url = `http://localhost:8080/test/${idTest}/question/liste`;
+    // return this._http.get<Question[]>(url);
+    return this._http.get<Test[]>('../../assets/mocks/tests.json').pipe(
+      map((tests: Test[]) => tests.find(test => test.id === idTest).questions)
+    );
   }
 
   getQuestion(idTest: number, idQuestion: number): Observable<Question> {

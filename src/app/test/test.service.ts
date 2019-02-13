@@ -14,16 +14,16 @@ export class TestService {
   ) { }
 
   getTests(): Observable<Test[]> {
-    return this._http.get<Test[]>('http://localhost:8080/test/liste');
-    // return this._http.get<Test[]>('../../assets/mocks/tests.json');
+    //return this._http.get<Test[]>('http://localhost:8080/test/liste');
+     return this._http.get<Test[]>('../../assets/mocks/tests.json');
   }
 
   getTest(idTest: number): Observable<Test> {
-    const url = `http://localhost:8080/test/${idTest}`;
-    return this._http.get<Test>(url);
-    // return this._http.get<Test[]>('../../assets/mocks/tests.json').pipe(
-    //   map((tests: Test[]) => tests.find(test => test.id === idTest))
-    // );
+    // const url = `http://localhost:8080/test/${idTest}`;
+    // return this._http.get<Test>(url);
+    return this._http.get<Test[]>('../../assets/mocks/tests.json').pipe(
+      map((tests: Test[]) => tests.find(test => test.id === idTest))
+    );
   }
 
   addTest(test: Test): Observable<Test> {

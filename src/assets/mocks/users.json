@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "nom": "Kravitz",
+      "prenom" : "Lenny",
+      "mail" : "lenny.kravitz@mojo.com",
+      "dateCreation": "2019-01-30T11:51:53",
+      "dateModification": "2019-02-12T16:41:03",
+      "profil" : "Administrateur",
+      "enable": true
+    },
+    {
+      "id": 2,
+      "nom": "Jackson",
+      "prenom" : "Michael",
+      "mail" : "mj@thriller.com",
+      "dateCreation": "2019-01-30T11:51:53",
+      "dateModification": "2019-02-12T16:41:03",
+      "profil" : "Evaluateur",
+      "enable": true
+    },
+    {
+      "id": 2,
+      "nom": "Basuyau",
+      "prenom" : "Agnès",
+      "mail" : "abasuyau@rh.com",
+      "dateCreation": "2019-01-30T11:51:53",
+      "dateModification": "2019-02-12T16:41:03",
+      "profil" : "Candidat",
+      "enable": true
+    }
+  ]
