@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg justify-content-between">
-  <button type="button" class="btn btn-outline-primary nav-link btn-style" [routerLink]="['utilisateur']" routerLinkActive #route="routerLinkActive">Utilisateurs</button>
+  <button type="button" class="btn btn-outline-primary nav-link btn-style" [routerLink]="['utilisateur']" routerLinkActive #routeUser="routerLinkActive" [ngClass]="{active: routeUser.isActive}">Utilisateurs</button>
   <button type="button" class="btn btn-outline-primary nav-link btn-style" [routerLink]="['creer']">Candidats</button>
-  <button type="button" class="btn btn-outline-primary nav-link btn-style" [routerLink]="['test']" routerLinkActive #route="routerLinkActive" [ngClass]="{active: route.isActive}">Tests</button>
+  <button type="button" class="btn btn-outline-primary nav-link btn-style" [routerLink]="['test']" routerLinkActive #routeTest="routerLinkActive" [ngClass]="{active: routeTest.isActive}">Tests</button>
   <button type="button" class="btn btn-outline-primary nav-link btn-style" [routerLink]="['creer']">Statistiques</button>
 </nav>
