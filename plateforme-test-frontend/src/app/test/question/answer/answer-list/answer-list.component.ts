@@ -7,11 +7,11 @@ import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-answer',
-  templateUrl: './answer.component.html',
-  styleUrls: ['./answer.component.css']
+  selector: 'app-answer-list',
+  templateUrl: './answer-list.component.html',
+  styleUrls: ['./answer-list.component.css']
 })
-export class AnswerComponent implements OnInit {
+export class AnswerListComponent implements OnInit {
   @Input() idTest: number;
   @Input() idQuestion: number;
   @Input() typeQuestion: number;
@@ -59,11 +59,10 @@ export class AnswerComponent implements OnInit {
     observable$ = this._answerService.addAnswer(this.idTest, this.idQuestion, answer);
 
     observable$.subscribe(() => {
-      // this._router.navigate(['test']);
+      this._router.navigate(['test']);
       console.log('REPONSE AJOUTEE AVEC SUCCEE');
     });
   }
-  // test
 
   deleteAnswer(idTest: number, idQuestion: number, idAnswer: number): void {
     this._answerService.deleteAnswer(idTest, idQuestion, idAnswer).subscribe(() => {

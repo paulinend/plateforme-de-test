@@ -1,0 +1,19 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <div class="form-group">
+      <label for="reponseLabel">Intitulé</label>
+      <input type="text" id="reponseLabel" class="form-control" formControlName="intitule">
+    </div>
+    <div class="form-group">
+      <label for="typeReponseSelect" formControlName="typeReponse">Type Réponse</label>
+        <select class="form-control" id="typeReponseSelect">
+          <option></option>
+          <option>Bonne réponse</option>
+          <option>Mauvaise réponse</option>
+      </select>
+    </div>
+    <div class="add">
+      <button type="submit">+ Ajouter</button>
+    </div>
+  </form>
+</div>
