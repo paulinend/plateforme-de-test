@@ -1,0 +1,8 @@
+<!-- pipe async = subscribe/unsubscribe -->
+<app-answer-list
+  [answers]="(answers$ | async)"
+  (answerDeleted)="deleteAnswer($event)"
+></app-answer-list>
+<app-answer-form
+  (answerAdded)="addAnwser($event)"
+></app-answer-form>
