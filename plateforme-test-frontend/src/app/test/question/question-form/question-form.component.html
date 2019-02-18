@@ -28,14 +28,20 @@
       </div>
     </div>
       <br>
-
-      <app-answer
-      [idTest]="idTest"
-      [idQuestion]="idQuestion"
-      [typeQuestion]="form.get('typeQuestion').value"
-      *ngIf="form.get('typeQuestion').value != 2 && idQuestion != null"
+    <div class="container">
+      <app-answer-list
+       [idTest]="idTest"
+       [idQuestion]="idQuestion"
+       [typeQuestion]="form.get('typeQuestion').value"
+       *ngIf="form.get('typeQuestion').value != 2 && idQuestion != null"
       >
-    </app-answer>
+      </app-answer-list>
+      <app-answer-form
+          [idTest]="idTest"
+          [idQuestion]="idQuestion"
+      >
+      </app-answer-form>
+    </div>
 
     <div class="btn-grp" style="display: flex; justify-content: space-between;">
       <button type="button" class="btn btn-outline-danger" [routerLink]="['../../../..', idTest]" routerLinkActive="router-link-active" >Annuler</button>
