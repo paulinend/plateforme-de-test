@@ -1,22 +1,22 @@
 // export interface Answer {
 //   id: number;
 //   intitule: string;
-//   typeReponse: boolean;
+//   correct: boolean;
 // }
 
 export class Answer {
   id: number;
   intitule: string;
-  typeReponse: boolean;
+  correct: boolean;
 
   constructor(answer: {
     id?: number;
     intitule?: string;
-    typeReponse?: boolean;
+    correct?: boolean;
   } = {}) {
     this.id = answer.id || null;
     this.intitule = answer.intitule || '';
-    this.typeReponse = answer.typeReponse || false;
+    this.correct = !!answer.correct;
   }
 
 }

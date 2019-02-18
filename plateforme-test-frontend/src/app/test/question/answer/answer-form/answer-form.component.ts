@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Form, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AnswerService } from '../answer.service';
 import { Router } from '@angular/router';
@@ -11,14 +11,13 @@ import { Answer } from '../answer';
   styleUrls: ['./answer-form.component.css']
 })
 export class AnswerFormComponent implements OnInit {
-  @Input() idTest: number;
-  @Input() idQuestion: number;
   form: FormGroup;
 
+  @Output()
+  answerAdded: EventEmitter<Answer> = new EventEmitter();
+
   constructor(
-    private _answerService: AnswerService,
     private _formBuilder: FormBuilder,
-    private _router: Router
   ) { }
 
   ngOnInit() {
@@ -28,21 +27,18 @@ export class AnswerFormComponent implements OnInit {
   initForm(): void {
     this.form = this._formBuilder.group({
       intitule: ['', Validators.required],
-      typeReponse: ['', Validators.required]
+      correct: false
 
     });
   }
 
   onSubmit(): void {
-    console.log('form', this.form.value);
-    let observable$: Observable<any>;
-    const answer = new Answer(this.form.value);
-    observable$ = this._answerService.addAnswer(this.idTest, this.idQuestion, answer);
+    if (this.form.invalid) {
+      return;
+    }
 
-    observable$.subscribe(() => {
-      this._router.navigate(['test']);
-      console.log('REPONSE AJOUTEE AVEC SUCCEE');
-    });
+    const answser: Answer = new Answer(this.form.value);
+    this.answerAdded.emit(answser);
   }
 
 }

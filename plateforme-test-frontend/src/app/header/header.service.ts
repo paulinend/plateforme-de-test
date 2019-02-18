@@ -13,10 +13,6 @@ export class HeaderService {
     private _http: HttpClient
   ) { }
 
-  getUser(idUser: number): Observable<User> {
-    return this._http.get<User[]>('../../assets/mocks/tests.json').pipe(
-      map((users: User[]) => users.find(user => user.id === idUser))
-    );
-  }
+
 
 }

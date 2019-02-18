@@ -7,7 +7,6 @@ import { TestListComponent } from './test-list/test-list.component';
 import { TestComponent } from './test/test.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { QuestionModule } from './question/question.module';
-import { AnswerModule } from './question/answer/answer.module';
 
 @NgModule({
   imports: [
@@ -15,8 +14,7 @@ import { AnswerModule } from './question/answer/answer.module';
     FormsModule,
     ReactiveFormsModule,
     TestRoutingModule,
-    QuestionModule,
-    AnswerModule
+    QuestionModule
   ],
   declarations: [
     TestFormComponent,
