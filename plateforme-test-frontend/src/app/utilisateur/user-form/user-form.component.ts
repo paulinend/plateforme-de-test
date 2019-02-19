@@ -16,6 +16,7 @@ export class UserFormComponent implements OnInit {
   form: FormGroup = new FormGroup({});
 
   profiles : Observable<string[]>;
+  // user: Observable<User>;
   user: User;
   state: string;
   title: string;
@@ -39,14 +40,16 @@ export class UserFormComponent implements OnInit {
 
     if (this.state.includes('creer')) {
       this.title = 'Ajouter un utilisateur';
-      // this.idUser = +this._route.parent.snapshot.paramMap.get('id');
-      // console.log('idUserSnapshot', this.idUser);
     }else if (this.state.includes('editer')){
       this.title = 'Modifier un utilisateur';
-      this._route.params.pipe(
-        concatMap(params => this._userService.getUser(+params['id'])),
-        tap(user => this.form.patchValue(user))
-      ).subscribe(user => this.user = user);
+      this._route.data.pipe(
+        // tap((data : {User : User} )=> this.user = data.User),
+        // tap(user => this.form.patchValue(user))
+      ).subscribe((data : {User : User} ) => (
+          this.user = data.User,
+          this.form.patchValue(this.user), 
+          console.log(this.user)
+        ));
     }else if (this.state.includes('consulter')){
       this.title = 'Consulter un utilisateur';
       this._route.params.pipe(
@@ -63,7 +66,7 @@ export class UserFormComponent implements OnInit {
       prenom: ['', Validators.required],
       mail: ['', Validators.required],
       profil : '',
-      enable: '',
+      disable: '',
     });
   }
 

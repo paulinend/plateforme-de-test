@@ -16,10 +16,10 @@ const routes: Routes = [
   },
   { 
     path: 'editer/:id', 
-    component: UserFormComponent
-    // , resolve : { 
-    //   User : UserResolver 
-    // }
+    component: UserFormComponent,
+    resolve : { 
+      User : UserResolver 
+    }
   },
 ];
 

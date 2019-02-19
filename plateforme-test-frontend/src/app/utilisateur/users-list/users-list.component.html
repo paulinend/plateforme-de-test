@@ -19,8 +19,8 @@
       <th>{{ user.dateCreation | date: "shortDate" }}</th>
       <th>{{ user.dateModification | date: "shortDate" }}</th>
       <th>{{ user.profil }} </th>
-      <th *ngIf="user.enable">Actif</th>
-      <th *ngIf="!user.enable">Inactif</th>
+      <th *ngIf="!user.disable">Actif</th>
+      <th *ngIf="user.disable">Inactif</th>
       <th>
         <a [routerLink]="['editer', user.id]">
           <img class="icon-style" src="../../../assets/icons/pencil.svg" alt="stylo">
