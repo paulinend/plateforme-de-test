@@ -36,29 +36,22 @@ export class UserFormComponent implements OnInit {
     this.initForm();    
     this.profiles = this._userService.getUserProfiles();
 
-    const params$: Observable<any> = this._route.paramMap;
-    const parentParams$: Observable<any> = this._route.parent.paramMap;
+    this.idUser = this._route.snapshot.params['id'];
 
     if (this.state.includes('creer')) {
       this.title = 'Ajouter un utilisateur';
-      this.idUser = +this._route.parent.snapshot.paramMap.get('id');
-      console.log('idUserSnapshot', this.idUser);
+      // this.idUser = +this._route.parent.snapshot.paramMap.get('id');
+      // console.log('idUserSnapshot', this.idUser);
     }else if (this.state.includes('editer')){
-      this.idUser = this._route.snapshot.params['id'];
-      console.log('idUserSnapshot', this.idUser);
       this.title = 'Modifier un utilisateur';
       this._route.params.pipe(
         concatMap(params => this._userService.getUser(+params['id'])),
-        // action sans modification de la donnée recue (ici, le test) ( ° )( . )
         tap(user => this.form.patchValue(user))
       ).subscribe(user => this.user = user);
     }else if (this.state.includes('consulter')){
-      this.idUser = this._route.snapshot.params['id'];
-      console.log('idUserSnapshot', this.idUser);
       this.title = 'Consulter un utilisateur';
       this._route.params.pipe(
         concatMap(params => this._userService.getUser(+params['id'])),
-        // action sans modification de la donnée recue (ici, le test) ( ° )( . )
         tap(user => this.form.patchValue(user)),
         tap(user => this.form.disable())
       ).subscribe(user => this.user = user);
