@@ -6,7 +6,7 @@ export interface IUser {
   dateCreation?: string;
   dateModification?: string;
   profil: string ;
-  enable:	boolean;
+  disable:	boolean;
 }
 
 export class User implements IUser{
@@ -17,7 +17,7 @@ export class User implements IUser{
     dateCreation?:	string;
     dateModification?:	string;
     profil: string ;
-    enable:	boolean;
+    disable:	boolean;
 
     constructor(ctor?: IUser) {
         this.id = ctor && ctor.id || null;
@@ -27,6 +27,6 @@ export class User implements IUser{
         this.dateCreation = ctor && ctor.dateCreation || '';
         this.dateModification = ctor && ctor.dateModification || '';
         this.profil = ctor && ctor.profil || '';
-        this.enable = ctor && ctor.enable || false;
+        this.disable = ctor && ctor.disable || false;
       }
 }

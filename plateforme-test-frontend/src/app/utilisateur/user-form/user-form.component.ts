@@ -70,5 +70,16 @@ export class UserFormComponent implements OnInit {
     });
   }
 
-  onSubmit() {}
+  onSubmit(): void {
+    let observable$: Observable<any>;
+    if (this.state.includes('creer') ) {
+      const user = new User(this.form.value);
+      observable$ = this._userService.addUser(user);
+    } else {
+      observable$ = this._userService.updateUser(Object.assign(this.user, this.form.value));
+    }
+    observable$.subscribe(() => {
+      this._router.navigate(['utilisateur']);
+    });
+  }
 }

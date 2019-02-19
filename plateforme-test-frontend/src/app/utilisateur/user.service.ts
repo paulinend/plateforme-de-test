@@ -22,7 +22,7 @@ export class UserService {
     // const url = `http://localhost:8080/user/${idUser}`;
     // return this._http.get<User>(url);
     return this._http.get<User[]>('../../assets/mocks/users.json').pipe(
-      map((users: User[]) => users.find(user => user.id === idUser))
+       map((users: User[]) => users.find(user => user.id === idUser))
     );
   }
 
