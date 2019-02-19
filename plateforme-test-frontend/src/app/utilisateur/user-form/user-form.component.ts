@@ -5,7 +5,6 @@ import { UserService } from '../user.service';
 import { User } from '../user';
 import { map, catchError, concatMap, tap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
-import { EnumType } from 'src/app/shared/model/enumtype';
 
 @Component({
   selector: 'app-user-form',
@@ -29,7 +28,7 @@ export class UserFormComponent implements OnInit {
     private _userService: UserService
   ) { 
     this.state = this._route.routeConfig.path;
-    console.log('state', this.state);
+    //console.log('state', this.state);
   }
 
   ngOnInit() {
