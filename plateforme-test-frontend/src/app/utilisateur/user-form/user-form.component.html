@@ -1,7 +1,37 @@
 <div class="container">
-  <!-- <h2>{{title}}</h2>
+  <h2>{{title}}</h2>
   <br>
   <form (ngSubmit)="onSubmit()" [formGroup]="form">
-    
-  </form> -->
+    <div class="form-group row">
+      <label for="userLastName" class="col-sm-2 col-md-2col-form-label">Nom</label>
+      <div class="form-group col-sm-4 col-md-4">
+        <input id="userLastName" type="text" class="form-control" formControlName="nom">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-md-2col-form-label" for="userFirstName">Prénom</label>
+      <div class="form-group col-sm-4 col-md-4">
+        <input id="userFirstName" type="text" class="form-control" formControlName="prenom">
+      </div> 
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-md-2col-form-label" for="userMail">Email</label>
+      <div class="form-group col-sm-4 col-md-4">
+        <input id="userMail" type="text" class="form-control" formControlName="mail">
+      </div> 
+    </div>
+
+    <div class="form-group row">
+      <label class="col-sm-2 col-md-2col-form-label" for="userProfile">Profil</label>
+      <div class="form-group col-sm-4 col-md-4">
+        <select id="userProfile" class="form-control" formControlName="profil">
+          <option *ngFor="let profil of (profiles | async)" [value]="profil">{{profil}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-check col-2 offset-sm-2">
+      <input id="questionEnable" type="checkbox" class="form-check-input" formControlName="enable">
+      <label class="form-check-label" for="questionEnable">Désactiver</label>
+    </div>
+  </form>
 </div>
