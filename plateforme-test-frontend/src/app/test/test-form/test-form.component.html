@@ -21,7 +21,7 @@
       <label class="form-check-label" for="testEnable">Désactiver</label>
     </div>
     <br>
-
+    <!-- <app-question></app-question> -->
     <app-question-list [idTest]="test.id" *ngIf="test"></app-question-list>
     <div class="btn-grp" style="display: flex; justify-content: space-between;">
       <button type="button" class="btn btn-outline-danger" [routerLink]="['/test']" routerLinkActive="router-link-active">Annuler</button>

@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AnswerComponent } from './answer/answer/answer.component';
 import { AnswerFormComponent } from './answer/answer-form/answer-form.component';
 import { AnswerListComponent } from './answer/answer-list/answer-list.component';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { AnswerListComponent } from './answer/answer-list/answer-list.component'
     QuestionListComponent,
     AnswerComponent,
     AnswerFormComponent,
-    AnswerListComponent
+    AnswerListComponent,
+    QuestionComponent
   ],
   exports: [
     QuestionListComponent

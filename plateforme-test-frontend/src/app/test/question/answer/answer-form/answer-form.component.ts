@@ -1,8 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Form, FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { AnswerService } from '../answer.service';
-import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Answer } from '../answer';
 
 @Component({

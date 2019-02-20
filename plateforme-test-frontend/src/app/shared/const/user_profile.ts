@@ -1,4 +1,4 @@
-export enum user_profile{
+export enum user_profile {
     Administrateur = 'Administrateur',
     Evaluateur = 'Évaluateur',
     Candidat = 'Candidat'

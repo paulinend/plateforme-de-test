@@ -7,11 +7,13 @@ import { Answer } from '../answer';
   styleUrls: ['./answer-list.component.css']
 })
 export class AnswerListComponent implements OnInit {
-  @Input()
-  answers: Answer[];
+  @Input() answers: Answer[];
+  @Input() typeQuestion: number;
   // Un event qui va emettre une valeur de type Answer
   @Output()
   answerDeleted: EventEmitter<Answer> = new EventEmitter();
+
+  selectedAnswer;
 
   constructor() { }
 
@@ -19,6 +21,10 @@ export class AnswerListComponent implements OnInit {
 
   onDelete(answer: Answer) {
     this.answerDeleted.emit(answer);
+  }
+
+  onSelectionChange(answer) {
+    this.selectedAnswer = Object.assign({}, this.selectedAnswer, answer);
   }
 
 }

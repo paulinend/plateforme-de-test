@@ -14,9 +14,10 @@
       <td>{{ answer.id }}</td>
       <td>{{ answer.intitule }}</td>
       <td>
+        <!-- <input *ngIf="typeQuestion === 'CHOIX_MULTIPLE' " type="checkbox" name="" id=""> -->
         <div class="form-check" [ngSwitch]="typeQuestion">
           <input
-            *ngSwitchCase="0"
+            *ngSwitchCase="'CHOIX_UNIQUE'"
             class="form-check-input"
             type="radio"
             value=""
@@ -26,7 +27,7 @@
             [value]="answer.id"
             (change)="onSelectionChange(answer)"
           >
-          <input *ngSwitchCase="1" class="form-check-input" type="checkbox" value="" id="CheckBox">
+          <input *ngSwitchCase="'CHOIX_MULTIPLE'" name="checkboxgroup" class="form-check-input" type="checkbox" value="" id="CheckBox">
         </div>
       </td>
       <td class="text-align-center">

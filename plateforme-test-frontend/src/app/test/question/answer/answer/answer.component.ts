@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Answer } from '../answer';
 import { AnswerService } from '../answer.service';
-import { Observable, BehaviorSubject } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -10,6 +10,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./answer.component.css']
 })
 export class AnswerComponent implements OnInit {
+  @Input() typeQuestion: number;
+
   answers$: BehaviorSubject<Answer[]> = new BehaviorSubject([]);
   testId: number;
   questionId: number;
@@ -42,7 +44,7 @@ export class AnswerComponent implements OnInit {
       () => {
         const answers = this.answers$.getValue();
         const index = answers.findIndex(answer => answer.id === deletedAnswer.id);
-        answers.splice(index, 1)
+        answers.splice(index, 1);
         this.answers$.next(answers);
       }
     );

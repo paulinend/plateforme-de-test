@@ -29,7 +29,10 @@
     </div>
     <br>
 
-    <app-answer></app-answer>
+    <app-answer
+      [typeQuestion]="form.get('typeQuestion').value"
+      *ngIf="form.get('typeQuestion').value != 'REPONSE_LIBRE' && idQuestion != null">
+    </app-answer>
 
     <div class="btn-grp" style="display: flex; justify-content: space-between;">
       <button type="button" class="btn btn-outline-danger" [routerLink]="['../../../..', idTest]" routerLinkActive="router-link-active" >Annuler</button>
