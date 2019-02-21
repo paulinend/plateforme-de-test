@@ -1,4 +1,5 @@
-<table class="table table-bordered" *ngIf="(tests$ | async) as tests; else noTest">
+<ng-container *ngIf="(tests$ | async) as tests; else loading">
+  <table class="table table-bordered" *ngIf="tests.length > 0; else noTest">
   <thead class="thead-light">
     <tr>
       <th>Nom</th>
@@ -40,7 +41,11 @@
       <td><a class="font-weight-bold text-dark" [routerLink]="['/test/creer']">+ Ajouter</a></td>
     </tr>
   </tfoot>
-</table>
-<ng-template #noTest>
+  </table>
+  <ng-template #noTest>
   <p>Aucun test.</p>
+  </ng-template>
+</ng-container>
+<ng-template #loading>
+chargement......
 </ng-template>

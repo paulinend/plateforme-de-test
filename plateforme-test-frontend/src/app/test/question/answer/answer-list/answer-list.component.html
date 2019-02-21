@@ -14,7 +14,6 @@
       <td>{{ answer.id }}</td>
       <td>{{ answer.intitule }}</td>
       <td>
-        <!-- <input *ngIf="typeQuestion === 'CHOIX_MULTIPLE' " type="checkbox" name="" id=""> -->
         <div class="form-check" [ngSwitch]="typeQuestion">
           <input
             *ngSwitchCase="'CHOIX_UNIQUE'"
