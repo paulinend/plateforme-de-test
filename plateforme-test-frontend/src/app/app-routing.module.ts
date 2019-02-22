@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 const appRoutes: Routes = [
   { path: 'utilisateur', loadChildren: '../app/utilisateur/utilisateur.module#UtilisateurModule' },
   { path: 'test', loadChildren: '../app/test/test.module#TestModule' },
+  { path: 'statistique', loadChildren: '../app/statistique/statistique.module' },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];

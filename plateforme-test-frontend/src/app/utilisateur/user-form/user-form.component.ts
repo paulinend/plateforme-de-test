@@ -21,7 +21,7 @@ export class UserFormComponent implements OnInit {
     private _route: ActivatedRoute,
     private _router: Router,
     private _userService: UserService,
-  ) { 
+  ) {
     this.state = this._route.routeConfig.path;
   }
 

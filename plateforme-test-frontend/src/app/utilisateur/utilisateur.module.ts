@@ -12,10 +12,10 @@ import { UserFormComponent } from './user-form/user-form.component';
     UtilisateurRoutingModule
   ],
   declarations: [
-    UsersListComponent, 
+    UsersListComponent,
     UserComponent, UserFormComponent],
   exports: [
-    UsersListComponent, 
+    UsersListComponent,
     UserComponent, UserFormComponent]
 })
 export class UtilisateurModule { }
