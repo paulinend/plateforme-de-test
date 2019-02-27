@@ -6,16 +6,16 @@
     <div class="form-group">
       <label for="questionLabel">Enoncé</label>
       <textarea id="questionLabel" class="form-control" formControlName="enonce"></textarea>
-      </div>
+    </div>
     <div class="form-group row">
       <div class="form-group row col-5">
-      <label for="typeQuestion" class="col-sm-5 col-form-label">Type de la réponse</label>
-      <div class="form-group row col-sm-7">
-        <select id="typeQuestion" class="form-control" formControlName="typeQuestion">
-          <option *ngFor="let typeQuestion of (typeQuestions | async)" [value]="typeQuestion.label">{{ typeQuestion.label }}</option>
-        </select>
+        <label for="typeQuestion" class="col-sm-5 col-form-label">Type de la réponse</label>
+        <div class="form-group row col-sm-7">
+          <select id="typeQuestion" class="form-control" formControlName="typeQuestion">
+            <option *ngFor="let typeQuestion of (typeQuestions | async)" [value]="typeQuestion.label">{{ typeQuestion.label }}</option>
+          </select>
+        </div>
       </div>
-    </div>
       <div class="form-group row col-3">
         <label for="questionScore" class="col-sm-5 col-form-label">Points</label>
         <div class="form-group col-md-7">

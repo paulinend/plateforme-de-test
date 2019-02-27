@@ -6,6 +6,8 @@ const appRoutes: Routes = [
   { path: 'utilisateur', loadChildren: '../app/utilisateur/utilisateur.module#UtilisateurModule' },
   { path: 'test', loadChildren: '../app/test/test.module#TestModule' },
   { path: 'home', component: HomeComponent },
+  { path: 'candidat', loadChildren: '../app/candidat/candidat.module#CandidatModule' },
+  { path: 'evaluation', loadChildren: '../app/evaluation/evaluation.module#EvaluationModule' },
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 

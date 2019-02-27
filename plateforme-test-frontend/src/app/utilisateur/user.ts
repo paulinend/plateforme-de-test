@@ -9,11 +9,11 @@ export interface IUser {
   disable:	boolean;
 }
 
-export class User implements IUser{
+export class User implements IUser {
     id: number;
     nom: string;
     prenom: string;
-    mail:string;
+    mail: string;
     dateCreation?:	string;
     dateModification?:	string;
     profil: string ;

@@ -1,9 +1,20 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Observable, Subscription } from 'rxjs';
-import { User } from '../user';
-import { UserService } from '../user.service';
+import {
+  Component,
+  OnInit,
+  OnDestroy
+} from '@angular/core';
+import {
+  Observable,
+  Subscription
+} from 'rxjs';
+import {
+  User
+} from '../user';
+import {
+  UserService
+} from '../user.service';
 
-//const trackByFn = (index: number, item: any) => item;
+// const trackByFn = (index: number, item: any) => item;
 
 @Component({
   selector: 'app-users-list',
@@ -11,17 +22,17 @@ import { UserService } from '../user.service';
   styleUrls: ['./users-list.component.css']
 })
 export class UsersListComponent implements OnInit {
-users$ : Observable<User[]>;
+  users$: Observable < User[] > ;
+
   constructor(
     private _userService: UserService,
-  ) {    
-   }
+  ) {}
 
   ngOnInit() {
     this.users$ = this._userService.getUsers();
-  }  
+  }
 
-  identify(index, item) {    
-    return item; // unique id corresponding to the item
- }
+  identify(index: number, item: any) {
+    return item;
+  }
 }
