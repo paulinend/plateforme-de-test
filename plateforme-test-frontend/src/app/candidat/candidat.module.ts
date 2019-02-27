@@ -2,13 +2,6 @@ import {
   NgModule
 } from '@angular/core';
 import {
-  CommonModule
-} from '@angular/common';
-import {
-  FormsModule,
-  ReactiveFormsModule
-} from '@angular/forms';
-import {
   CandidatRoutingModule
 } from './candidat-routing.module';
 import {
@@ -20,13 +13,19 @@ import {
 import {
   CandidatFormComponent
 } from './candidat-form/candidat-form.component';
-import { CandidatTestComponent } from './candidat-test/candidat-test.component';
-import { CandidatTestModalComponent } from './candidat-test-modal/candidat-test-modal.component';
+import {
+  CandidatTestComponent
+} from './candidat-test/candidat-test.component';
+import {
+  CandidatTestModalComponent
+} from './candidat-test-modal/candidat-test-modal.component';
+import {
+  SharedModule
+} from '../shared/shared.module';
+
 @NgModule({
   imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
+    SharedModule,
     CandidatRoutingModule
   ],
   declarations: [
@@ -36,6 +35,6 @@ import { CandidatTestModalComponent } from './candidat-test-modal/candidat-test-
     CandidatTestComponent,
     CandidatTestModalComponent
   ],
-  // exports: [CandidatsListComponent]
+  exports: []
 })
 export class CandidatModule {}

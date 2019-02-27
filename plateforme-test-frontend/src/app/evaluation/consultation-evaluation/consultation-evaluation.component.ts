@@ -11,5 +11,4 @@ export class ConsultationEvaluationComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

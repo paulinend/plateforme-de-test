@@ -2,18 +2,31 @@ import {
   NgModule
 } from '@angular/core';
 import {
-  CommonModule
-} from '@angular/common';
-import {
   EvaluationRoutingModule
 } from './evaluation-routing.module';
+import {
+  SharedModule
+} from '../shared/shared.module';
+import {
+  ConsultationEvaluationComponent
+} from './consultation-evaluation/consultation-evaluation.component';
+import {
+  CorrectionEvaluationComponent
+} from './correction-evaluation/correction-evaluation.component';
+import {
+  EvaluationComponent
+} from './evaluation/evaluation.component';
 
 @NgModule({
   imports: [
-    CommonModule,
-    EvaluationRoutingModule
+    SharedModule,
+    EvaluationRoutingModule,
   ],
-  declarations: [],
+  declarations: [
+    EvaluationComponent,
+    ConsultationEvaluationComponent,
+    CorrectionEvaluationComponent,
+  ],
   exports: []
 })
 export class EvaluationModule {}

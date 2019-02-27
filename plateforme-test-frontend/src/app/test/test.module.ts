@@ -2,10 +2,6 @@ import {
   NgModule
 } from '@angular/core';
 import {
-  CommonModule
-} from '@angular/common';
-
-import {
   TestRoutingModule
 } from './test-routing.module';
 import {
@@ -18,18 +14,15 @@ import {
   TestComponent
 } from './test/test.component';
 import {
-  FormsModule,
-  ReactiveFormsModule
-} from '@angular/forms';
-import {
   QuestionModule
 } from './question/question.module';
+import {
+  SharedModule
+} from '../shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
+    SharedModule,
     TestRoutingModule,
     QuestionModule
   ],
@@ -38,8 +31,6 @@ import {
     TestListComponent,
     TestComponent
   ],
-  exports: [
-    TestListComponent
-  ]
+  exports: []
 })
 export class TestModule {}
