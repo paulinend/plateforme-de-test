@@ -47,6 +47,7 @@ export class QuestionFormComponent implements OnInit {
       combineLatest(params$, parentParams$).pipe(
         concatMap(([params, parentParams]) => {
           this.idTest = +parentParams.get('id');
+          console.log('idTestSnapshot', this.idTest);
           this.idQuestion = +params.get('id');
           return this._questionService.getQuestion(this.idTest, this.idQuestion);
         }),

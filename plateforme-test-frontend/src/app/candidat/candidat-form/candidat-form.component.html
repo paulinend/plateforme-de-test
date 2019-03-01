@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>{{title}}</h2>
+  <br>
+  <form (ngSubmit)="onSubmit()" [formGroup]="form">
+    <div class="form-group row">
+      <div class="form-group row col-4">
+        <label for="userLastName" class="col-sm-5 col-form-label"><strong>Nom :</strong></label>
+        <div class="form-group row col-6">
+          <p id="userLastName" formControlName="nom"></p>
+        </div>
+      </div>
+      <div class="form-group row col-4">
+        <label for="userFirstName" class="col-sm-5 col-form-label"><strong>Prénom :</strong></label>
+        <div class="form-group row col-6">
+          <p id="userFirstName" formControlName="prenom"></p>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="commentary"><strong>Commentaire</strong></label>
+      <textarea id="commentary" type="text" class="form-control ng-pristine ng-invalid ng-touched" formControlName="commentaire"></textarea>
+    </div>
+  </form>
+</div>

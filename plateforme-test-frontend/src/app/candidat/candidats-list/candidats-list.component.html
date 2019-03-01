@@ -1,0 +1,26 @@
+<table class="table table-bordered" *ngIf="(users$ | async) as users; else noUser">
+  <thead class="thead-light">
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; trackBy: identify">
+      <!-- <th>
+        <a [routerLink]="['consulter', user.id]">
+          {{ user.nom }}
+        </a>
+      </th> -->
+      <th>
+        <a [routerLink]="['consulter']">
+          {{ user.nom }}
+        </a>
+      </th>
+      <th>{{ user.prenom }} </th>
+    </tr>
+  </tbody>
+</table>
+<ng-template #noUser>
+  <p>Aucun candidat.</p>
+</ng-template>

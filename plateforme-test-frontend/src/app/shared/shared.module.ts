@@ -1,13 +1,27 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MenuComponent } from './menu/menu.component';
-import { RouterModule } from '@angular/router';
+import {
+  NgModule
+} from '@angular/core';
+import {
+  CommonModule
+} from '@angular/common';
+import {
+  RouterModule
+} from '@angular/router';
+import {
+  ReactiveFormsModule,
+  FormsModule
+} from '@angular/forms';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule
-  ],
-  declarations: [MenuComponent]
+  imports: SharedModule.MODULE_LIST,
+  declarations: [],
+  exports: SharedModule.MODULE_LIST
 })
-export class SharedModule { }
+export class SharedModule {
+  static readonly MODULE_LIST = [
+    CommonModule,
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ];
+}

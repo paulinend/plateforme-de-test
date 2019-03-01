@@ -7,6 +7,8 @@ const appRoutes: Routes = [
   { path: 'test', loadChildren: '../app/test/test.module#TestModule' },
   { path: 'statistique', loadChildren: '../app/statistique/statistique.module#StatistiqueModule' },
   { path: 'home', component: HomeComponent },
+  { path: 'candidat', loadChildren: '../app/candidat/candidat.module#CandidatModule' },
+  { path: 'evaluation', loadChildren: '../app/evaluation/evaluation.module#EvaluationModule' },
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
