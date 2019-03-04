@@ -24,16 +24,9 @@ import {
   ],
   declarations: [
     UsersListComponent,
-<<<<<<< HEAD
-    UserComponent, UserFormComponent],
-  exports: [
-    UsersListComponent,
-    UserComponent, UserFormComponent]
-=======
     UserComponent,
     UserFormComponent
   ],
   exports: []
->>>>>>> b9f867a6672ff91c141bcae2534e0c21c100f8c9
 })
 export class UtilisateurModule {}

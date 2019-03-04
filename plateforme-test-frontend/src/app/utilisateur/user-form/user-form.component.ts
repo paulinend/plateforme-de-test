@@ -37,11 +37,7 @@ export class UserFormComponent implements core.OnInit {
     private _formBuilder: FormBuilder,
     private _route: ActivatedRoute,
     private _router: Router,
-<<<<<<< HEAD
-    private _userService: UserService,
-=======
     private _userService: UserService
->>>>>>> b9f867a6672ff91c141bcae2534e0c21c100f8c9
   ) {
     this.state = this._route.routeConfig.path;
   }
