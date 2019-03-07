@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Statistique } from '../statistique';
 
 @Component({
   selector: 'app-statistique-test',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatistiqueTestComponent implements OnInit {
 
+  @Input() stats: Statistique;
+
   constructor() { }
 
   ngOnInit() {
+    console.log('vvvvvvvvvvvvvvvv', this.stats);
   }
 
 }

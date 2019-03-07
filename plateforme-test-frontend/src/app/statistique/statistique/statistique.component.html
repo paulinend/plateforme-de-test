@@ -24,7 +24,7 @@
     <!-- </div> -->
   </div>
   <div class="statistique">
-    <app-statistique-test *ngIf="displayBy.value === 'test'"></app-statistique-test>
+    <app-statistique-test [stats]="stats" *ngIf="displayBy.value === 'test'"></app-statistique-test>
     <app-statistique-theme *ngIf="displayBy.value === 'theme'"></app-statistique-theme>
   </div>
 </div>

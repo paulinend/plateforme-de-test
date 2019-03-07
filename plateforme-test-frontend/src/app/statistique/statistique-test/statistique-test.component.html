@@ -1,5 +1,26 @@
-<p>
-  statistique-test works!
-
-
-</p>
+<div class="container">
+  <div class="row justify-content-center">
+      <img class="icon-stats" src="../../../assets/icons/user.svg" alt="icone utilisateur">
+      <!-- <span>{{ stats.nbEval }}</span> -->
+    <p>Nombre d'évaluations</p>
+  </div>
+  <div class="row justify-content-between">
+    <div class="col align-self-start">
+      <div class="col">
+        <span>{{stats.noteMin}} / 20</span>
+        <span>Note min</span>
+      </div>
+      <div class="col">
+        <span>{{ stats.noteMoyenne }} / 20</span>
+        <span>Note moyenne</span>
+      </div>
+      <div class="col">
+        <span>{{ stats.noteMax }} / 20</span>
+        <span>Note max</span>
+      </div>
+    </div>
+    <div class="col align-self-end">
+      end note grade
+    </div>
+  </div>
+</div>

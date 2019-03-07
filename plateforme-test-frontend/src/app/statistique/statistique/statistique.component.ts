@@ -29,7 +29,6 @@ export class StatistiqueComponent implements OnInit {
   getStats() {
     this._statistiqueService.getStatistiques().subscribe(
       stats => {
-        console.log(stats);
         this.stats = stats;
       });
   }
