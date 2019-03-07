@@ -1,4 +1,31 @@
 <h1>Données statistiques</h1>
 <div class="container">
-  TABLEAU
+  <div class="row tri-tableau border">
+    <div class="col-6 d-flex justify-content-around">
+      <label><input type="radio" name="optionRadio" value="test" [formControl]="displayBy">Par test</label>
+      <label><input type="radio" name="optionRadio" value="theme" [formControl]="displayBy">Par thème</label>
+    </div>
+    <div class="col-4 d-flex justify-content-around mt-1">
+      <label> Statut tests:</label>
+      <label><input type="radio" name="" id="">Tous</label>
+      <label><input type="radio" name="" id="">Actifs</label>
+      <label><input type="radio" name="" id="">Inactifs</label>
+    </div>
+  </div>
+  <div class="row type-test border">
+    <!-- <div class="d-flex justify-content-center"> -->
+      <label class="col">Test</label>
+      <div class="col">
+        <select class="custom-select">
+          <option selected>Choisir un test</option>
+          <option  *ngFor="let test of (tests$ | async)">Test {{ test.nom }}</option>
+        </select>
+      </div>
+    <!-- </div> -->
+  </div>
+  <div class="statistique">
+    <app-statistique-test *ngIf="displayBy.value === 'test'"></app-statistique-test>
+    <app-statistique-theme *ngIf="displayBy.value === 'theme'"></app-statistique-theme>
+  </div>
 </div>
+

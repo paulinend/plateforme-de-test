@@ -7,7 +7,7 @@
       "dateCreation": "2019-01-30T11:51:53",
       "dateModification": "2019-02-12T16:41:03",
       "profil" : "Administrateur",
-      "enable": true
+      "disable": false
     },
     {
       "id": 2,
@@ -16,17 +16,27 @@
       "mail" : "mj@thriller.com",
       "dateCreation": "2019-01-30T11:51:53",
       "dateModification": "2019-02-12T16:41:03",
-      "profil" : "Evaluateur",
-      "enable": true
+      "profil" : "Évaluateur",
+      "disable": false
     },
     {
-      "id": 2,
+      "id": 3,
       "nom": "Basuyau",
       "prenom" : "Agnès",
       "mail" : "abasuyau@rh.com",
       "dateCreation": "2019-01-30T11:51:53",
       "dateModification": "2019-02-12T16:41:03",
       "profil" : "Candidat",
-      "enable": true
+      "disable": false
+    },
+    {
+      "id": 4,
+      "nom": "Dus",
+      "prenom" : "Jean-Claude",
+      "mail" : "jcdus@aol.com",
+      "dateCreation": "2019-01-30T11:51:53",
+      "dateModification": "2019-02-12T16:41:03",
+      "profil" : "Candidat",
+      "disable": true
     }
   ]
