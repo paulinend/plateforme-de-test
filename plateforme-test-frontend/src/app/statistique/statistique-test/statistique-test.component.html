@@ -1,26 +1,39 @@
 <div class="container">
   <div class="row justify-content-center">
       <img class="icon-stats" src="../../../assets/icons/user.svg" alt="icone utilisateur">
-      <!-- <span>{{ stats.nbEval }}</span> -->
+      <span>{{ stats.nbEval }}</span>
     <p>Nombre d'évaluations</p>
   </div>
   <div class="row justify-content-between">
     <div class="col align-self-start">
-      <div class="col">
-        <span>{{stats.noteMin}} / 20</span>
-        <span>Note min</span>
+      <div class="col align-self-start">
+        <p>{{stats.note.min}} / 20</p>
+        <p>Note min</p>
       </div>
-      <div class="col">
-        <span>{{ stats.noteMoyenne }} / 20</span>
+      <div class="col align-self-center">
+        <img class="icon-stats" src="../../../assets/icons/pencil.svg" alt="icone crayon">
+        <span>{{ stats.note.average }} / 20</span>
         <span>Note moyenne</span>
       </div>
-      <div class="col">
-        <span>{{ stats.noteMax }} / 20</span>
+      <div class="col align-self-end">
+        <span>{{ stats.note.max }} / 20</span>
         <span>Note max</span>
       </div>
     </div>
     <div class="col align-self-end">
-      end note grade
+      <div class="col">
+        <span>{{stats.time.min}} min</span>
+        <span>Temps min</span>
+      </div>
+      <div class="col">
+        <img class="icon-stats" src="../../../assets/icons/clock.svg" alt="icone horloge">
+        <span>{{ stats.time.average }} min</span>
+        <span>Temps moyen</span>
+      </div>
+      <div class="col">
+        <span>{{ stats.time.max }} min</span>
+        <span>Temps max</span>
+      </div>
     </div>
   </div>
 </div>

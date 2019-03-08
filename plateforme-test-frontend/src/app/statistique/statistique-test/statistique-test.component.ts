@@ -13,7 +13,6 @@ export class StatistiqueTestComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('vvvvvvvvvvvvvvvv', this.stats);
   }
 
 }
