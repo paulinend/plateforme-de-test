@@ -14,7 +14,7 @@ import { StatistiqueService } from '../statistique.service';
 export class StatistiqueComponent implements OnInit {
   tests$: Observable<Test[]>;
   displayBy = new FormControl('test');
-  stats: Statistique;
+  stats$: Observable<Statistique>;
 
   constructor(
     private _testService: TestService,
@@ -23,15 +23,7 @@ export class StatistiqueComponent implements OnInit {
 
   ngOnInit() {
     this.tests$ = this._testService.getTests();
-    this.getStats();
+    this.stats$ = this._statistiqueService.getStatistiques();
   }
-
-  getStats() {
-    this._statistiqueService.getStatistiques().subscribe(
-      stats => {
-        this.stats = stats;
-      });
-  }
-
 
 }

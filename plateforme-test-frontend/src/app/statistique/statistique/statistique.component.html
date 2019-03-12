@@ -24,7 +24,9 @@
     <!-- </div> -->
   </div>
   <div class="statistique">
-    <app-statistique-test [stats]="stats" *ngIf="displayBy.value === 'test'"></app-statistique-test>
+    <ng-container *ngIf="displayBy.value === 'test' && (stats$ | async) as stats">
+      <app-statistique-test [stats]="stats"></app-statistique-test>
+    </ng-container>
     <app-statistique-theme *ngIf="displayBy.value === 'theme'"></app-statistique-theme>
   </div>
 </div>
